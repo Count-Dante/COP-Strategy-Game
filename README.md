@@ -6,4 +6,14 @@
 * Ryan Black
 
 # Product Vision
-A group project developed as a group project for our COP 4331 class. It's a strategy game that's meant to teach us how to learn to develop games on our own.
+Target Market
+
+What need it solves
+
+Product name/category
+
+Advantages our product has over others/why people will want it
+
+How it's unlike the other competitors in the market
+
+Our product offers...
