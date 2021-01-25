@@ -11,7 +11,7 @@ How it's unlike the other competitors in the market
 
 Our product offers...
 
-### Group 14 Team Members
+## Group 14 Team Members
 * Aedan Deyto
 * David Kipikash
 * Grant Allan
