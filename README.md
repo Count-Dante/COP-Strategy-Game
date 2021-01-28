@@ -1,7 +1,5 @@
 # Product Vision
-This video game will be a delight for both hardcore and casual strategy game players. The options available will give the flexibility and options that those already familiar with similar strategy games will enjoy, but the UI and gameplay will also be simple enough that those unfamiliar with the genre will have a blast playing.
-
-Other grand scale turn based strategy games, such as games from the Civilization series, tend to de-emphasis individual units and cities. It becomes a game of numbers. Sheer quantity of resources, rather than strategy. Our game will prevent that, making every city and unit important and preventing games from all ending in the same way.
+"The Candy Crush of strategy games." Manifesting Destiny, a video game set in the Old West, will be a delight for beginners and casual strategy game players. Other turn based strategy games, such as games from the Civilization series, have a steep learning curve. The sheer quantity of resources can easily overwhelm a new player. Manifesting Destiny solves this issue by eliminating the painstaking micro-management of resources and units while offering a user-friendly UI!
 
 ## Group 14 Team Members
 * Aedan Deyto
