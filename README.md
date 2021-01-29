@@ -8,6 +8,29 @@
 * Natalia Colmenares
 * Ryan Black
 
+# Sprint 1
+* Product Backlog
+* Sprint Backlog
+* Requirements
+* Trello Board
+* Burndown Chart
+* Velocity Chart
+* System Architecture
+* Source Code
+* Automated Tests
+* Product Demonstration
+
+## Task Allocation
+Aedan Deyto: 
+
+David Kipikash: 
+
+Grant Allan: 
+
+Natalia Colmenares: 
+
+Ryan Black: 
+
 | ID | User Story | Effort | Priority | Validation Criteria | Status |
 |----|------------|--------|----------|---------------------|--------|
 | 000 | ~As a professor, I want to provide my students with an example github site, so that they will succeed in my class.~ | 8 | 1 | Given a student, when that student goes to my GitHub page, then they can see an example project for my course. | DONE |
