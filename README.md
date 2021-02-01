@@ -4,7 +4,7 @@
 ## Group 14 Team Members
 * Aedan Deyto - AedanDeyto22
 * David Kipikash - Kipikash-Git
-* Grant Allan - Count-Dante
+* Grant Allan - Grant-Allan
 * Natalia Colmenares - nataliacolm
 * Ryan Black - rblack0
 
