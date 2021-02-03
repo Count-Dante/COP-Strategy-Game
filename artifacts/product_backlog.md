@@ -1,7 +1,7 @@
 | ID | User Story | Effort | Priority | Validation Criteria | Status |
 |----|------------|--------|----------|---------------------|--------|
 | 000 | As a User, I want a main menu to navigate the game through. | 4 | 1 | Given a user, when that user opens the game, the game opens to a main menu. | WORKING |
-| 001 | As a User, I want to be able to actually start a game. | 10 | 1 | Given a user, when that user reaches the main menu, they can start a game. | WORKING |
+| 001 | As a User, I want to be able to actually start a game session. | 10 | 1 | Given a user, when that user reaches the main menu, they can start a game session. | WORKING |
 | 002 | As a User, I want to be able to save my game. | 4 | 1 | Given a user, when that user is done playing for the time being, they can save their game to start playing it again later. | WORKING |
 | 003 | As a User, I want to be able to load my game. | 4 | 1 | Given a user, when that user opens the main menu, they should be able to load their saved game. | WORKING |
 | 004 | As a User, I want music in the games I play. | 3 | 2 | The game has a working soundtrack for the user's listening pleasure. | WORKING |
