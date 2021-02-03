@@ -11,7 +11,7 @@
 | 008 | As a User, I want to be able to earn/gather resources in the game. | 5 | 1 | Given a user, that user can earn/gather resources in the game. | WORKING |
 | 009 | As a User, I want to be able to beat the game. | 3 | 1 | The game has achievable victory conditions. | WORKING |
 | 010 | As a User, I want to be able to lose the game. | 3 | 1 | The game has failable victory conditions. | WORKING |
-| 011 | As a User, I want | 1 | 1 | Given a user | WORKING |
+| 011 | As a User, I want to have a tutorial to teach me how to play | 1 | 1 | Given a brand new user, that user can easily begin the tutorial and work through it to understand the game functions. | WORKING |
 | 012 | As a User, I want | 1 | 1 | Given a user | WORKING |
 | 013 | As a User, I want | 1 | 1 | Given a user | WORKING |
 | 014 | As a User, I want | 1 | 1 | Given a user | WORKING |
