@@ -9,11 +9,11 @@
 * Ryan Black - rblack0
 
 # Sprint 1
-* Product Backlog
-* Sprint Backlog
-* Requirements
-* Trello Board
-* Burndown Chart
+* [Product Backlog](https://trello.com/b/FpkzNxdc/backlogs)
+* [Sprint Backlog](https://trello.com/b/FpkzNxdc/backlogs)
+* [Requirements](https://trello.com/b/FpkzNxdc/backlogs)
+* [Trello Board](https://trello.com/b/FpkzNxdc/backlogs)
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1ccAiiIHTk2BGBF6PouW-TygnWsErGMOF8CUPSVpZSkQ/edit#gid=0)
 * Velocity Chart
 * System Architecture
 * Source Code
@@ -21,12 +21,12 @@
 * Product Demonstration
 
 ## Task Allocation
-Aedan Deyto: 
+Aedan Deyto: Product backlog, Initial setup
 
-David Kipikash: 
+David Kipikash: Product backlog, Initial setup
 
-Grant Allan: 
+Grant Allan: Product backlog, Initial setup
 
-Natalia Colmenares: 
+Natalia Colmenares: Product backlog, Initial setup
 
-Ryan Black: 
+Ryan Black: Product backlog, Initial setup
