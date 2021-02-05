@@ -2,10 +2,9 @@
 
 | Requirement ID | User Story ID | Requirement | Acceptance Criteria | Effort | Priority | Status |
 |----------------|---------------|-------------|---------------------|--------|----------|--------|
-|            000 |           001 | Each entry in the product backlog shall have a unique ID             | Each entry in the backlog has a unique ID | 1 | Necessary | Verified |
-|            001 |           001 | Each entry in the product backlog shall have a textual description   | Each entry in the backlog has a textual description | 1 | Necessary | Verified |
-|            002 |           001 | Each entry in the product backlog shall have a priority | Each entry in the backlog has a priority | 1 | Necessary | Verified |
-|            003 |           001 | Each entry in the product backlog shall have an estimation of effort | Each entry in the backlog has an estimation of effort | 1 | Necessary | Verified |
-|            004 |           001 | Each entry in the product backlog shall have a validation criteria   | Each entry in the backlog has a validation criteria of the form Given/When/Then | 1 | Necessary | Verified |
-|            005 |           001 | Each entry in the product backlog shall have a status that can be one of PLANNED, WORKING, or DONE | Each entry in the backlog has a status | 1 | Necessary | Verified |
-|            005 |           001 | The product backlog shall be displayed as a table with one entry per row | The product backlog is visualized as a table with one entry per row | 1 | Necessary | Verified |
+|            001 |           001 | A user shall be able to press the 'start' button if they wish to start a new game.             | There is a start button that begins the game. | 1 | Necessary | Planned |
+|            003 |           001 | The menu shall display the name "Manfiesting Destiny."  | The main menu has the title "Manifesting Destiny." | 1 | Important | Planned |
+|            001 |           002 | The map shall have multiple biomes. | There exists different biomes on the map. | 5 | Important | Planned |
+|            002 |           002 | A user shall be able to move around the map. | The user is able to navigate the map. | 4 | Necessary | Planned |
+|            001 |           003 | A user shall be told what each basic mechanic does.   | When the user starts a game, they are given a tutorial on the game's mechanics. | 4 | Necessary | Planned |
+|            002 |           003 | A user shall be able to skip the tutorial unless they are experienced. | When the user starts a game they are given the option to skip the tutorial. | 1 | Desirable | Planned |
