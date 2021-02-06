@@ -9,3 +9,5 @@
 |            001 |           003 | A user shall be told what each basic mechanic does.   | When the user starts a game, they are given a tutorial on the game's mechanics. | 4 | Necessary | Planned |
 |            002 |           003 | A user shall be able to skip the tutorial unless they are experienced. | When the user starts a game they are given the option to skip the tutorial. | 1 | Desirable | Planned |
 |            001 |           004 | A user shall be able to exit/git rid of the text-based narrator after reading the text. | When the user is done reading all the text they can close the text pop-up. | 2 | Desirable | Planned |
+|            001 |           005 | A user shall be able to adjust the volume of the music as they please. | Given at any time the user can change the volume of in-game music. | 2 | Desirable | Planned |
+|            001 |           006 | A user shall be able to open a submenu in-game that will pause the game. | When the user opens the submenu the game will pause. | 2 | Desirable | Planned |
