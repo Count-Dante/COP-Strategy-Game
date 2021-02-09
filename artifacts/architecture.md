@@ -1,5 +1,3 @@
-# Architecture
-------------------
 # Program Organization
 
 You should have your context, container, and component (c4model.com) diagrams in this section, along with a description and explanation of each diagram and a table that relates each block to one or more user stories. 
