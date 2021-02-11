@@ -80,7 +80,7 @@ See Code Complete, Chapter 3
 
 # Input/Output
 
-See Code Complete, Chapter 3
+Our game will take input from the mouse in order to move the on-screen cursor and select objects in-game. This can be used to navigate menus or select objects in the game world. In addition, input will be taken from the keyboard for actions such as player movement (WASD), entering a requested value from the user (0-9), opening the world map (M), and opening the game menu (ESC). All outputs will come through the screen as the player receives visual feedback from their actions. Any I/O errors will be handled through Unity itself.
 
 # Error Processing
 
