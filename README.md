@@ -18,6 +18,29 @@
 * System Architecture
 * Source Code
 * Automated Tests
+* Product Demonstration
+
+## Task Allocation
+Aedan Deyto: Product backlog, Initial setup
+
+David Kipikash: Product backlog, Initial setup
+
+Grant Allan: Product backlog, Initial setup
+
+Natalia Colmenares: Product backlog, Initial setup
+
+Ryan Black: Product backlog, Initial setup
+
+# Sprint 1
+* [Product Backlog](https://trello.com/b/FpkzNxdc/backlogs)
+* [Sprint Backlog](https://trello.com/b/FpkzNxdc/backlogs)
+* [Requirements](https://trello.com/b/FpkzNxdc/backlogs)
+* [Trello Board](https://trello.com/b/FpkzNxdc/backlogs)
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1mqqSALltwAl0edOKvCXrpOLnEsmOgAQWlE3VF5gjhaM/edit?ts=601f11a4#gid=0)
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/1SVAG2XL3UHwgRf9H_69p2QMZEYk6puFvHCiJfRDD5Q4/edit#gid=0)
+* System Architecture
+* Source Code
+* Automated Tests
 * [Product Demonstration](https://youtu.be/xD75lnCag3w)
 
 ## Task Allocation
