@@ -8,7 +8,7 @@
 * Natalia Colmenares - nataliacolm
 * Ryan Black - rblack0
 
-# Sprint 1
+# Sprint 2
 * [Product Backlog](https://trello.com/b/FpkzNxdc/backlogs)
 * [Sprint Backlog](https://trello.com/b/FpkzNxdc/backlogs)
 * [Requirements](https://trello.com/b/FpkzNxdc/backlogs)
