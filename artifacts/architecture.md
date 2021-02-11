@@ -6,16 +6,30 @@
 
 | System Context | User Story ID                                                                                 |
 |---------|-----------------------------------------------------------------------------------------------|
-| Player  |                                                                       |
-| Game    |  |
+| Player  | 003, 004, 005, 006,009, 012, 013,                                                                       |
+| Game    | 007, 008, 009, 010, 011, 016, 017, 018, 019, 021 |
 
 ## Container Diagram:
 
 ![Screen Shot 2021-02-10 at 15 19 22](https://user-images.githubusercontent.com/38693615/107567682-ffcee800-6bb3-11eb-8977-2aa14425b153.png)
 
+| Container     | User Story ID                                         |
+|---------------|-------------------------------------------------------|
+| Main Menu     | 001, 003, 013, 022      |
+| Game          | 008, 009, 010 |
+| Unity IO      | 002 |
+
 ## Component Diagram:
 
 ![Component](https://user-images.githubusercontent.com/38693615/107663801-c650b800-6c59-11eb-807f-a86430aa4b2f.png)
+
+| Component                | User Story ID                |
+|--------------------------|------------------------------|
+| Utilities                |  013, 022, 001               |
+| persistentDataPath       |  002                          |
+| Manifesting Destiny      |  007, 015, 016, 017,018, 007, 004  |
+| Expansion & Defense controller | 008, 010, 014              |
+
 
 # Code Design
 
