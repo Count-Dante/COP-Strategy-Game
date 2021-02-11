@@ -18,7 +18,7 @@
 * System Architecture
 * Source Code
 * Automated Tests
-* Product Demonstration
+* [Product Demonstration](https://youtu.be/xD75lnCag3w)
 
 ## Task Allocation
 Aedan Deyto: Product backlog, Initial setup
