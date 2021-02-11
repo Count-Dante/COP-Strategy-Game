@@ -16,7 +16,7 @@
 | Container     | User Story ID                                         |
 |---------------|-------------------------------------------------------|
 | Main Menu     | 001, 003, 013, 022      |
-| Game          | 008, 009, 010 |
+| Game          | 004, 007, 008, 009, 010, 015, 016, 017 |
 | Unity IO      | 002 |
 
 ## Component Diagram:
@@ -26,9 +26,8 @@
 | Component                | User Story ID                |
 |--------------------------|------------------------------|
 | Utilities                |  013, 022, 001               |
-| persistentDataPath       |  002                          |
-| Manifesting Destiny      |  007, 015, 016, 017, 018, 007, 004  |
-| Expansion & Defense controller | 008, 010, 014              |
+| persistentDataPath       |  002                         |
+| Expansion & Defense controller | 008, 010, 014          |
 
 
 # Code Design
