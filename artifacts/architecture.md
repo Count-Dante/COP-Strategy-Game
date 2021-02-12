@@ -108,4 +108,4 @@ This game may use pre-existing visuals or sprites obtained from a third party. O
 
 # Change Strategy
 
-See Code Complete, Chapter 3
+As more testing is performed, balancing and fine-tuning may occur. If a strategy arises that is shown to over-shadow all other viable strategies (rendering them useless), then adjustments can me made to lower to power of such a strategy. In addition, the modularity of our project allows us to implement as many features as we have time for. Once the core game is designed, we will be able to append additional features to our architecture wherever possible.
