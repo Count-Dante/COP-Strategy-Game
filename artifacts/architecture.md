@@ -104,7 +104,8 @@ Bugs are commonplace in gaming and it is expected that at least a few of these w
 
 # Architectural Feasibility
 
-See Code Complete, Chapter 3
+Since this game is being made as a simple alternative to other strategy games that incorporate a ton of micromanagement, the core features of this game are relatively simple and thus straightforward for us as the developers to implement. All of the developers working on this project are familiar with C# and have a basic yet solid grasp of Unity development, so we are confident that *Manifest Destiny* will meet its performance targets.
+
 
 # Overengineering
 
