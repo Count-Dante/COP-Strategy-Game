@@ -88,7 +88,7 @@ See Code Complete, Chapter 3
 
 # Fault Tolerance
 
-See Code Complete, Chapter 3
+Bugs are commonplace in gaming and it is expected that at least a few of these will be overlooked during development. For this project we plan to concentrate more on our game’s feature set than some minor bugs. Our focus for detecting faults will be at the priority level of “game breaking” rather than minor. In this way, we can aim to achieve a more dynamic, feature-driven product rather than a linear, yet refined product.
 
 # Architectural Feasibility
 
