@@ -4,14 +4,22 @@
 
 ![Screen Shot 2021-02-10 at 12 02 12](https://user-images.githubusercontent.com/38693615/107567716-08272300-6bb4-11eb-8670-9e49634eba64.png)
 
+Our single player game will allow players to play Manifesting Destiny, view progress bars to reach the next expansion state, and change game settings to fit their game style. The game is being developed through Unity’s gaming engine. 
+
 | System Context | User Story ID                                                                                 |
 |---------|-----------------------------------------------------------------------------------------------|
 | Player  | 003, 004, 005, 006, 009, 012, 013,                                                                       |
 | Game    | 007, 008, 009, 010, 011, 016, 017, 018, 019, 021 |
 
+
 ## Container Diagram:
 
 ![Screen Shot 2021-02-10 at 15 19 22](https://user-images.githubusercontent.com/38693615/107567682-ffcee800-6bb3-11eb-8977-2aa14425b153.png)
+
+* Player: A person who owns the game can access their personal settings set and play the game by controlling user input.
+* Game Context: The game context is produced when a player opens the program to launch our game.
+* Main Menu Container: Players can access their previous game saves, change their settings, quit the game, and play Manifesting Destiny.
+* Game Container: The game container consists of all the settings and controllers necessary to properly advance through the Manifesting Destiny game. 
 
 | Container     | User Story ID                                         |
 |---------------|-------------------------------------------------------|
@@ -22,6 +30,14 @@
 ## Component Diagram:
 
 ![Component](https://user-images.githubusercontent.com/38693615/107663801-c650b800-6c59-11eb-807f-a86430aa4b2f.png)
+
+Main Menu Container:
+* Utilities Component: Functionalities such as start game, load game, quit game, and settings are what compose the utilities component in the Main Menu Container. These functionalities are what give the player access to our game and are dictated by user input.
+* persistentDataPath Component: This component is what allows a player to save a current game state or load a new state. The main menu reads from the persistentDataPath to load a game.
+
+Manifesting Destiny (Game) Container:
+* persistentDataPath Component: The game uses the persistentDataPath to allow the player to save his current state in the game. Thus, reading and writing to this component will be a frequent action throughout the game. 
+* Expansion and Defense Controller Component: As the player plays the game, the progress towards expansion and defense will continue to be recorded. This determines whether the player will be able to expand and gather more resources or lose if the player cannot defend against the bad events. If the player cannot defend against a certain bad event, the player loses the game. Contrastingly, if the player is able to expand towards California, he wins.
 
 | Component                | User Story ID                |
 |--------------------------|------------------------------|
