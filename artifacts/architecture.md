@@ -70,7 +70,7 @@ See Code Complete, Chapter 3
 
 # Resource Management
 
-See Code Complete, Chapter 3
+Since our game utilizes 8-bit graphics and is relatively simple in terms of mechanics and active objects within the game, approximately 4 gigabytes of ram and any CPU and GPU from 2015+ would be suffiicent to run *Manifesting Destiny*. Object pooling will be used to reduce CPU usage and pre-instatiate any objects (in regard to our game this could be units, resources, or areas to be discovered) needed by a scene instead of dynamically creating them as the game runs.
 
 # Security
 
