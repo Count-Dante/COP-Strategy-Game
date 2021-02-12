@@ -104,7 +104,7 @@ See Code Complete, Chapter 3
 
 # Reuse
 
-See Code Complete, Chapter 3
+This game may use pre-existing visuals or sprites obtained from a third party. Obtaining these resources will be handled with respect and not passed off as our own. We plan to give full credit to the parties that contributed to our software, and follow the legal guidelines necessary for this process.
 
 # Change Strategy
 
