@@ -74,11 +74,10 @@ Since our game utilizes 8-bit graphics and is relatively simple in terms of mech
 
 # Security
 
-See Code Complete, Chapter 3
+We are creating a single-player game and will be running locally on the users’ computer, and will not be saving critical or personal data that needs to be protected. So we concluded that security is not a consideration in our system architecture. 
 
 # Performance
-
-See Code Complete, Chapter 3
+The graphics in our game will be 2 Dimensional 8-Bit Style, which will not be graphically intensive. The only intensive part of our software will that the software is computationally intensive. However, the game is designed to be simple so it shouldn’t use a lot of memory and CPU space. So we believe that our game will perform well on any reasonable laptop or desktop.
 
 # Scalability
 
@@ -113,9 +112,7 @@ See Code Complete, Chapter 3
 
 # Build-vs-Buy Decisions
 
-This section should list the third party libraries your system is using and describe what those libraries are being used for.
-
-See Code Complete, Chapter 3
+We are building our game in the Unity Engine. All software in our final project will be built by us. And, any 8-Bit drawing or music will be either done by hand or will be obtained from open-source materials. Also, we will be using free assets from the Unity asset store, which freely allows us to utilize them. Assets such as TextMesh Pro will be used to write dialogue systems in the game. So all the material and software we are using is free.
 
 # Reuse
 
