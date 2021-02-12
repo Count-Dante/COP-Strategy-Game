@@ -44,12 +44,12 @@ Ryan Black: Product backlog, Initial setup
 * [Product Demonstration](https://youtu.be/xD75lnCag3w)
 
 ## Task Allocation
-Aedan Deyto: Product backlog, Initial setup
+Aedan Deyto: UI diagram
 
-David Kipikash: Product backlog, Initial setup
+David Kipikash: "ilities"
 
-Grant Allan: Product backlog, Initial setup
+Grant Allan: Class diagram
 
-Natalia Colmenares: Product backlog, Initial setup
+Natalia Colmenares: Program organization
 
-Ryan Black: Product backlog, Initial setup
+Ryan Black: "ilities"
