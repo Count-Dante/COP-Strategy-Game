@@ -69,8 +69,7 @@ See Code Complete, Chapter 3
 We want to maintain modularity in our game so that it can be scaled out in future versions. There are a lot of ideas and features we would like to implement, but might not have time for. In this way, we want to establish a core set of features first, and then eventually expand that feature-set over time. Ways in which we plan to scale our game outward in the future include adding more biomes/locations to explore, including new random encounters/events, and introducing more resource types over time to support a variety of play styles.
 
 # Interoperability
-
-See Code Complete, Chapter 3
+Since our game is created using Unity, it is self-contained and does not require any additional files or rely on any software outside of what comes packaged with it. *Manifesting Destiny* does not interact or share data with other software or hardware, and because of this interoperability is not a consideration for this project.
 
 # Internationalization/Localization
 
