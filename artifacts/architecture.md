@@ -54,9 +54,7 @@ See Code Complete, Chapter 3 and https://c4model.com/
 
 # Data Design
 
-If you are using a database, you should have a basic Entity Relationship Diagram (ERD) in this section. This diagram should describe the tables in your database and their relationship to one another (especially primary/foreign keys), including the columns within each table. 
-
-See Code Complete, Chapter 3
+The game utilizes the persistentDataPath which allows the player to save the current state of their game to a static directory path. The user will be able to load their saved game from that path and continue right where they left off. Local variables and other objects pertinent to the game will manifest in memory and be destroyed when the game is closed.
 
 # Business Rules
 
@@ -88,7 +86,7 @@ Since our game is created using Unity, it is self-contained and does not require
 
 # Internationalization/Localization
 
-See Code Complete, Chapter 3
+This game is being created for a target audience of English-speaking users; this section is not applicable to our game.
 
 # Input/Output
 
@@ -96,7 +94,7 @@ Our game will take input from the mouse in order to move the on-screen cursor an
 
 # Error Processing
 
-See Code Complete, Chapter 3
+The Unity engine handles error processing for our game and writes any error(s) encountered during runtime to both the console window in Unity and a log file for the Unity editor.
 
 # Fault Tolerance
 
@@ -109,7 +107,7 @@ Since this game is being made as a simple alternative to other strategy games th
 
 # Overengineering
 
-See Code Complete, Chapter 3
+This game will be robust because we the developers err on the side of simplicity rather than complexity in our code and design. We will start by building a simple main menu that allows the user to start the game and open a simple map. Then, we will create a basic overlay that displays only information that the user needs to play the game and tools to build up their settlement. These elements serve as the basic foundation for our game and after their creation, additional features will be added with simplicity and clean code in mind over the 3 month development period allotted to create our game. If any additional features created add to much complexity or come off as overengineered, they can be very easily rolled back or redesigned within the development period.
 
 # Build-vs-Buy Decisions
 
