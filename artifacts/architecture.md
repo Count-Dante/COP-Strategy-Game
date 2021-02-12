@@ -44,9 +44,7 @@ See Code Complete, Chapter 3
 
 # Business Rules
 
-You should list the assumptions, rules, and guidelines from external sources that are impacting your program design. 
-
-See Code Complete, Chapter 3
+Since we are using pre-existing assets gathered from the internet, and implementing our own game music and sound effects, we must abide by the copyright standards set in place for these elements. Additionally, we shall not attempt to pass off any assets used for this product as our own.
 
 # User Interface Design
 
