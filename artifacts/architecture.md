@@ -59,7 +59,8 @@ Main Menu UML Diagram: Directly below is the UML for our main menu. The game wil
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |        |      |
+|  1  |    As a player, I want a main menu in order to easily start a new game and load old games.    |   Main Menu   |
+|  13  |    As a player, I want to be able to change the volume of the music so I can determine a good volume level for me.    |   Settings   |
 
 Overlay UML Diagram: The Overlay diagram contains all the various icons and menus that will be on the player's screen as they play the game. The overlay contains an icon to open the buildings menu, an icon to open the units menu, an icon to open the pause menu, and shows you have many resources you have of each type (food, wood, gold). Clicking on any of the icons will direct the user to the associated class. For example, clicking on the buildings menu icon will run the Building Menu class, showing the user a window with all the buildings they can build at that time.
 
@@ -77,7 +78,18 @@ Overlay UML Diagram: The Overlay diagram contains all the various icons and menu
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |        |      |
+|  2  |    As a player, I want to be able to save my game so that I can pick the game up at the last time I played.    |   Pause Menu   |
+|  3  |    As a player, I want a basic tutorial when I first play the game, so that I can easily figure out what I'm supposed to do.    |   Information Popups   |
+|  4  |    As a player, I want a text-based narrator, so that the game can communicate certain mechanics and milestones with me.    |   Information Popups   |
+|  6  |    As a player, I want to be able to pause the game so I can divert my attention somewhere else while I am playing.    |   Pause Menu   |
+|  7  |    As a player, I want the game to generate obstacles for me so that I can feel challenged.    |   Bad Events   |
+|  8  |    As a player, I want to be able to defend my settlement from the challenges imposed by the game so that I can save my settlement.    |   Building Menu   |
+|  10  |    As a player, I want to be able to expand my settlement so that I can continue to progress in the game.    |   Building Menu   |
+|  11  |    As a player, I want to be able to see the resources I have so that I can view how many resources I have collected each time.    |   Resource Inventory   |
+|  13  |    As a player, I want to be able to change the volume of the music so I can determine a good volume level for me.    |   Pause Menu   |
+|  14  |    As a player, I want an indication of how many resources I need to gather before I am able to expand my settlement.    |   Resource Inventory   |
+|  16  |    As a player, I want the game to get harder as I progress so that I am not in a static state.    |   Bad Events   |
+|  22  |    As a player, I want to be able to quit the game from the main menu so I can easily exit.    |   Pause Menu   |
 
 Events UML Diagram: The Events diagram shows the data behind the windows in the "pop-ups" class in the Overlay diagram. That is to say, the "pop-ups" class and its children classes are just the windows that tell the user what is happening. The Events class and its children are what run the calculations and decide what sort of event will occur and why.
 
@@ -90,7 +102,10 @@ Events UML Diagram: The Events diagram shows the data behind the windows in the 
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |        |      |
+|  3  |    As a player, I want a basic tutorial when I first play the game, so that I can easily figure out what I'm supposed to do.    |   Information Events   |
+|  4  |    As a player, I want a text-based narrator, so that the game can communicate certain mechanics and milestones with me.    |   Information Events   |
+|  7  |    As a player, I want the game to generate obstacles for me so that I can feel challenged.    |   Bad Events   |
+|  16  |    As a player, I want the game to get harder as I progress so that I am not in a static state.    |   Bad Events   |
 
 Resources UML Diagram: The Resources diagram shows the classes that govern the resources within an object. For example, the food inside a farm. There will be a maximum limit to the amount of food in a farm, a semi-random number of "food" resource assigned to the farm, and then a counter that keeps track of the food left in the farm as the user works the farm to gain food from it.
 
@@ -103,7 +118,8 @@ Resources UML Diagram: The Resources diagram shows the classes that govern the r
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|       |                         |              |
+|  9  |    As a player, I want to be able to gather resources to help me progress in the game.    |   Resources   |
+|  19  |    As a player, I want there to be a limit to the resources in the map so that I be strategic in how I gather and spend them.    |   Resources Class   |
 
 # Data Design
 
