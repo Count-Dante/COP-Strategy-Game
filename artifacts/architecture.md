@@ -48,7 +48,7 @@ Manifesting Destiny (Game) Container:
 
 # Code Design
 
-![alt text](https://github.com/Grant-Allan/artifacts/Images/Manifesting Destiny Class Diagrams-Events.png)
+![alt text](https://github.com/Grant-Allan/artifacts/images/Manifesting-Destiny-Class-Diagrams-Main-Menu.png)
 
 # Data Design
 
