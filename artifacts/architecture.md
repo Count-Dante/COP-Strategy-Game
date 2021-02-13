@@ -48,6 +48,7 @@ Manifesting Destiny (Game) Container:
 
 # Code Design
 
+### Main Menu
 Main Menu UML Diagram: Directly below is the UML for our main menu. The game will start by loading directly into the Main Menu class. The user can then decide whether they want to go to Settings, New Game, or Load Game. In the Settings class, they'll have the option to change the volume settings. In the Load Game class, they'll be able to select one of three saved games and return to playing that game. In the New Game class, they'll choose the settings for their game. That is to say, what mode and difficulty they want.
 
 ![Manifesting-Destiny-Class-Diagrams-Main-Menu](https://user-images.githubusercontent.com/45442774/107851886-2ae75080-6ddb-11eb-8f52-28ae6157a2d1.png)
@@ -62,6 +63,7 @@ Main Menu UML Diagram: Directly below is the UML for our main menu. The game wil
 |  1  |    As a player, I want a main menu in order to easily start a new game and load old games.    |   Main Menu   |
 |  13  |    As a player, I want to be able to change the volume of the music so I can determine a good volume level for me.    |   Settings   |
 
+### Overlay
 Overlay UML Diagram: The Overlay diagram contains all the various icons and menus that will be on the player's screen as they play the game. The overlay contains an icon to open the buildings menu, an icon to open the units menu, an icon to open the pause menu, and shows you have many resources you have of each type (food, wood, gold). Clicking on any of the icons will direct the user to the associated class. For example, clicking on the buildings menu icon will run the Building Menu class, showing the user a window with all the buildings they can build at that time.
 
 ![Manifesting-Destiny-Class-Diagrams-Overlay](https://user-images.githubusercontent.com/45442774/107852007-f1fbab80-6ddb-11eb-8311-df7440104fad.png)
@@ -91,6 +93,7 @@ Overlay UML Diagram: The Overlay diagram contains all the various icons and menu
 |  16  |    As a player, I want the game to get harder as I progress so that I am not in a static state.    |   Bad Events   |
 |  22  |    As a player, I want to be able to quit the game from the main menu so I can easily exit.    |   Pause Menu   |
 
+### Events
 Events UML Diagram: The Events diagram shows the data behind the windows in the "pop-ups" class in the Overlay diagram. That is to say, the "pop-ups" class and its children classes are just the windows that tell the user what is happening. The Events class and its children are what run the calculations and decide what sort of event will occur and why.
 
 ![Manifesting-Destiny-Class-Diagrams-Events](https://user-images.githubusercontent.com/45442774/107852014-0344b800-6ddc-11eb-9fa4-f831e7b20501.png)
@@ -107,6 +110,7 @@ Events UML Diagram: The Events diagram shows the data behind the windows in the 
 |  7  |    As a player, I want the game to generate obstacles for me so that I can feel challenged.    |   Bad Events   |
 |  16  |    As a player, I want the game to get harder as I progress so that I am not in a static state.    |   Bad Events   |
 
+### Resources
 Resources UML Diagram: The Resources diagram shows the classes that govern the resources within an object. For example, the food inside a farm. There will be a maximum limit to the amount of food in a farm, a semi-random number of "food" resource assigned to the farm, and then a counter that keeps track of the food left in the farm as the user works the farm to gain food from it.
 
 ![Manifesting-Destiny-Class-Diagrams-Resources](https://user-images.githubusercontent.com/45442774/107852010-faec7d00-6ddb-11eb-9117-aa2884db493f.png)
