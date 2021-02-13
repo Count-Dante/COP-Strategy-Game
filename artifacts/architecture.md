@@ -48,7 +48,9 @@ Manifesting Destiny (Game) Container:
 
 # Code Design
 
-![Manifesting-Destiny-Class-Diagrams-Main-Menu](https://github.com/Grant-Allan/COP-Strategy-Game/blob/master/artifacts/images/Manifesting-Destiny-Class-Diagrams-Main-Menu.png)
+Main Menu UML Diagram: Directly below is the UML for our main menu. The game will start by loading directly
+
+![Manifesting-Destiny-Class-Diagrams-Main-Menu](https://user-images.githubusercontent.com/45442774/107851886-2ae75080-6ddb-11eb-8f52-28ae6157a2d1.png)
 
 # Data Design
 
