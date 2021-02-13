@@ -62,9 +62,28 @@ Since we are using pre-existing assets gathered from the internet, and implement
 
 # User Interface Design
 
-You should have one or more user interface screens in this section. Each screen should be accompanied by an explaination of the screens purpose and how the user will interact with it. You should relate each screen to one another as the user transitions through the states of your application. You should also have a table that relates each window or component to the support using stories. 
+![UI-Diagram](https://user-images.githubusercontent.com/73034231/107835586-0736f280-6d68-11eb-955c-57a59b73e863.jpg)
 
-See Code Complete, Chapter 3
+Main Menu: This will be the First Screen the users see when starting the program. The screen displays 2 options, “Start” and “Exit”. The Start button will lead to the next UI.
+
+Start Game: When the user press start game this will be the next screen they see. This screen will also display 2 options, “New Game” and “Load Game”. Both options will lead the user to the Map screen, however, based on the choice the map will differ.
+
+Map: This screen will be the main screen the user interacts with. This screen will have 5 main displays other than the map: “<Name of Settlement>”, “Expand”, “Defend”, “Resources”, and “Pause”. “Pause” is the only other interactable display in which will direct the user to the Pause/Sub Menu. 
+ 
+Pause/Sub Menu: This menu allows the user to pause their game if they need to or if the user wants to save and leave the game. This screen displays 3 options: “Resume Game”, “Save & Exit”, and “Settings”. “Resume Game” will allow the user to go back to Map and resume their game. “Save & Exit” will bring the user back to the Main Menu.
+
+Win: This screen will appear if the user wins the game.
+
+Lost: This screen will appear if the user loses the game.
+
+| User Interface               | User Story ID                |
+|--------------------------|------------------------------|
+| Main Menu              |  001, 022               |
+| Start Game       |  002                         |
+| Map | 009, 010, 011, 014, 015, 021          |
+| Pause/Sub Menu             |  002, 006, 013               |
+| Win    |  017                         |
+| Lost | 018         |
 
 # Resource Management
 
