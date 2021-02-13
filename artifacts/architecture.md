@@ -52,54 +52,54 @@ Main Menu UML Diagram: Directly below is the UML for our main menu. The game wil
 
 ![Manifesting-Destiny-Class-Diagrams-Main-Menu](https://user-images.githubusercontent.com/45442774/107851886-2ae75080-6ddb-11eb-8f52-28ae6157a2d1.png)
 
-* Main Menu Class:
-* New Game Class:
-* Load Game Class:
-* Settings Class:
+* Main Menu Class: The only purpose of the main menu is to direct the user to either the new game, load game, or settings menus.
+* New Game Class: This class is where the user will select the mode they want to play in and the difficulty they want to play on.
+* Load Game Class: This is where a user can choose to load a saved game.
+* Settings Class: This is where a user can adjust the volume of music and sounds.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|       |                         |              |
+|    |        |      |
 
 Overlay UML Diagram: The Overlay diagram contains all the various icons and menus that will be on the player's screen as they play the game. The overlay contains an icon to open the buildings menu, an icon to open the units menu, an icon to open the pause menu, and shows you have many resources you have of each type (food, wood, gold). Clicking on any of the icons will direct the user to the associated class. For example, clicking on the buildings menu icon will run the Building Menu class, showing the user a window with all the buildings they can build at that time.
 
 ![Manifesting-Destiny-Class-Diagrams-Overlay](https://user-images.githubusercontent.com/45442774/107852007-f1fbab80-6ddb-11eb-8311-df7440104fad.png)
 
-* Overlay Class:
-* Pause Menu Class:
-* Unit Menu Class:
-* Building Menu Class:
-* Resource Inventory Class:
-* Popups Class:
-* Good Events Class:
-* Bad Events Class:
-* Information Popups Class:
+* Overlay Class: A class that allows the user to open any of the necessary overlay menus while playing the game. Basically, it's a bunch of buttons that call the menu classes as needed.
+* Pause Menu Class: This is where the user can open the settings menu, save the game, quit the game, or just leave the game paused.
+* Unit Menu Class: This is where the user will select the unit they want to build.
+* Building Menu Class: This is where the user will select the building they want to build.
+* Resource Inventory Class: This allows the user to see the resources they have.
+* Popups Class: A parent class governing general popup windows.
+* Good Events Class: This subclass shows the user good events.
+* Bad Events Class: This subclass shows the user bad events.
+* Information Popups Class: This subclass shows the user informational popups.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|       |                         |              |
+|    |        |      |
 
 Events UML Diagram: The Events diagram shows the data behind the windows in the "pop-ups" class in the Overlay diagram. That is to say, the "pop-ups" class and its children classes are just the windows that tell the user what is happening. The Events class and its children are what run the calculations and decide what sort of event will occur and why.
 
 ![Manifesting-Destiny-Class-Diagrams-Events](https://user-images.githubusercontent.com/45442774/107852014-0344b800-6ddc-11eb-9fa4-f831e7b20501.png)
 
-* Events Class:
-* Information Events Class:
-* Good Events Class:
-* Bad Events Class:
+* Events Class: A parent class governing general events.
+* Information Events Class: A subclass that retrieves information on the tutorial, resources, units, or buildings.
+* Good Events Class: A subclass that decides when a good event occurs.
+* Bad Events Class: A subclass that decides when bad events occur.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|       |                         |              |
+|    |        |      |
 
 Resources UML Diagram: The Resources diagram shows the classes that govern the resources within an object. For example, the food inside a farm. There will be a maximum limit to the amount of food in a farm, a semi-random number of "food" resource assigned to the farm, and then a counter that keeps track of the food left in the farm as the user works the farm to gain food from it.
 
 ![Manifesting-Destiny-Class-Diagrams-Resources](https://user-images.githubusercontent.com/45442774/107852010-faec7d00-6ddb-11eb-9117-aa2884db493f.png)
 
-* Resources Class:
-* Farms Class:
-* Forest Class:
-* Mines Class:
+* Resources Class: A parent class governing general resources.
+* Farms Class: A subclass that dictates how much food is in a farm to begin with and keeps track of how much remains at any given time.
+* Forest Class: A subclass that dictates how much wood is in a forest to begin with and keeps track of how much remains at any given time.
+* Mines Class: A subclass that dictates how much gold is in a mine to begin with and keeps track of how much remains at any given time.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
