@@ -48,9 +48,21 @@ Manifesting Destiny (Game) Container:
 
 # Code Design
 
-Main Menu UML Diagram: Directly below is the UML for our main menu. The game will start by loading directly
+Main Menu UML Diagram: Directly below is the UML for our main menu. The game will start by loading directly into the Main Menu class. The user can then decide whether they want to go to Settings, New Game, or Load Game. In the Settings class, they'll have the option to change the volume settings. In the Load Game class, they'll be able to select one of three saved games and return to playing that game. In the New Game class, they'll choose the settings for their game. That is to say, what mode and difficulty they want.
 
 ![Manifesting-Destiny-Class-Diagrams-Main-Menu](https://user-images.githubusercontent.com/45442774/107851886-2ae75080-6ddb-11eb-8f52-28ae6157a2d1.png)
+
+Overlay UML Diagram: The Overlay diagram contains all the various icons and menus that will be on the player's screen as they play the game. The overlay contains an icon to open the buildings menu, an icon to open the units menu, an icon to open the pause menu, and shows you have many resources you have of each type (food, wood, gold). Clicking on any of the icons will direct the user to the associated class. For example, clicking on the buildings menu icon will run the Building Menu class, showing the user a window with all the buildings they can build at that time.
+
+![Manifesting-Destiny-Class-Diagrams-Overlay](https://user-images.githubusercontent.com/45442774/107852007-f1fbab80-6ddb-11eb-8311-df7440104fad.png)
+
+Events UML Diagram: The Events diagram is really a part of the Overlay diagram. However, we felt that the Overlay diagram was getting too large to be comfortably viewed, so we added a series of placeholders in the Overlay diagram to show where the Event diagram connects and created a separate diagram to show the Events. There's three types of events. Informational events, shown in the Informational Events class, which show up to tell the user something. For example, the user clicking on a building would cause a window to appear with information about that building. Good events, shown in the Good Events class, which tell the player about a random beneficial event, such as getting extra food, money, or wood. Bad events, shown in the Bad Events class, which tell the player about a random detrimental event, such as losing food, money, wood, or having part of the population die.
+
+![Manifesting-Destiny-Class-Diagrams-Events](https://user-images.githubusercontent.com/45442774/107852014-0344b800-6ddc-11eb-9fa4-f831e7b20501.png)
+
+Resources UML Diagram: The Resources diagram shows the classes that govern the resources within an object. For example, the food inside a farm. There will be a maximum limit to the amount of food in a farm, a semi-random number of "food" resource assigned to the farm, and then a counter that keeps track of the food left in the farm as the user works the farm to gain food from it.
+
+![Manifesting-Destiny-Class-Diagrams-Resources](https://user-images.githubusercontent.com/45442774/107852010-faec7d00-6ddb-11eb-9117-aa2884db493f.png)
 
 # Data Design
 
