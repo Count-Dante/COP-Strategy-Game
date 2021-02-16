@@ -67,12 +67,12 @@ Ryan Black: "ilities"
 * [Product Demonstration](https://youtu.be/xD75lnCag3w)
 
 ## Task Allocation
-Aedan Deyto:
+Aedan Deyto: Indicators
 
-David Kipikash:
+David Kipikash: Resources (Food,Wood,Gold)
 
-Grant Allan:
+Grant Allan:  Collecting Sprites, Sound Effect/Music
 
-Natalia Colmenares:
+Natalia Colmenares: Main Menu, Text Based Narrator
 
-Ryan Black:
+Ryan Black: Map
