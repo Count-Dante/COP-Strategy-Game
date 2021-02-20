@@ -6,6 +6,8 @@ import ResourceManager.java;
 // Harvest 4 Gold = 10% Chance
 public static void harvestGold()
 {
+      set delay
+
       int randomNumber = randomNumberGenerator();
       int goldAmount = getGold();
 
