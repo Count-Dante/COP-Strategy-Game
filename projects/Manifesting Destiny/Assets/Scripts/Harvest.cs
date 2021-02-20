@@ -9,7 +9,7 @@ public class Harvest : MonoBehaviour
       // Gather 3 Resources: 40%
       // Gather 4 Resources: 20%
       // Gather 5 Resources: 10%
-      public static void gatherGold()
+      public void gatherGold()
       {
             int goldAmount = Resources.getGold();
             int randomNumber = Resources.randomNumberGenerator();
@@ -40,7 +40,7 @@ public class Harvest : MonoBehaviour
             }
       }
 
-      public static void gatherWood()
+      public void gatherWood()
       {
             int woodAmount = Resources.getWood();
             int randomNumber = Resources.randomNumberGenerator();
@@ -71,7 +71,7 @@ public class Harvest : MonoBehaviour
             }
       }
 
-      public static void gatherFood()
+      public void gatherFood()
       {
             int foodAmount = Resources.getFood();
             int randomNumber = Resources.randomNumberGenerator();
