@@ -64,7 +64,7 @@ Ryan Black: "ilities"
 * [System Architecture](https://github.com/Grant-Allan/COP-Strategy-Game/blob/main/artifacts/architecture.md)
 * Source Code
 * [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
-* Manual Tests
+* [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
 * [Product Demonstration](https://youtu.be/5z0hPlBoQfU)
 
 ## Task Allocation
