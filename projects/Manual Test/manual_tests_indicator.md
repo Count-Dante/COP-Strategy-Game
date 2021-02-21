@@ -3,6 +3,9 @@
 
 | Test ID | User Story ID | Steps to Reproduce | Expected Result | Actual Result | Pass or Fail |
 |----------------|---------------|-------------|---------------------|--------|--------|
-|            000 |           001 | The user hits the 'start' button after opening the game. | The initial map should be displayed. | The map is displayed. | Pass |
-|            000 |           001 | The user can view and also click a resource tile on the map.   | A resource tile should be visible an able to be clicked. | A resource tile is visible and able to be clicked. | Pass |
-|            000 |           001 | The user chooses to expand their settlement past the intiial map. | A new area and new resource tiles should be visible. | There is no ability to expand with a new area to settle. | Fail |
+|            000 |           011 | Opening Manifesting Destiny in Unity Hub. | Manifesting Destiny should open. | Manifesting Destiny opens. | Pass |
+|            000 |           011 | After opening Manifesting Destiny start the game by pressing start game button. | After pressing start game the user should be in the Main Menu of the game. | The user is in the Main Menu of the game after pressing start game. | Pass |
+|            000 |           011 | In the Main Menu you'll press "Start". | Should send the user into the Map, which
+	  which will conatin a wood button and 3 Zero's at the top. | User is sent into the mp and sees the "Wood" button and 3 zero's at the top. | Pass |
+|            000 |           011 | In the map press the "Wood" Button. | The middle zero at the top should increment up. | The middle zero does increment up. | Pass |
+|            000 |           011 | In the map press the "Wood" Button again. | The middle zero should increment up again. | The middle zero does increment up again. | Pass |
