@@ -62,7 +62,7 @@ Ryan Black: "ilities"
 * [Burndown Chart](https://docs.google.com/spreadsheets/d/1mqqSALltwAl0edOKvCXrpOLnEsmOgAQWlE3VF5gjhaM/edit?ts=601f11a4#gid=1491789175)
 * [Velocity Chart](https://docs.google.com/spreadsheets/d/1SVAG2XL3UHwgRf9H_69p2QMZEYk6puFvHCiJfRDD5Q4/edit#gid=0)
 * [System Architecture](https://github.com/Grant-Allan/COP-Strategy-Game/blob/main/artifacts/architecture.md)
-* Source Code
+* [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
 * [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
 * [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
 * [Product Demonstration](https://youtu.be/5z0hPlBoQfU)
