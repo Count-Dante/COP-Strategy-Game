@@ -65,7 +65,7 @@ Ryan Black: "ilities"
 * [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
 * [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
 * [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
-* [Product Demonstration](https://youtu.be/5z0hPlBoQfU)
+* [Product Demonstration](https://youtu.be/sLLhHw-fcT0)
 
 ## Task Allocation
 Aedan Deyto: Indicators
