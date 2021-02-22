@@ -129,9 +129,17 @@ Resources UML Diagram: The Resources diagram shows the classes that govern the r
 
 The game utilizes the persistentDataPath which allows the player to save the current state of their game to a static directory path. The user will be able to load their saved game from that path and continue right where they left off. Local variables and other objects pertinent to the game will manifest in memory and be destroyed when the game is closed.
 
+| Data Design            | User Story or Requirements ID                |
+|--------------------------|------------------------------|
+| Game Saved and Load             |  UID002, 027              |
+
 # Business Rules
 
 Since we are using pre-existing assets gathered from the internet, and implementing our own game music and sound effects, we must abide by the copyright standards set in place for these elements. Additionally, we shall not attempt to pass off any assets used for this product as our own.
+
+| Business Rules        | User Story or Requirements ID                |
+|--------------------------|------------------------------|
+| Assets         |  UID026 RID 001, 002, 003    |
 
 # User Interface Design
 
@@ -164,7 +172,7 @@ Since our game utilizes 8-bit graphics and is relatively simple in terms of mech
 
 | Resource Management              | User Story or Requirements ID                |
 |--------------------------|------------------------------|
-| 8-Bit Graphics              |  RID024              |
+| 8-Bit Graphics              |  UID024 RID001              |
 
 # Security
 
@@ -179,7 +187,7 @@ The graphics in our game will be 2 Dimensional 8-Bit Style, which will not be gr
 
 | Performance              | User Story or Requirements ID                |
 |--------------------------|------------------------------|
-| 8-Bit Graphics              |  RID024              |
+| 8-Bit Graphics              |  UID024 RID001             |
 
 # Scalability
 
@@ -212,6 +220,10 @@ The Unity engine handles error processing for our game and writes any error(s) e
 
 Bugs are commonplace in gaming and it is expected that at least a few of these will be overlooked during development. For this project we plan to concentrate more on our game’s feature set than some minor bugs. Our focus for detecting faults will be at the priority level of “game breaking” rather than minor. In this way, we can aim to achieve a more dynamic, feature-driven product rather than a linear, yet refined product.
 
+| Fault Tolerance         | User Story or Requirements ID                |
+|--------------------------|------------------------------|
+| Fetures           |  UID026, 024, 002, 013              |
+
 # Architectural Feasibility
 
 Since this game is being made as a simple alternative to other strategy games that incorporate a ton of micromanagement, the core features of this game are relatively simple and thus straightforward for us as the developers to implement. All of the developers working on this project are familiar with C# and have a basic yet solid grasp of Unity development, so we are confident that *Manifest Destiny* will meet its performance targets.
@@ -221,7 +233,7 @@ Since this game is being made as a simple alternative to other strategy games th
 
 This game will be robust because we the developers are on the side of simplicity rather than complexity in our code and design. We will start by building a simple main menu that allows the user to start the game and open a simple map. Then, we will create a basic overlay that displays only information that the user needs to play the game and tools to build up their settlement. These elements serve as the basic foundation for our game and after their creation, additional features will be added with simplicity and clean code in mind over the 3 month development period allotted to create our game. If any additional features created add to much complexity or come off as overengineered, they can be very easily rolled back or redesigned within the development period.
 
-| Input/Output          | User Story or Requirements ID                |
+| Overengineering         | User Story or Requirements ID                |
 |--------------------------|------------------------------|
 | Map         |  UID026    |
 | Resources         |  UID023    |
@@ -231,7 +243,7 @@ This game will be robust because we the developers are on the side of simplicity
 
 We are building our game in the Unity Engine. All software in our final project will be built by us. And, any 8-Bit drawing or music will be either done by hand or will be obtained from open-source materials. Also, we will be using free assets from the Unity asset store, which freely allows us to utilize them. Assets such as TextMesh Pro will be used to write dialogue systems in the game. So all the material and software we are using is free.
 
-| Input/Output          | User Story or Requirements ID                |
+| Build-vs-Buy         | User Story or Requirements ID                |
 |--------------------------|------------------------------|
 | Assets         |  UID026 RID 001, 002, 003    |
 
@@ -239,7 +251,7 @@ We are building our game in the Unity Engine. All software in our final project 
 
 This game may use pre-existing visuals or sprites obtained from a third party. Obtaining these resources will be handled with respect and not passed off as our own. We plan to give full credit to the parties that contributed to our software, and follow the legal guidelines necessary for this process.
 
-| Input/Output          | User Story or Requirements ID                |
+| Reuse         | User Story or Requirements ID                |
 |--------------------------|------------------------------|
 | Assets         |  UID026 RID 001, 002, 003    |
 
