@@ -143,7 +143,7 @@ Since we are using pre-existing assets gathered from the internet, and implement
 
 # User Interface Design
 
-![Untitled Diagram](https://user-images.githubusercontent.com/73034231/108738278-71d2f580-7501-11eb-9d8b-78b29e8f0a43.png)
+![UI-Diagram](https://user-images.githubusercontent.com/73034231/108739156-54eaf200-7502-11eb-8bdf-90b0f5283bc1.png)
 
 * Main Menu: This will be the First Screen the users see when starting the program. The screen displays 2 options, “Start” and “Exit”. The Start button will lead to the next UI.
 
