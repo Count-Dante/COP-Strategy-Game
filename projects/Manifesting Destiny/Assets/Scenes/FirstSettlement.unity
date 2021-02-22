@@ -467,6 +467,7 @@ GameObject:
   - component: {fileID: 567970144}
   - component: {fileID: 567970143}
   - component: {fileID: 567970145}
+  - component: {fileID: 567970146}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -576,9 +577,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99ba57534b3095745986dc4327aee5c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceAmountFood: {fileID: 0}
-  resourceAmountGold: {fileID: 0}
-  resourceAmountWood: {fileID: 0}
+  resourceAmountFood: {fileID: 131808929}
+  resourceAmountGold: {fileID: 1698096399}
+  resourceAmountWood: {fileID: 337766543}
+--- !u!114 &567970146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567970139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6823b017095c24682930092ef2cf6c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeTileButton: {fileID: 758612862}
 --- !u!1 &758612859
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +605,7 @@ GameObject:
   - component: {fileID: 758612864}
   - component: {fileID: 758612863}
   - component: {fileID: 758612862}
+  - component: {fileID: 758612861}
   m_Layer: 0
   m_Name: TreeTile
   m_TagString: Untagged
@@ -618,6 +633,19 @@ RectTransform:
   m_AnchoredPosition: {x: 334, y: 70}
   m_SizeDelta: {x: 46.43158, y: 53.6603}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &758612861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758612859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6823b017095c24682930092ef2cf6c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeTileButton: {fileID: 758612862}
 --- !u!114 &758612862
 MonoBehaviour:
   m_ObjectHideFlags: 0

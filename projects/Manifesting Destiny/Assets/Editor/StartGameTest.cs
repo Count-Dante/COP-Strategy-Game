@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class StartGameTest
 {
   [Test]
-  public void LoadGameScene_Test()
+  public void LoadGameSceneTest()
   {
     Button startButton;
     startButton = GameObject.Find("StartButton").GetComponent<Button>();
