@@ -129,13 +129,21 @@ Resources UML Diagram: The Resources diagram shows the classes that govern the r
 
 The game utilizes the persistentDataPath which allows the player to save the current state of their game to a static directory path. The user will be able to load their saved game from that path and continue right where they left off. Local variables and other objects pertinent to the game will manifest in memory and be destroyed when the game is closed.
 
+| Data Design              | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| Game Saved and Load          |  UID 002, 027             |
+
 # Business Rules
 
 Since we are using pre-existing assets gathered from the internet, and implementing our own game music and sound effects, we must abide by the copyright standards set in place for these elements. Additionally, we shall not attempt to pass off any assets used for this product as our own.
 
+| Business Rules             | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| Assets        |  UID026 RID001, 002, 003             |
+
 # User Interface Design
 
-![UI-Diagram](https://user-images.githubusercontent.com/73034231/107835586-0736f280-6d68-11eb-955c-57a59b73e863.jpg)
+![UI-Diagram](https://user-images.githubusercontent.com/73034231/108777188-6d263580-7531-11eb-9718-608b3c1b0c27.png)
 
 * Main Menu: This will be the First Screen the users see when starting the program. The screen displays 2 options, “Start” and “Exit”. The Start button will lead to the next UI.
 
@@ -144,6 +152,8 @@ Since we are using pre-existing assets gathered from the internet, and implement
 * Map: This screen will be the main screen the user interacts with. This screen will have 5 main displays other than the map: “<Name of Settlement>”, “Expand”, “Defend”, “Resources”, and “Pause”. “Pause” is the only other interactable display in which will direct the user to the Pause/Sub Menu. 
  
 * Pause/Sub Menu: This menu allows the user to pause their game if they need to or if the user wants to save and leave the game. This screen displays 3 options: “Resume Game”, “Save & Exit”, and “Settings”. “Resume Game” will allow the user to go back to Map and resume their game. “Save & Exit” will bring the user back to the Main Menu.
+
+* Volume Setting: This screen will allow the user to change the volume of in game sound. This screen will display a slider to increase or decrease the volume of the sound. And an "Exit" button to go back to the Pause/Sub Menu.
 
 * Win: This screen will appear if the user wins the game.
 
@@ -162,16 +172,32 @@ Since we are using pre-existing assets gathered from the internet, and implement
 
 Since our game utilizes 8-bit graphics and is relatively simple in terms of mechanics and active objects within the game, approximately 4 gigabytes of ram and any CPU and GPU from 2015+ would be suffiicent to run *Manifesting Destiny*. Object pooling will be used to reduce CPU usage and pre-instatiate any objects (in regard to our game this could be units, resources, or areas to be discovered) needed by a scene instead of dynamically creating them as the game runs.
 
+| Resource Managemnet             | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| 8-Bit Graphics        |  UID024 RID001          |
+
 # Security
 
 We are creating a single-player game and will be running locally on the users’ computer, and will not be saving critical or personal data that needs to be protected. So we concluded that security is not a consideration in our system architecture. 
 
+| Security             | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| Playing Locally       |  UID028            |
+
 # Performance
 The graphics in our game will be 2 Dimensional 8-Bit Style, which will not be graphically intensive. The only intensive part of our software will that the software is computationally intensive. However, the game is designed to be simple so it shouldn’t use a lot of memory and CPU space. So we believe that our game will perform well on any reasonable laptop or desktop.
+
+| Performance           | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| 8-Bit Graphics        |  UID024 RID001          |
 
 # Scalability
 
 We want to maintain modularity in our game so that it can be scaled out in future versions. There are a lot of ideas and features we would like to implement, but might not have time for. In this way, we want to establish a core set of features first, and then eventually expand that feature-set over time. Ways in which we plan to scale our game outward in the future include adding more biomes/locations to explore, including new random encounters/events, and introducing more resource types over time to support a variety of play styles.
+
+| Scalability            | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| Core Features      |  UID026, 024, 002, 013         |
 
 # Interoperability
 Since our game is created using Unity, it is self-contained and does not require any additional files or rely on any software outside of what comes packaged with it. *Manifesting Destiny* does not interact or share data with other software or hardware, and because of this interoperability is not a consideration for this project.
@@ -184,6 +210,10 @@ This game is being created for a target audience of English-speaking users; this
 
 Our game will take input from the mouse in order to move the on-screen cursor and select objects in-game. This can be used to navigate menus or select objects in the game world. In addition, input will be taken from the keyboard for actions such as map navigation (WASD), entering a requested value from the user (0-9), and opening the game menu (ESC). All outputs will come through the screen as the player receives visual feedback from their actions. Any I/O errors will be handled through Unity itself.
 
+| Input/Output           | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| Interaction      |  UID026, UID011, UID023 RID001, UID023 RID002, UID023 RID003          |
+
 # Error Processing
 
 The Unity engine handles error processing for our game and writes any error(s) encountered during runtime to both the console window in Unity and a log file for the Unity editor.
@@ -192,6 +222,10 @@ The Unity engine handles error processing for our game and writes any error(s) e
 
 Bugs are commonplace in gaming and it is expected that at least a few of these will be overlooked during development. For this project we plan to concentrate more on our game’s feature set than some minor bugs. Our focus for detecting faults will be at the priority level of “game breaking” rather than minor. In this way, we can aim to achieve a more dynamic, feature-driven product rather than a linear, yet refined product.
 
+| Fault Tolerance           | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| Features       |  UID026, 024, 002, 013          |
+
 # Architectural Feasibility
 
 Since this game is being made as a simple alternative to other strategy games that incorporate a ton of micromanagement, the core features of this game are relatively simple and thus straightforward for us as the developers to implement. All of the developers working on this project are familiar with C# and have a basic yet solid grasp of Unity development, so we are confident that *Manifest Destiny* will meet its performance targets.
@@ -199,15 +233,28 @@ Since this game is being made as a simple alternative to other strategy games th
 
 # Overengineering
 
-This game will be robust because we the developers err on the side of simplicity rather than complexity in our code and design. We will start by building a simple main menu that allows the user to start the game and open a simple map. Then, we will create a basic overlay that displays only information that the user needs to play the game and tools to build up their settlement. These elements serve as the basic foundation for our game and after their creation, additional features will be added with simplicity and clean code in mind over the 3 month development period allotted to create our game. If any additional features created add to much complexity or come off as overengineered, they can be very easily rolled back or redesigned within the development period.
+This game will be robust because we the developers are on the side of simplicity rather than complexity in our code and design. We will start by building a simple main menu that allows the user to start the game and open a simple map. Then, we will create a basic overlay that displays only information that the user needs to play the game and tools to build up their settlement. These elements serve as the basic foundation for our game and after their creation, additional features will be added with simplicity and clean code in mind over the 3 month development period allotted to create our game. If any additional features created add to much complexity or come off as overengineered, they can be very easily rolled back or redesigned within the development period.
+
+| Overengineering            | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| Map     |  UID026          |
+| Resources       |  UID023         |
 
 # Build-vs-Buy Decisions
 
 We are building our game in the Unity Engine. All software in our final project will be built by us. And, any 8-Bit drawing or music will be either done by hand or will be obtained from open-source materials. Also, we will be using free assets from the Unity asset store, which freely allows us to utilize them. Assets such as TextMesh Pro will be used to write dialogue systems in the game. So all the material and software we are using is free.
 
+| Business Rules             | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| Assets        |  UID026 RID001, 002, 003             |
+
 # Reuse
 
 This game may use pre-existing visuals or sprites obtained from a third party. Obtaining these resources will be handled with respect and not passed off as our own. We plan to give full credit to the parties that contributed to our software, and follow the legal guidelines necessary for this process.
+
+| Business Rules             | User Story or Requirement ID    |
+|--------------------------|------------------------------|
+| Assets        |  UID026 RID001, 002, 003             |
 
 # Change Strategy
 
