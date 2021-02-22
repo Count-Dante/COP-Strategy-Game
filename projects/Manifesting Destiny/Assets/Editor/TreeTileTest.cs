@@ -9,7 +9,7 @@ public class TreeTileTest
   bool buttonClicked = false;
 
   [Test]
-  public void buttonClickedTest()
+  public void woodTile_Test()
   {
     Button treeButton = GameObject.Find("TreeTile").GetComponent<Button>();
 
@@ -22,23 +22,5 @@ public class TreeTileTest
   public void treeOnClick()
   {
     buttonClicked = true;
-  }
-
-  [Test]
-  public void gatherWoodTest()
-  {
-    Button treeButton = GameObject.Find("TreeTile").GetComponent<Button>();
-
-    treeButton.onClick.AddListener(() => harvestOnClick());
-    treeButton.onClick.Invoke();
-
-    Assert.IsTrue(Resources.getWood() <= 5 && Resources.getWood() > 0);
-  }
-
-  public void harvestOnClick()
-  {
-    GameObject gameObject = new GameObject();
-    Harvest tile = gameObject.AddComponent<Harvest>();
-    tile.gatherWood();
   }
 }
