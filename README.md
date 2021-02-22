@@ -59,7 +59,7 @@ Ryan Black: "ilities"
 * [Sprint Backlog](https://trello.com/b/FpkzNxdc/backlogs)
 * [Requirements](https://trello.com/b/FpkzNxdc/backlogs)
 * [Trello Board](https://trello.com/b/FpkzNxdc/backlogs)
-* [Burndown Chart](https://docs.google.com/spreadsheets/d/1mqqSALltwAl0edOKvCXrpOLnEsmOgAQWlE3VF5gjhaM/edit?ts=601f11a4#gid=1491789175)
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1mqqSALltwAl0edOKvCXrpOLnEsmOgAQWlE3VF5gjhaM/edit?usp=sharing)
 * [Velocity Chart](https://docs.google.com/spreadsheets/d/1SVAG2XL3UHwgRf9H_69p2QMZEYk6puFvHCiJfRDD5Q4/edit#gid=0)
 * [System Architecture](https://github.com/Grant-Allan/COP-Strategy-Game/blob/main/artifacts/architecture.md)
 * [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
