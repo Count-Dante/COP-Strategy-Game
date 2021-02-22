@@ -143,7 +143,7 @@ Since we are using pre-existing assets gathered from the internet, and implement
 
 # User Interface Design
 
-![UI-Diagram](https://user-images.githubusercontent.com/73034231/107835586-0736f280-6d68-11eb-955c-57a59b73e863.jpg)
+![Untitled Diagram](https://user-images.githubusercontent.com/73034231/108738278-71d2f580-7501-11eb-9d8b-78b29e8f0a43.png)
 
 * Main Menu: This will be the First Screen the users see when starting the program. The screen displays 2 options, “Start” and “Exit”. The Start button will lead to the next UI.
 
@@ -152,6 +152,8 @@ Since we are using pre-existing assets gathered from the internet, and implement
 * Map: This screen will be the main screen the user interacts with. This screen will have 5 main displays other than the map: “<Name of Settlement>”, “Expand”, “Defend”, “Resources”, and “Pause”. “Pause” is the only other interactable display in which will direct the user to the Pause/Sub Menu. 
  
 * Pause/Sub Menu: This menu allows the user to pause their game if they need to or if the user wants to save and leave the game. This screen displays 3 options: “Resume Game”, “Save & Exit”, and “Settings”. “Resume Game” will allow the user to go back to Map and resume their game. “Save & Exit” will bring the user back to the Main Menu.
+
+* Volume Settng: This screen will allow the user to change the volume of in game sound. This screen will display a slider to increase or decrease the volume of the sound. And an "Exit" button to go back to the Pause/Sub Menu.
 
 * Win: This screen will appear if the user wins the game.
 
@@ -163,6 +165,7 @@ Since we are using pre-existing assets gathered from the internet, and implement
 | Start Game       |  002                         |
 | Map | 009, 010, 011, 014, 015, 021          |
 | Pause/Sub Menu             |  002, 006, 013               |
+| Volume Setting             | 013               |
 | Win    |  017                         |
 | Lost | 018         |
 
