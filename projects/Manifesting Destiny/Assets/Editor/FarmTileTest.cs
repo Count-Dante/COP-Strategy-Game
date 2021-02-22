@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class FarmTileTest
 {
   bool buttonClicked = false;
-  
+
   [Test]
-  public void foodTile_Test()
+  public void buttonClickedTest()
   {
     Button farmButton;
     farmButton = GameObject.Find("FarmTile").GetComponent<Button>();
@@ -23,5 +23,23 @@ public class FarmTileTest
   public void farmOnClick()
   {
     buttonClicked = true;
+  }
+
+  [Test]
+  public void gatherFoodTest()
+  {
+    Button treeButton = GameObject.Find("FarmTile").GetComponent<Button>();
+
+    treeButton.onClick.AddListener(() => harvestOnClick());
+    treeButton.onClick.Invoke();
+
+    Assert.IsTrue(Resources.getFood() <= 5 && Resources.getFood() > 0);
+  }
+
+  public void harvestOnClick()
+  {
+    GameObject gameObject = new GameObject();
+    Harvest tile = gameObject.AddComponent<Harvest>();
+    tile.gatherFood();
   }
 }
