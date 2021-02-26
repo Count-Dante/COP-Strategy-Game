@@ -7,6 +7,6 @@ public class OpenSettings : MonoBehaviour
     public void OpenSettingsMenu()
     {
         // Open the Settings scene
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
