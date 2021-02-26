@@ -9,4 +9,11 @@ public class ExpansionController : MonoBehaviour
     public static float wood = 0;
     public static float gold = 0;
     public static float food = 0;
+
+    public void removeResources()
+  {
+    Resources.setWood((int)(Resources.getWood() - wood));
+    Resources.setGold((int)(Resources.getGold() - gold));
+    Resources.setFood((int)(Resources.getFood() - food));
+  }
 }
