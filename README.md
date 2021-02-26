@@ -68,3 +68,24 @@ Grant Allan:  Collecting Sprites, Sound Effect/Music
 Natalia Colmenares: Main Menu, Text Based Narrator
 
 Ryan Black: Map
+
+# Sprint 4
+* [Trello Board](https://trello.com/b/FpkzNxdc/backlogs)
+* [Burndown Chart]()
+* [Velocity Chart]()
+* [System Architecture](https://github.com/Grant-Allan/COP-Strategy-Game/blob/main/artifacts/architecture.md)
+* [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
+* [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
+* [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
+* [Product Demonstration]()
+
+## Task Allocation
+Aedan Deyto: 
+
+David Kipikash: 
+
+Grant Allan: 
+
+Natalia Colmenares: 
+
+Ryan Black: 
