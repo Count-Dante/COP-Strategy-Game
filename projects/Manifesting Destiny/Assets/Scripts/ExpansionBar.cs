@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ExpansionBar : MonoBehaviour
 {
-    public static int maxExpansionPoint = 50;
     public static float woodExpansionPoint = 0;
     public static float foodExpansionPoint = 0;
     public static float goldExpansionPoint = 0;
@@ -14,7 +13,8 @@ public class ExpansionBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slider.maxValue = maxExpansionPoint;
+        slider.maxValue = ExpansionController.easyExpansion;
+
         slider.value = getCurrentExpansionPoint();
     }
 
