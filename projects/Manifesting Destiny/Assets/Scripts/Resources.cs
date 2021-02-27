@@ -1,55 +1,40 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Resources : MonoBehaviour
 {
-
-      private static int gold = 0;
-      private static int wood = 0;
-      private static int food = 0;
-
-      public static int getGold()
-      {
-            return gold;
-      }
-
-      public static void setGold(int amount)
-      {
-            gold = amount;
-      }
-
-      public static int getWood()
-      {
-            return wood;
-      }
-
-      public static void setWood(int amount)
-      {
-            wood = amount;
-      }
+      public static int totalFood = 0;
+      public static int totalGold = 0;
+      public static int totalWood = 0;
 
       public static int getFood()
       {
-            return food;
+            return totalFood;
       }
 
       public static void setFood(int amount)
       {
-            food = amount;
+            totalFood = amount;
       }
 
-      // Get random number from 1 - 100 (inclusive).
-      public static int randomNumberGenerator()
+      public static int getGold()
       {
-            return UnityEngine.Random.Range(1,100);
+            return totalGold;
       }
 
-      void Update()
+      public static void setGold(int amount)
       {
-            Debug.Log(wood);
+            totalGold = amount;
       }
 
+      public static int getWood()
+      {
+            return totalWood;
+      }
 
-
+      public static void setWood(int amount)
+      {
+            totalWood = amount;
+      }
 }

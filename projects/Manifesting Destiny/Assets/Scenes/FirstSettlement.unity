@@ -1445,6 +1445,9 @@ GameObject:
   - component: {fileID: 567970143}
   - component: {fileID: 567970145}
   - component: {fileID: 567970146}
+  - component: {fileID: 567970149}
+  - component: {fileID: 567970148}
+  - component: {fileID: 567970147}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1574,6 +1577,42 @@ MonoBehaviour:
   hard: 0
   extreme: 0
   expansion: {fileID: 2142800471}
+--- !u!114 &567970147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567970139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bfb5953b2a0f104fa947c19c98698d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &567970148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567970139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d913d86c7a9fdc4f99343c28feebf50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &567970149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567970139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df610102ec58624bb5a107415126dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &726389544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,8 +1771,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 567970143}
-        m_MethodName: gatherWood
+      - m_Target: {fileID: 567970147}
+        m_MethodName: harvestWood
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2721,8 +2760,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 567970143}
-        m_MethodName: gatherFood
+      - m_Target: {fileID: 567970149}
+        m_MethodName: harvestFood
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6039,8 +6078,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 567970143}
-        m_MethodName: gatherGold
+      - m_Target: {fileID: 567970148}
+        m_MethodName: harvestGold
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

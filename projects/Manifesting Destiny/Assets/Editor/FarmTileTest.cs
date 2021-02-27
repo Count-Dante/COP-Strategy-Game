@@ -39,7 +39,7 @@ public class FarmTileTest
   public void harvestOnClick()
   {
     GameObject gameObject = new GameObject();
-    Harvest tile = gameObject.AddComponent<Harvest>();
-    tile.gatherFood();
+    Food tile = gameObject.AddComponent<Food>();
+    tile.harvestFood();
   }
 }

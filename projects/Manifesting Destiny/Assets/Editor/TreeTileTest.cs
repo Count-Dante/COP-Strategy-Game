@@ -38,7 +38,7 @@ public class TreeTileTest
   public void harvestOnClick()
   {
     GameObject gameObject = new GameObject();
-    Harvest tile = gameObject.AddComponent<Harvest>();
-    tile.gatherWood();
+    Wood tile = gameObject.AddComponent<Wood>();
+    tile.harvestWood();
   }
 }

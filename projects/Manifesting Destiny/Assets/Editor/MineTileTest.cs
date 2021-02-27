@@ -38,8 +38,8 @@ public class MineTileTest
   public void harvestOnClick()
   {
     GameObject gameObject = new GameObject();
-    Harvest tile = gameObject.AddComponent<Harvest>();
-    tile.gatherGold();
+    Gold tile = gameObject.AddComponent<Gold>();
+    tile.harvestGold();
   }
 
 }
