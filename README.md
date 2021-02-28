@@ -80,12 +80,12 @@ Ryan Black: Map
 * [Product Demonstration]()
 
 ## Task Allocation
-Aedan Deyto: 
+Aedan Deyto: UID 014. Expansion progress bar for the user 
 
-David Kipikash: 
+David Kipikash: UID 019. Limits resources for the user on the first map
 
-Grant Allan: 
+Grant Allan: UID 022. Quit button from the main menu
 
-Natalia Colmenares: 
+Natalia Colmenares: UID 010. Resource allocation for expansion and expansion controller
 
-Ryan Black: 
+Ryan Black: UID 007. Bad events RNG for the game
