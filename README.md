@@ -77,7 +77,7 @@ Ryan Black: Map
 * [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
 * [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
 * [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
-* [Product Demonstration]()
+* [Product Demonstration](https://youtu.be/ez-QhDbBh4M)
 
 ## Task Allocation
 Aedan Deyto: UID 014. Expansion progress bar for the user 
