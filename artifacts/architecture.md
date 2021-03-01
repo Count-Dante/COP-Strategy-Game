@@ -53,8 +53,7 @@ Main Menu UML Diagram: Directly below is the UML for our main menu. The game wil
 
 ![Manifesting Destiny Class Diagrams-Main Menu](https://user-images.githubusercontent.com/45442774/109438518-68152a80-79f8-11eb-8658-fa6512b1bbf2.png)
 
-* Main Menu Class: The only purpose of the main menu is to direct the user to either the new game, load game, or settings menus.
-* New Game Class: This class is where the user will select the mode they want to play in and the difficulty they want to play on.
+* Start Game Class: This class is where the user will select the mode they want to play in and the difficulty they want to play on.
 * Load Game Class: This is where a user can choose to load a saved game.
 * Settings Class: This is where a user can adjust the volume of music and sounds.
 * Quit Game Class: This allows a user to close the game application.
