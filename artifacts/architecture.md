@@ -51,79 +51,87 @@ Manifesting Destiny (Game) Container:
 ## Main Menu
 Main Menu UML Diagram: Directly below is the UML for our main menu. The game will start by loading directly into the Main Menu class. The user can then decide whether they want to go to Settings, New Game, or Load Game. In the Settings class, they'll have the option to change the volume settings. In the Load Game class, they'll be able to select one of three saved games and return to playing that game. In the New Game class, they'll choose the settings for their game. That is to say, what mode and difficulty they want.
 
-![Manifesting-Destiny-Class-Diagrams-Main-Menu](https://user-images.githubusercontent.com/45442774/107851886-2ae75080-6ddb-11eb-8f52-28ae6157a2d1.png)
+![Manifesting Destiny Class Diagrams-Main Menu](https://user-images.githubusercontent.com/45442774/109438518-68152a80-79f8-11eb-8658-fa6512b1bbf2.png)
 
 * Main Menu Class: The only purpose of the main menu is to direct the user to either the new game, load game, or settings menus.
 * New Game Class: This class is where the user will select the mode they want to play in and the difficulty they want to play on.
 * Load Game Class: This is where a user can choose to load a saved game.
 * Settings Class: This is where a user can adjust the volume of music and sounds.
+* Quit Game Class: This allows a user to close the game application.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
 |  1  |    As a player, I want a main menu in order to easily start a new game and load old games.    |   Main Menu   |
 |  13  |    As a player, I want to be able to change the volume of the music so I can determine a good volume level for me.    |   Settings   |
-
-## Overlay
-Overlay UML Diagram: The Overlay diagram contains all the various icons and menus that will be on the player's screen as they play the game. The overlay contains an icon to open the buildings menu, an icon to open the units menu, an icon to open the pause menu, and shows you have many resources you have of each type (food, wood, gold). Clicking on any of the icons will direct the user to the associated class. For example, clicking on the buildings menu icon will run the Building Menu class, showing the user a window with all the buildings they can build at that time.
-
-![Manifesting-Destiny-Class-Diagrams-Overlay](https://user-images.githubusercontent.com/45442774/107852007-f1fbab80-6ddb-11eb-8311-df7440104fad.png)
-
-* Overlay Class: A class that allows the user to open any of the necessary overlay menus while playing the game. Basically, it's a bunch of buttons that call the menu classes as needed.
-* Pause Menu Class: This is where the user can open the settings menu, save the game, quit the game, or just leave the game paused.
-* Unit Menu Class: This is where the user will select the unit they want to build.
-* Building Menu Class: This is where the user will select the building they want to build.
-* Resource Inventory Class: This allows the user to see the resources they have.
-* Popups Class: A parent class governing general popup windows.
-* Good Events Class: This subclass shows the user good events.
-* Bad Events Class: This subclass shows the user bad events.
-* Information Popups Class: This subclass shows the user informational popups.
-
-| **ID** | **User Story**                                                                                              | **Major Classes**       |
-| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|  2  |    As a player, I want to be able to save my game so that I can pick the game up at the last time I played.    |   Pause Menu   |
-|  3  |    As a player, I want a basic tutorial when I first play the game, so that I can easily figure out what I'm supposed to do.    |   Information Popups   |
-|  4  |    As a player, I want a text-based narrator, so that the game can communicate certain mechanics and milestones with me.    |   Information Popups   |
-|  6  |    As a player, I want to be able to pause the game so I can divert my attention somewhere else while I am playing.    |   Pause Menu   |
-|  7  |    As a player, I want the game to generate obstacles for me so that I can feel challenged.    |   Bad Events   |
-|  8  |    As a player, I want to be able to defend my settlement from the challenges imposed by the game so that I can save my settlement.    |   Building Menu   |
-|  10  |    As a player, I want to be able to expand my settlement so that I can continue to progress in the game.    |   Building Menu   |
-|  11  |    As a player, I want to be able to see the resources I have so that I can view how many resources I have collected each time.    |   Resource Inventory   |
-|  13  |    As a player, I want to be able to change the volume of the music so I can determine a good volume level for me.    |   Pause Menu   |
-|  14  |    As a player, I want an indication of how many resources I need to gather before I am able to expand my settlement.    |   Resource Inventory   |
-|  16  |    As a player, I want the game to get harder as I progress so that I am not in a static state.    |   Bad Events   |
-|  22  |    As a player, I want to be able to quit the game from the main menu so I can easily exit.    |   Pause Menu   |
-
-## Events
-Events UML Diagram: The Events diagram shows the data behind the windows in the "pop-ups" class in the Overlay diagram. That is to say, the "pop-ups" class and its children classes are just the windows that tell the user what is happening. The Events class and its children are what run the calculations and decide what sort of event will occur and why.
-
-![Manifesting-Destiny-Class-Diagrams-Events](https://user-images.githubusercontent.com/45442774/107852014-0344b800-6ddc-11eb-9fa4-f831e7b20501.png)
-
-* Events Class: A parent class governing general events.
-* Information Events Class: A subclass that retrieves information on the tutorial, resources, units, or buildings.
-* Good Events Class: A subclass that decides when a good event occurs.
-* Bad Events Class: A subclass that decides when bad events occur.
-
-| **ID** | **User Story**                                                                                              | **Major Classes**       |
-| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|  3  |    As a player, I want a basic tutorial when I first play the game, so that I can easily figure out what I'm supposed to do.    |   Information Events   |
-|  4  |    As a player, I want a text-based narrator, so that the game can communicate certain mechanics and milestones with me.    |   Information Events   |
-|  7  |    As a player, I want the game to generate obstacles for me so that I can feel challenged.    |   Bad Events   |
-|  16  |    As a player, I want the game to get harder as I progress so that I am not in a static state.    |   Bad Events   |
+|  27  |    As a player, I want to be able to load old games from the main menu so I can easily access previous game states    |   Load Game   |
 
 ## Resources
-Resources UML Diagram: The Resources diagram shows the classes that govern the resources within an object. For example, the food inside a farm. There will be a maximum limit to the amount of food in a farm, a semi-random number of "food" resource assigned to the farm, and then a counter that keeps track of the food left in the farm as the user works the farm to gain food from it.
+Resources UML Diagram: 
 
-![Manifesting-Destiny-Class-Diagrams-Resources](https://user-images.githubusercontent.com/45442774/107852010-faec7d00-6ddb-11eb-9117-aa2884db493f.png)
+![Manifesting Destiny Class Diagrams-Resources](https://user-images.githubusercontent.com/45442774/109438532-7b27fa80-79f8-11eb-98a8-878372f127fb.png)
 
-* Resources Class: A parent class governing general resources.
-* Farms Class: A subclass that dictates how much food is in a farm to begin with and keeps track of how much remains at any given time.
-* Forest Class: A subclass that dictates how much wood is in a forest to begin with and keeps track of how much remains at any given time.
-* Mines Class: A subclass that dictates how much gold is in a mine to begin with and keeps track of how much remains at any given time.
+* Resources Class: 
+* Food Class: 
+* Wood Class: 
+* Gold Class: 
+* RNG Class: 
+* Indicator Class: 
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|  9  |    As a player, I want to be able to gather resources to help me progress in the game.    |   Resources   |
-|  19  |    As a player, I want there to be a limit to the resources in the map so that I be strategic in how I gather and spend them.    |   Resources Class   |
+|    |        |      |
+|    |        |      |
+
+## Expansion Bar
+Expansion Bar UML Diagram: 
+
+![Manifesting Destiny Class Diagrams-Expansion Bar](https://user-images.githubusercontent.com/45442774/109438582-a4488b00-79f8-11eb-86bb-51eefccc0dba.png)
+
+* Expansion Bar Class: 
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|    |        |      |
+|    |        |      |
+
+## Expansion Controller
+Expansion Controller UML Diagram: 
+
+![Manifesting Destiny Class Diagrams-Expansion Controller](https://user-images.githubusercontent.com/45442774/109438609-bcb8a580-79f8-11eb-9312-8067df5abdb5.png)
+
+* Expansion Controller Class: 
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|    |        |      |
+|    |        |      |
+
+## Sliders
+Sliders UML Diagram: 
+
+![Manifesting Destiny Class Diagrams-Sliders](https://user-images.githubusercontent.com/45442774/109438664-f2f62500-79f8-11eb-841b-0a5ac5dad6a1.png)
+
+* Expansion Slider Class: 
+* Wood Slider Class: 
+* Food Slider Class: 
+* Gold Slider Class: 
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|    |        |      |
+|    |        |      |
+
+## Bad RNG
+Bad RNG UML Diagram: 
+
+![Manifesting Destiny Class Diagrams-Bad RNG](https://user-images.githubusercontent.com/45442774/109438685-01dcd780-79f9-11eb-9239-f0d1b34de5f6.png)
+
+* Bad RNG Class: 
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|    |        |      |
+|    |        |      |
 
 # Data Design
 
