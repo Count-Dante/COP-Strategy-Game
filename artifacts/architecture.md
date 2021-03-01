@@ -149,15 +149,19 @@ Since we are using pre-existing assets gathered from the internet, and implement
 
 # User Interface Design
 
-![UI-Diagram](https://user-images.githubusercontent.com/73034231/108777188-6d263580-7531-11eb-9718-608b3c1b0c27.png)
+![Untitled Diagram (2)](https://user-images.githubusercontent.com/73034231/109447797-82f49880-7a12-11eb-8ae1-862aceab00ce.png)
 
 * Main Menu: This will be the First Screen the users see when starting the program. The screen displays 2 options, “Start” and “Exit”. The Start button will lead to the next UI.
 
 * Start Game: When the user press start game this will be the next screen they see. This screen will also display 2 options, “New Game” and “Load Game”. Both options will lead the user to the Map screen, however, based on the choice the map will differ.
 
-* Map: This screen will be the main screen the user interacts with. This screen will have 5 main displays other than the map: “<Name of Settlement>”, “Expand”, “Defend”, “Resources”, and “Pause”. “Pause” is the only other interactable display in which will direct the user to the Pause/Sub Menu. 
+* Map: This screen will be the main screen the user interacts with. This screen will have 5 main displays other than the map: “<Name of Settlement>”, “Expand”, “Defend”, “Resources”, and “Pause”. “Pause” is the only other interactable display in which will direct the user to the Pause/Sub Menu. The is also a "Continue" button that sends the user to Resource Allocation. The "Expand" button will send to a fresh map and closer to California, the last state.
  
 * Pause/Sub Menu: This menu allows the user to pause their game if they need to or if the user wants to save and leave the game. This screen displays 3 options: “Resume Game”, “Save & Exit”, and “Settings”. “Resume Game” will allow the user to go back to Map and resume their game. “Save & Exit” will bring the user back to the Main Menu.
+
+* Resouce Allocation: This UI will allow the user to allocate resources into expanding or defending their settlement. This screen will display 3 sliders for each resource and each silder will show the value of the slide at the very right. Their is also a continue button that will allow the user to confirm their allocation and go back to the map.
+
+* Negtaive Event: This screen will only pop up if the user encountures a negative event. This screen will diaply a picture of the event, a discription of what happens in the event, and a "Continue" button that allows the user to be sent back to thge map
 
 * Volume Setting: This screen will allow the user to change the volume of in game sound. This screen will display a slider to increase or decrease the volume of the sound. And an "Exit" button to go back to the Pause/Sub Menu.
 
@@ -171,6 +175,8 @@ Since we are using pre-existing assets gathered from the internet, and implement
 | Start Game       |  002                         |
 | Map | 009, 010, 011, 014, 015, 021          |
 | Pause/Sub Menu             |  002, 006, 013               |
+| Resouce Allocation | 008, 010         |
+| Negative Event            |  007              |
 | Win    |  017                         |
 | Lost | 018         |
 
