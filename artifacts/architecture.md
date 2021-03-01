@@ -129,8 +129,7 @@ Bad RNG UML Diagram:
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |        |      |
-|    |        |      |
+|   007 |     As a player, I want the game to generate obstacles for me so that I can feel challenged.  |   BadRNG   |
 
 # Data Design
 
