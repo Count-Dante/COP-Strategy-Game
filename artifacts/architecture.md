@@ -98,11 +98,11 @@ Expansion Controller UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Expansion Controller](https://user-images.githubusercontent.com/45442774/109438609-bcb8a580-79f8-11eb-9312-8067df5abdb5.png)
 
-* Expansion Controller Class: 
+* Expansion Controller Class: This class holds the resources the user allocates towards expansion each turn. Other classes such as the expansion bar get data from this class. Additionally, this class determines expansion points needing according to level of difficulty.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |        |      |
+|  010  |   As a player, I want to be able to expand my settlement so that I can continue to progress in the game.     |    Expansion Controller  |
 |    |        |      |
 
 ## Sliders
@@ -110,14 +110,14 @@ Sliders UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Sliders](https://user-images.githubusercontent.com/45442774/109438664-f2f62500-79f8-11eb-841b-0a5ac5dad6a1.png)
 
-* Expansion Slider Class: 
-* Wood Slider Class: 
-* Food Slider Class: 
-* Gold Slider Class: 
+* Expansion Slider Class: This class 
+* Wood Slider Class: This is a subclass of the expansion slider class. Determines how the slider should move based on wood collected by the user.
+* Food Slider Class: This is a subclass of the expansion slider class. Determines how the slider should move based on food collected by the user.
+* Gold Slider Class: This is a subclass of the expansion slider class. Determines how the slider should move based on gold collected by the user.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |        |      |
+|   010 |     As a player, I want to be able to expand my settlement so that I can continue to progress in the game.   |  Expansion Slider Class    |
 |    |        |      |
 
 ## Bad RNG
