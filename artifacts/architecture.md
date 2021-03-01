@@ -75,11 +75,11 @@ Resources UML Diagram:
 * Wood Class: 
 * Gold Class: 
 * RNG Class: 
-* Indicator Class: 
+* Indicator Class: This class will gather the amount of wood, gold, food from their respected class and print them on screen for the user to see.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |        |      |
+|  011  | As a player, I want to be able to see the resources I have so that I can view how many resources I have collected each time. |  Indicator  |
 |    |        |      |
 
 ## Expansion Bar
@@ -87,11 +87,11 @@ Expansion Bar UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Expansion Bar](https://user-images.githubusercontent.com/45442774/109438582-a4488b00-79f8-11eb-86bb-51eefccc0dba.png)
 
-* Expansion Bar Class: 
+* Expansion Bar Class: The Expansion Bar Class changes the bar indicator in the game to help the user visualize how much more expansion points they need before they can expand. The calss gather the amound of wood, gold, and food allocated into the expansion and then calucates the users current expansion point. Which "Update" will update the bar to show the change.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |        |      |
+|   014 |   As a player, I want an indication of how many resources I need to gather before I am able to expand my settlement.  |   Expansion Bar  |
 |    |        |      |
 
 ## Expansion Controller
