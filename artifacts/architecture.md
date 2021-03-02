@@ -81,8 +81,8 @@ Resources UML Diagram:
 |  011  | As a player, I want to be able to see the resources I have so that I can view how many resources I have collected each time. |  Indicator  |
 |  019 | As a player, I want there to be a limit to the resources in the map so that I be strategic in how I gather and spend them.  |   Food, Wood, Gold   |
 |  025 | As a player I want to be able to collect food from a tile so that I have an alternate way to obtain resources to progress through the game  |   Food  |
-|  023 | As a player I want to be able to collect wood from a tile so that I have an alternate way to obtain resources to progress through the game  |   wood  |
-|  024 | As a player I want to be able to collect gold from a tile so that I can have another method of obtaining resources  |   gold  |
+|  023 | As a player I want to be able to collect wood from a tile so that I have an alternate way to obtain resources to progress through the game  |   Wood  |
+|  024 | As a player I want to be able to collect gold from a tile so that I can have another method of obtaining resources  |   Gold  |
 
 ## Expansion Bar
 Expansion Bar UML Diagram: 
