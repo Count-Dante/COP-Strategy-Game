@@ -70,9 +70,9 @@ Resources UML Diagram:
 ![Manifesting Destiny Class Diagrams-Resources](https://user-images.githubusercontent.com/45442774/109438532-7b27fa80-79f8-11eb-98a8-878372f127fb.png)
 
 * Resources Class: 
-* Food Class: 
-* Wood Class: 
-* Gold Class: 
+* Food Class: This class holds a "Food" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the food resource (via harvestFood() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the food tile can be clicked.
+* Wood Class: This class holds a "Wood" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the wood resource (via harvestWood() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the wood tile can be clicked.
+* Gold Class: This class holds a "Gold" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the gold resource (via harvestGold() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the gold tile can be clicked.
 * RNG Class: 
 * Indicator Class: This class will gather the amount of wood, gold, food from their respected class and print them on screen for the user to see.
 
