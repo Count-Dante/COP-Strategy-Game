@@ -69,7 +69,7 @@ Resources UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Resources](https://user-images.githubusercontent.com/45442774/109438532-7b27fa80-79f8-11eb-98a8-878372f127fb.png)
 
-* Resources Class: 
+* Resources Class: This class allows other class to update the amount of food, gold, and wood resource. And allows other class to obatin the amount of each resource.
 * Food Class: This class holds a "Food" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the food resource (via harvestFood() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the food tile can be clicked.
 * Wood Class: This class holds a "Wood" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the wood resource (via harvestWood() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the wood tile can be clicked.
 * Gold Class: This class holds a "Gold" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the gold resource (via harvestGold() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the gold tile can be clicked.
@@ -79,7 +79,10 @@ Resources UML Diagram:
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
 |  011  | As a player, I want to be able to see the resources I have so that I can view how many resources I have collected each time. |  Indicator  |
-|    |        |      |
+|  019 | As a player, I want there to be a limit to the resources in the map so that I be strategic in how I gather and spend them.  |   Food, Wood, Gold   |
+|  025 | As a player I want to be able to collect food from a tile so that I have an alternate way to obtain resources to progress through the game  |   Food  |
+|  023 | As a player I want to be able to collect wood from a tile so that I have an alternate way to obtain resources to progress through the game  |   wood  |
+|  024 | As a player I want to be able to collect gold from a tile so that I can have another method of obtaining resources  |   gold  |
 
 ## Expansion Bar
 Expansion Bar UML Diagram: 
@@ -125,7 +128,7 @@ Bad RNG UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Bad RNG](https://user-images.githubusercontent.com/45442774/109438685-01dcd780-79f9-11eb-9239-f0d1b34de5f6.png)
 
-* Bad RNG Class: 
+* Bad RNG Class: This class produces the negative events that the user will have to face as they go through the game.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
