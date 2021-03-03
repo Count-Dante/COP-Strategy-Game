@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GoldSlider : ExpansionSlider
+public class GoldSlider : Sliders
 {
     void Update()
     {

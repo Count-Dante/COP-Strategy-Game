@@ -17,32 +17,32 @@ public class Indicator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-          resourceFood = Resources.getFood();
-          resourceGold = Resources.getGold();
-          resourceWood = Resources.getWood();
+      resourceFood = Resources.getFood();
+      resourceGold = Resources.getGold();
+      resourceWood = Resources.getWood();
 
-          resourceAmountFood.text = Convert.ToString(resourceFood);
-          resourceAmountGold.text = Convert.ToString(resourceGold);
-          resourceAmountWood.text = Convert.ToString(resourceWood);
+      resourceAmountFood.text = Convert.ToString(resourceFood);
+      resourceAmountGold.text = Convert.ToString(resourceGold);
+      resourceAmountWood.text = Convert.ToString(resourceWood);
 
-          Debug.Log(resourceFood);
-          Debug.Log(resourceGold);
-          Debug.Log(resourceWood);
+      Debug.Log(resourceFood);
+      Debug.Log(resourceGold);
+      Debug.Log(resourceWood);
     }
 
     // Update is called once per frame
     void Update()
     {
-          resourceFood = Resources.getFood();
-          resourceGold = Resources.getGold();
-          resourceWood = Resources.getWood();
+      resourceFood = Resources.getFood();
+      resourceGold = Resources.getGold();
+      resourceWood = Resources.getWood();
 
-          resourceAmountFood.text = Convert.ToString(resourceFood);
-          resourceAmountGold.text = Convert.ToString(resourceGold);
-          resourceAmountWood.text = Convert.ToString(resourceWood);
+      resourceAmountFood.text = Convert.ToString(resourceFood);
+      resourceAmountGold.text = Convert.ToString(resourceGold);
+      resourceAmountWood.text = Convert.ToString(resourceWood);
 
-          Debug.Log(resourceFood);
-          Debug.Log(resourceGold);
-          Debug.Log(resourceWood);
+      Debug.Log(resourceFood);
+      Debug.Log(resourceGold);
+      Debug.Log(resourceWood);
     }
 }
