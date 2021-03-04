@@ -12,4 +12,9 @@ public class GoldSlider : Sliders
 
       ExpansionController.gold = resourceAmount;
     }
+
+    public void setActiveSlider()
+    {
+      ResourceInventory.goldExpSliderActive = true;
+    }
 }

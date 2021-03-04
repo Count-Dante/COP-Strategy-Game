@@ -12,4 +12,9 @@ public class FoodSlider : Sliders
 
       ExpansionController.food = resourceAmount;
     }
+
+    public void setActiveSlider()
+    {
+      ResourceInventory.foodExpSliderActive = true;
+    }
 }

@@ -12,4 +12,9 @@ public class FoodDefenseSlider : Sliders
 
     DefenseController.food = resourceAmount;
   }
+
+  public void setActiveSlider()
+  {
+    ResourceInventory.foodDefSliderActive = true;
+  }
 }

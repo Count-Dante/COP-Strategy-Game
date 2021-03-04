@@ -11,5 +11,13 @@ public class WoodDefenseSlider : Sliders
     resourceSlider.maxValue = inventory;
 
     DefenseController.wood = resourceAmount;
+
   }
+
+  public void setActiveSlider()
+  {
+    ResourceInventory.woodDefSliderActive = true;
+  }
+
+
 }

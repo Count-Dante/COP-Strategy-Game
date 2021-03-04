@@ -12,4 +12,9 @@ public class WoodSlider : Sliders
 
       ExpansionController.wood = resourceAmount;
     }
+
+    public void setActiveSlider()
+    {
+      ResourceInventory.woodExpSliderActive = true;
+    }
 }

@@ -12,4 +12,9 @@ public class GoldDefenseSlider : Sliders
 
     DefenseController.gold = resourceAmount;
   }
+
+  public void setActiveSlider()
+  {
+    ResourceInventory.goldDefSliderActive = true;
+  }
 }
