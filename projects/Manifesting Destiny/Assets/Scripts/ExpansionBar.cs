@@ -10,20 +10,24 @@ public class ExpansionBar : MonoBehaviour
     public static float goldExpansionPoint = 0;
 
     public static float expansionPoint = 0;
+    public static float maxExpansionPoint = 0;
 
     public Slider slider;
+    public ExpansionController expand;
+
     // Start is called before the first frame update
     void Start()
     {
-        slider.maxValue = ExpansionController.easyExpansion;
-
+        maxExpansionPoint = ExpansionController.easyExpansion;
+        slider.maxValue = maxExpansionPoint;
         slider.value = expansionPoint;
     }
 
     // Update is called once per frame
     void Update()
     {
-        slider.value = getCurrentExpansionPoint();
+        slider.value = expansionPoint;
+        checkToExpand();
     }
 
     public static float getCurrentExpansionPoint()
@@ -33,5 +37,13 @@ public class ExpansionBar : MonoBehaviour
         goldExpansionPoint = ExpansionController.gold * 7;
 
         return goldExpansionPoint + woodExpansionPoint + foodExpansionPoint;
+    }
+
+    public void checkToExpand()
+    {
+        if (expansionPoint >= maxExpansionPoint)
+        {
+            expand.setActiveExpansionButton();
+        }
     }
 }

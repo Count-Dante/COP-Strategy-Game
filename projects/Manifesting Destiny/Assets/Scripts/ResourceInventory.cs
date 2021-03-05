@@ -98,6 +98,9 @@ public class ResourceInventory : MonoBehaviour
 
     public void resetSlider()
     {
+      ExpansionBar.expansionPoint = ExpansionBar.expansionPoint + ExpansionBar.getCurrentExpansionPoint();
+      DefenseBar.defensePoint = DefenseBar.defensePoint + DefenseBar.getCurrentDefensePoint();
+      
       woodExpansion.value = 0;
       woodDefense.value = 0;
 

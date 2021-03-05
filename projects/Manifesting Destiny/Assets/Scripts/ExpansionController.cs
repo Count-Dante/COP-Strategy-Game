@@ -63,4 +63,9 @@ public class ExpansionController : MonoBehaviour
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void setActiveExpansionButton()
+    {
+      expansion.gameObject.SetActive(true);
+    }
+
 }
