@@ -21,14 +21,16 @@ public class DefenseBar : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-      slider.value = getCurrentDefensePoint();
+      DefenseController.defensePoints = getCurrentDefensePoint();
+
+      slider.value = DefenseController.defensePoints;
   }
 
   public static float getCurrentDefensePoint()
   {
-      woodDefensePoint = 2 * 5;
-      foodDefensePoint = 1 * 5;
-      goldDefensePoint = 1 * 7;
+      woodDefensePoint = DefenseController.wood * 5;
+      foodDefensePoint = DefenseController.food * 5;
+      goldDefensePoint = DefenseController.gold * 7;
 
       return woodDefensePoint + foodDefensePoint + goldDefensePoint;
   }
