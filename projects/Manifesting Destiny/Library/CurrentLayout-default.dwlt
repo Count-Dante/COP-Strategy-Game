@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1600
     height: 768
-  m_MinSize: {x: 677, y: 471}
-  m_MaxSize: {x: 14000, y: 14021}
+  m_MinSize: {x: 678, y: 471}
+  m_MaxSize: {x: 14001, y: 14021}
   vertical: 0
-  controlID: 4808
+  controlID: 16797
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 471}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 4809
+  controlID: 16798
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 4810
+  controlID: 16799
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -396,10 +396,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 563f0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 14f2ffff80f9ffff8ef9ffffc2f9ffffecf9ffff00faffff4efbffffe8390000e2420000f2470000ac490000c04d00000a4f0000824f0000a44f00007250000042510000
+      scrollPos: {x: 0, y: 152}
+      m_SelectedIDs: 167e0000
+      m_LastClickedID: 32278
+      m_ExpandedIDs: e6d2ffff8edfffffaedfffff06e0ffff9ce3ffffdee3ffffd8e5ffff04e6ffff18e6ffff54e6ffff76e6ffffdef6ffff46f9ffff58f9ffffbaf9fffff6f9ffff0afaffff5efbfffffc4200005243000016480000d6490000b65300000c540000ae550000be5700002e580000565d0000665f00007c600000d26000007462000084640000f46400000c71000068710000e6710000a272000060730000a274000082750000f47500008c7a0000e27a00009a7b0000847c0000a67c0000947e0000067f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 240.01926, y: 135.72545, z: -15.93403}
+    m_Target: {x: 250.03862, y: 206.80972, z: -105.91246}
     speed: 2
-    m_Value: {x: 240.01926, y: 135.72545, z: -15.93403}
+    m_Value: {x: 250.03862, y: 206.80972, z: -105.91246}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -511,9 +511,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 276.2037
+    m_Target: 221.73444
     speed: 2
-    m_Value: 276.2037
+    m_Value: 221.73444
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -667,20 +667,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Grant\Documents\GitHub\COP-Strategy-Game\projects\Manifesting
     Destiny
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 19}
-    m_SelectedIDs: 8a3b0000
-    m_LastClickedID: 15242
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 8c3b0000
+    m_LastClickedID: 15244
     m_ExpandedIDs: 00000000263b0000283b00002a3b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -737,7 +737,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000000000000f63f0000ee3f0000523d00001a3b0000
+    m_ExpandedInstanceIDs: c623000000000000f63f0000ee3f0000523d00001a3b0000d03a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -946,7 +946,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 540
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
