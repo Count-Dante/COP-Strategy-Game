@@ -11,15 +11,10 @@ public class BadRNG : MonoBehaviour
     // Function that determines which random-bad event will occur.
     public void whichEvent()
     {
-        
-        // Variables to hold the current values of wood, gold, and food after allocation.
-        int wood = Resources.getWood();
-        int gold = Resources.getGold();
-        int food = Resources.getFood();
 
         // Variable to store the calculated current event and defense value.
         int curEvent = 0;
-        int defense = wood + gold + food;
+        float defense = DefenseBar.defensePoint;
 
         // Sets the PostRNG object active to allow for a pop-up to appear.
         PostRNG.SetActive(true);
@@ -46,22 +41,24 @@ public class BadRNG : MonoBehaviour
         // towards expansion and did not leave enough for defense.
 
         // Tornado
-        if (curEvent == 1 && defense - 15 >= 0)
-            defense -= 15;
+        if (curEvent == 1 && defense - 8 >= 0)
+            defense -= 8;
         
         // Plague
-        else if (curEvent == 2 && defense - 10 >= 0)
-            defense -= 10;
+        else if (curEvent == 2 && defense - 6 >= 0)
+            defense -= 6;
 
         // Bandits
-        else if (curEvent == 3 && defense - 5 >= 0)
-            defense -= 5;
+        else if (curEvent == 3 && defense - 4 >= 0)
+            defense -= 4;
         
         // Pack
         else
             curEvent = 4;
 
-        // Sets the object / image associated with the current event to active.
+        // Sets the object / image associated with the current event to active and sets the
+        // new value of defense points to the defense bar.
+        DefenseBar.defensePoint = defense;
         PostRNG.transform.GetChild(curEvent).gameObject.SetActive(true);
 
     }   
