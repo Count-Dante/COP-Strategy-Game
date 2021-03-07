@@ -5,6 +5,7 @@ using UnityEngine;
 public class Wood : MonoBehaviour
 {
       public static int numberOfClicks = 5;
+      public static bool timerEnabled;
 
       // Harvest methods must be seperate for each resource for game balancing.
       // Gather 1 Wood: 10%
@@ -15,7 +16,7 @@ public class Wood : MonoBehaviour
       public void harvestWood()
       {
             // Resource can still be harvested!
-            if (numberOfClicks > 0)
+            if (numberOfClicks > 0 && timerEnabled == true)
             {
                   // Used to determine "luck" of how many resources are gathered.
                   int randomNumber = RNG.randomNumberGenerator();
@@ -52,7 +53,7 @@ public class Wood : MonoBehaviour
 
       void Update()
       {
-            Debug.Log(numberOfClicks);
+            timerEnabled = Timer.getTimerStatus();
       }
 
 }

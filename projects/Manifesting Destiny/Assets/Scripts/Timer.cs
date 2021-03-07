@@ -35,6 +35,7 @@ public class Timer : MonoBehaviour
 
             else
             {
+                  timerEnabled = false;
                   timerText.SetActive(true);
                   Time.timeScale = 0;
             }
@@ -43,11 +44,17 @@ public class Timer : MonoBehaviour
       public void pauseTimer()
       {
             timerEnabled = false;
+            timerText.SetActive(false);
       }
 
       public void startTimer()
       {
             timerEnabled = true;
+      }
+
+      public static bool getTimerStatus()
+      {
+            return timerEnabled;
       }
 
 }
