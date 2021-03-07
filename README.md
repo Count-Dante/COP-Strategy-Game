@@ -89,3 +89,24 @@ Grant Allan: UID 022. Quit button from the main menu
 Natalia Colmenares: UID 010. Resource allocation for expansion and expansion controller
 
 Ryan Black: UID 007. Bad events RNG for the game
+
+# Sprint 5
+* [Trello Board](https://trello.com/b/FpkzNxdc/backlogs)
+* [Burndown Chart]()
+* [Velocity Chart]()
+* [System Architecture](https://github.com/Grant-Allan/COP-Strategy-Game/blob/main/artifacts/architecture.md)
+* [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
+* [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
+* [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
+* [Product Demonstration]()
+
+## Task Allocation
+Aedan Deyto: UID 
+
+David Kipikash: UID 
+
+Grant Allan: UID 
+
+Natalia Colmenares: UID 
+
+Ryan Black: UID 
