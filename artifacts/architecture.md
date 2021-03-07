@@ -67,7 +67,7 @@ Main Menu UML Diagram: Directly below is the UML for our main menu. The game wil
 ## Resources
 Resources UML Diagram: 
 
-![Manifesting Destiny Class Diagrams-Resources](https://user-images.githubusercontent.com/45442774/109438532-7b27fa80-79f8-11eb-98a8-878372f127fb.png)
+![Manifesting Destiny Class Diagrams-Resources](https://user-images.githubusercontent.com/45442774/110257067-0f9adb80-7f6a-11eb-8ebd-afd23fe8167a.png)
 
 * Resources Class: This class allows other class to update the amount of food, gold, and wood resource. And allows other class to obatin the amount of each resource.
 * Food Class: This class holds a "Food" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the food resource (via harvestFood() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the food tile can be clicked.
@@ -85,28 +85,17 @@ Resources UML Diagram:
 |  024 | As a player I want to be able to collect gold from a tile so that I can have another method of obtaining resources  |   Gold  |
 
 ## Expansion Bar
-Expansion Bar UML Diagram: 
+Expansion Controller UML Diagram: 
 
-![Manifesting Destiny Class Diagrams-Expansion Bar](https://user-images.githubusercontent.com/45442774/109438582-a4488b00-79f8-11eb-86bb-51eefccc0dba.png)
+![Manifesting Destiny Class Diagrams-Expansion Controller](https://user-images.githubusercontent.com/45442774/110257070-19bcda00-7f6a-11eb-869b-ee152d3f7d95.png)
 
+* Expansion Controller Class: This class holds the resources the user allocates towards expansion each turn. Other classes such as the expansion bar get data from this class. Additionally, this class determines expansion points needed according to level of difficulty (easy, medium, hard, extreme).
 * Expansion Bar Class: The Expansion Bar Class changes the bar indicator in the game to help the user visualize how much more expansion points they need before they can expand. The calss gather the amound of wood, gold, and food allocated into the expansion and then calucates the users current expansion point. Which "Update" will update the bar to show the change.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|   014 |   As a player, I want an indication of how many resources I need to gather before I am able to expand my settlement.  |   Expansion Bar  |
-|    |        |      |
-
-## Expansion Controller
-Expansion Controller UML Diagram: 
-
-![Manifesting Destiny Class Diagrams-Expansion Controller](https://user-images.githubusercontent.com/45442774/109438609-bcb8a580-79f8-11eb-9312-8067df5abdb5.png)
-
-* Expansion Controller Class: This class holds the resources the user allocates towards expansion each turn. Other classes such as the expansion bar get data from this class. Additionally, this class determines expansion points needed according to level of difficulty (easy, medium, hard, extreme).
-
-| **ID** | **User Story**                                                                                              | **Major Classes**       |
-| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
 |  010  |   As a player, I want to be able to expand my settlement so that I can continue to progress in the game.     |    Expansion Controller  |
-|    |        |      |
+|   014 |   As a player, I want an indication of how many resources I need to gather before I am able to expand my settlement.  |   Expansion Bar  |
 
 ## Sliders
 Sliders UML Diagram: 
@@ -133,6 +122,40 @@ Bad RNG UML Diagram:
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
 |   007 |     As a player, I want the game to generate obstacles for me so that I can feel challenged.  |   BadRNG   |
+
+## Volume
+Volume UML Diagram: 
+
+![Manifesting Destiny Class Diagrams-Volume](https://user-images.githubusercontent.com/45442774/110257100-4c66d280-7f6a-11eb-8fa0-054748441ca7.png)
+
+* Volume Class: 
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|  005  |    As a Player, I want music when I play the game to make it more enjoyable.    |   Volume   |
+|  013  |    As a player, I want to be able to change the volume of the music so I can determine a good volume level for me.    |   Volume   |
+
+## Save/Load Game
+Save/Load Game UML Diagram: 
+
+![Manifesting Destiny Class Diagrams-Save Game](https://user-images.githubusercontent.com/45442774/110257184-9059d780-7f6a-11eb-93ff-98e8871bd8f0.png)
+
+* Volume Control Class: 
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|  002  |    As a player, I want to be able to save my game so that I can pick the game up at the last time I played.    |   Save Data   |
+
+## Timer
+Volume Control UML Diagram: 
+
+![Manifesting Destiny Class Diagrams-Timer](https://user-images.githubusercontent.com/45442774/110257157-846e1580-7f6a-11eb-8e35-7a3fdc88ae7f.png)
+
+* Timer Class: 
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|    |        |      |
 
 # Data Design
 
