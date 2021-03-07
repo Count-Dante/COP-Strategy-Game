@@ -143,8 +143,8 @@ Save/Load Game UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Save Game](https://user-images.githubusercontent.com/45442774/110257184-9059d780-7f6a-11eb-93ff-98e8871bd8f0.png)
 
-* Save Data Class: 
-* Game Data Class: 
+* Save Data Class: This class contains 2 functions: The save function when called stores the current value of each resource and allocation of resources towards either defense or expansion into a "Game Data" object that stores these values into a .data file that is written to Unity's persistent data path. The load function when called accesses the .data file created by the save function and writes the stored values to the current game.
+* Game Data Class: This class serves as an object to store the values of each resource and allocation values towards defenese and expansion.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
