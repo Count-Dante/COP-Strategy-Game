@@ -75,8 +75,8 @@ Resources UML Diagram:
 * Gold Class: This class holds a "Gold" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the gold resource (via harvestGold() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the gold tile can be clicked.
 * RNG Class: Used to generate a random number for certain events in the game. This class helps in producing random resource amounts as well as random encounters in the game.
 * Indicator Class: This class will gather the amount of wood, gold, food from their respected class and print them on screen for the user to see.
-* Resource Inventor Class: 
-* Defense Controller Class: 
+* Resource Inventory Class: This class keeps track of a user's input for resource allocation with the sliders. It ensures that users cannot allocate more resources than in their inventory.
+* Defense Controller Class: This class updates and removes the number of total resources the user allocated.
 * Defense Bar Class:
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
