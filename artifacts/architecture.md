@@ -77,7 +77,7 @@ Resources UML Diagram:
 * Indicator Class: This class will gather the amount of wood, gold, food from their respected class and print them on screen for the user to see.
 * Resource Inventory Class: This class keeps track of a user's input for resource allocation with the sliders. It ensures that users cannot allocate more resources than in their inventory.
 * Defense Controller Class: This class updates and removes the number of total resources the user allocated.
-* Defense Bar Class:
+* Defense Bar Class: This class updates the Defense Bar UI to show how much defense the user has.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
@@ -90,6 +90,7 @@ Resources UML Diagram:
 |    008|     As a player, I want to be able to defend my settlement from the challenges imposed by the game so that I can save my settlement. | Resource Inventory|
 |    008|     As a player, I want to be able to defend my settlement from the challenges imposed by the game so that I can save my settlement. | Defense Controller|
 |  030 | As a player, I want a timer while I click on the resources so that I think about what resources to prioritize. |   Food, Wood, Gold   |
+|  029 | As a player, I want to be able to see how much defense I need to be able to defend my settlement. |   Defense Bar   |
 
 ## Expansion Bar
 Expansion Controller UML Diagram: 
