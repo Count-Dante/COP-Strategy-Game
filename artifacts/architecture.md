@@ -105,15 +105,15 @@ Sliders UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Sliders](https://user-images.githubusercontent.com/45442774/109438664-f2f62500-79f8-11eb-841b-0a5ac5dad6a1.png)
 
-* Expansion Slider Class: This class updates the text that represents the value the slider is currently at. 
-* Wood Slider Class: This is a subclass of the expansion slider class. Determines how the slider should move based on wood collected by the user and saves the final selected value in the expansion controller.
-* Food Slider Class: This is a subclass of the expansion slider class. Determines how the slider should move based on food collected by the user and saves the final selected value in the expansion controller..
-* Gold Slider Class: This is a subclass of the expansion slider class. Determines how the slider should move based on gold collected by the user and saves the final selected value in the expansion controller..
+* Slider Class: This class updates the text that represents the value the slider is currently at. 
+* Wood Slider Class: This is a subclass of the slider class. Determines how the slider should move based on wood collected by the user and saves the final selected value in the expansion controller and defense controller.
+* Food Slider Class: This is a subclass of the slider class. Determines how the slider should move based on food collected by the user and saves the final selected value in the expansion controller and defense controller.
+* Gold Slider Class: This is a subclass of the slider class. Determines how the slider should move based on gold collected by the user and saves the final selected value in the expansion controller and defense controller.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|   010 |     As a player, I want to be able to expand my settlement so that I can continue to progress in the game.   |  Expansion Slider Class    |
-|    |        |      |
+|   010 |     As a player, I want to be able to expand my settlement so that I can continue to progress in the game.   |  Slider Class    |
+|    008|     As a player, I want to be able to defend my settlement from the challenges imposed by the game so that I can save my settlement. | Slider Class |
 
 ## Bad RNG
 Bad RNG UML Diagram: 
