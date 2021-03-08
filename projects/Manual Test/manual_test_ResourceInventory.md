@@ -8,11 +8,9 @@
 |            000 |           008 | In the Allocation menu slide the Defense gold slider by 8. | The user should see a text next to the slider display the number 8. | The user does see the slider text display 8. | Sprint 5: Pass |
 |            000 |           010 | In the Allocation menu slide the expansion gold slider by 1. | The user should see a text next to the slider display the number 1. | The user does see the slider text display 1. | Sprint 5: Pass |
 |            000 |           008 | In the Allocation menu the Defense gold get incremented by 1. | The user should see the gold slider for defense decrease its value by 1 because the user has allocated more gold than in inventory. | The user does see the slider decrease by 1. | Sprint 5: Pass |
-
 |            000 |           008 | In the Allocation menu slide the Defense wood slider by 10. | The user should see a text next to the slider display the number 10. | The user does see the slider text display 10. | Sprint 5: Pass |
 |            000 |           010 | In the Allocation menu slide the expansion wood slider by 1. | The user should see a text next to the slider display the number 1. | The user does see the slider text display 1. | Sprint 5: Pass |
 |            000 |           008 | In the Allocation menu the Defense wood get incremented by 1. | The user should see the wood slider for defense decrease its value by 1 because the user has allocated more wood than in inventory. | The user does see the slider decrease by 1. | Sprint 5: Pass |
-
 |            000 |           008 | In the Allocation menu slide the Defense food slider by 15. | The user should see a text next to the slider display the number 15. | The user does see the slider text display 15. | Sprint 5: Pass |
 |            000 |           010 | In the Allocation menu slide the expansion food slider by 1. | The user should see a text next to the slider display the number 1. | The user does see the slider text display 1. | Sprint 5: Pass |
 |            000 |           008 | In the Allocation menu the Defense food get incremented by 1. | The user should see the food slider for defense decrease its value by 1 because the user has allocated more food than in inventory. | The user does see the slider decrease by 1. | Sprint 5: Pass |
