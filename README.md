@@ -98,15 +98,15 @@ Ryan Black: UID 007. Bad events RNG for the game
 * [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
 * [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
 * [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
-* [Product Demonstration]()
+* [Product Demonstration](https://youtu.be/J-Prl2F1Igg)
 
 ## Task Allocation
-Aedan Deyto: UID 
+Aedan Deyto: UID 015 & 029. Defense progress bar and Win progress indicator for the user
 
-David Kipikash: UID 
+David Kipikash: UID 030. In game timer for the player
 
-Grant Allan: UID 
+Grant Allan: UID 005 , 006, & 013. Settings menu, pause menu, and in game music
 
-Natalia Colmenares: UID 
+Natalia Colmenares: UID 008. Resource allocation for defense and defense controller
 
-Ryan Black: UID 
+Ryan Black: UID 002. Load and save functionality
