@@ -70,14 +70,14 @@ Resources UML Diagram:
 ![Manifesting Destiny Class Diagrams-Resources](https://user-images.githubusercontent.com/45442774/110257067-0f9adb80-7f6a-11eb-8ebd-afd23fe8167a.png)
 
 * Resources Class: This class allows other class to update the amount of food, gold, and wood resource. And allows other class to obatin the amount of each resource.
-* Food Class: This class holds a "Food" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the food resource (via harvestFood() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the food tile can be clicked.
-* Wood Class: This class holds a "Wood" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the wood resource (via harvestWood() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the wood tile can be clicked.
-* Gold Class: This class holds a "Gold" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the gold resource (via harvestGold() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the gold tile can be clicked.
+* Food Class: This class holds a "Food" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the food resource (via harvestFood() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the food tile can be clicked. Calls on Timer class to ensure resource can be harvested.
+* Wood Class: This class holds a "Wood" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the wood resource (via harvestWood() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the wood tile can be clicked. Calls on Timer class to ensure resource can be harvested.
+* Gold Class: This class holds a "Gold" object. This object is 1 of the 3 tiles that will be placed around the map and used to gather the gold resource (via harvestGold() method). Uses a "numberOfClicks" field to ensure the player has a limit to the amount of times the gold tile can be clicked. Calls on Timer class to ensure resource can be harvested.
 * RNG Class: Used to generate a random number for certain events in the game. This class helps in producing random resource amounts as well as random encounters in the game.
 * Indicator Class: This class will gather the amount of wood, gold, food from their respected class and print them on screen for the user to see.
 * Resource Inventory Class: This class keeps track of a user's input for resource allocation with the sliders. It ensures that users cannot allocate more resources than in their inventory.
 * Defense Controller Class: This class updates and removes the number of total resources the user allocated.
-* Defense Bar Class: This class updatest the UI bar that shows how much defense the users has based on the allocated resources.
+* Defense Bar Class:
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
@@ -89,7 +89,7 @@ Resources UML Diagram:
 |   010 |     As a player, I want to be able to expand my settlement so that I can continue to progress in the game.   |  Resource Inventory Class    |
 |    008|     As a player, I want to be able to defend my settlement from the challenges imposed by the game so that I can save my settlement. | Resource Inventory|
 |    008|     As a player, I want to be able to defend my settlement from the challenges imposed by the game so that I can save my settlement. | Defense Controller|
-|    029|     As a player, I want to be able to see how much defense I need to be able to defend my settlement. | Defense Bar|
+|  030 | As a player, I want a timer while I click on the resources so that I think about what resources to prioritize. |   Food, Wood, Gold   |
 
 ## Expansion Bar
 Expansion Controller UML Diagram: 
@@ -155,15 +155,15 @@ Save/Load Game UML Diagram:
 |  002  |    As a player, I want to be able to save my game so that I can pick the game up at the last time I played.    |   Save Data   |
 
 ## Timer
-Volume Control UML Diagram: 
+Timer UML Diagram: 
 
 ![Manifesting Destiny Class Diagrams-Timer](https://user-images.githubusercontent.com/45442774/110257157-846e1580-7f6a-11eb-8e35-7a3fdc88ae7f.png)
 
-* Timer Class: 
+* Timer Class: Controls how long a round lasts before you are unable to perform any actions. Interfaces with the "TimerBar" game object to show the player that their time is slowly decreasing. Also serves as a support class for the Wood, Food, and Gold classes. (For Timer-Resource interactions, see the Resources class.)
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |        |      |
+|  030  | As a player, I want a timer while I click on the resources so that I think about what resources to prioritize. |  Timer  |
 
 # Data Design
 
