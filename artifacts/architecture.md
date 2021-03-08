@@ -86,6 +86,9 @@ Resources UML Diagram:
 |  025 | As a player I want to be able to collect food from a tile so that I have an alternate way to obtain resources to progress through the game  |   Food  |
 |  023 | As a player I want to be able to collect wood from a tile so that I have an alternate way to obtain resources to progress through the game  |   Wood  |
 |  024 | As a player I want to be able to collect gold from a tile so that I can have another method of obtaining resources  |   Gold  |
+|   010 |     As a player, I want to be able to expand my settlement so that I can continue to progress in the game.   |  Resource Inventory Class    |
+|    008|     As a player, I want to be able to defend my settlement from the challenges imposed by the game so that I can save my settlement. | Resource Inventory|
+|    008|     As a player, I want to be able to defend my settlement from the challenges imposed by the game so that I can save my settlement. | Defense Controller|
 
 ## Expansion Bar
 Expansion Controller UML Diagram: 
