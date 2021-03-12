@@ -136,7 +136,7 @@ Volume UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Volume](https://user-images.githubusercontent.com/45442774/110257100-4c66d280-7f6a-11eb-8fa0-054748441ca7.png)
 
-* Volume Class: 
+* Volume Class: This class updates the music volume or game sounds volume, depnding on which function is used.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
