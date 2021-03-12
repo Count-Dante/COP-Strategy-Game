@@ -7,6 +7,14 @@ public class Resources : MonoBehaviour
       public static int totalFood = 0;
       public static int totalGold = 0;
       public static int totalWood = 0;
+/*
+      void Start()
+      {
+        totalFood = 0;
+        totalGold = 0;
+        totalWood = 0;
+      }
+      */
 
       public static int getFood()
       {

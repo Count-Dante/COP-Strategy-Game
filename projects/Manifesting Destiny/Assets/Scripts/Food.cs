@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-      public static int numberOfClicks = 5;
+      public int numberOfClicks = 5;
       public static bool timerEnabled;
 
       // Harvest methods must be seperate for each resource for game balancing.
