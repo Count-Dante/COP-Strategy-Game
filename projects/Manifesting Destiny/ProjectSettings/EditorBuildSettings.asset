@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondSettlement.unity
     guid: 3f8a7b5ac7f8b432885ca088b2a5beee
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 0fba4b29a99ed1849ad427c81cfc8b71
   m_configObjects: {}
