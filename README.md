@@ -110,3 +110,25 @@ Grant Allan: UID 005 , 006, & 013. Settings menu, pause menu, and in game music
 Natalia Colmenares: UID 008. Resource allocation for defense and defense controller
 
 Ryan Black: UID 002. Load and save functionality
+
+# Sprint 6
+* [Trello Board](https://trello.com/b/FpkzNxdc/backlogs)
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1mqqSALltwAl0edOKvCXrpOLnEsmOgAQWlE3VF5gjhaM/edit?ts=601f11a4#gid=395950779)
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/1SVAG2XL3UHwgRf9H_69p2QMZEYk6puFvHCiJfRDD5Q4/edit#gid=0)
+* [System Architecture](https://github.com/Grant-Allan/COP-Strategy-Game/blob/main/artifacts/architecture.md)
+* [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
+* [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
+* [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
+* [Product Demonstration]()
+
+## Task Allocation
+Aedan Deyto: 
+
+David Kipikash: 
+
+Grant Allan: 
+
+Natalia Colmenares: 
+
+Ryan Black:
+
