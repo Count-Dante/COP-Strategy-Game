@@ -33,6 +33,7 @@ public class MineTileTest
     mineButton.onClick.Invoke();
 
     Assert.IsTrue(Resources.getGold() <= 5 && Resources.getGold() > 0);
+    Resources.setGold(0);
   }
 
   public void harvestOnClick()

@@ -33,6 +33,7 @@ public class TreeTileTest
     treeButton.onClick.Invoke();
 
     Assert.IsTrue(Resources.getWood() <= 5 && Resources.getWood() > 0);
+    Resources.setWood(0);
   }
 
   public void harvestOnClick()

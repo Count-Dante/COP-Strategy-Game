@@ -34,6 +34,7 @@ public class FarmTileTest
     treeButton.onClick.Invoke();
 
     Assert.IsTrue(Resources.getFood() <= 5 && Resources.getFood() > 0);
+    Resources.setFood(0);
   }
 
   public void harvestOnClick()
