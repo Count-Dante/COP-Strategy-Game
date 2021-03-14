@@ -109,7 +109,7 @@ Grant Allan: UID 005 , 006, & 013. Settings menu, pause menu, and in game music
 
 Natalia Colmenares: UID 008. Resource allocation for defense and defense controller
 
-Ryan Black: UID 002. Load and save functionality
+Ryan Black: UID 002. Save functionality
 
 # Sprint 6
 * [Trello Board](https://trello.com/b/FpkzNxdc/backlogs)
