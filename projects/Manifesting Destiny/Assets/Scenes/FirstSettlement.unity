@@ -16319,7 +16319,7 @@ GameObject:
   - component: {fileID: 1959195205}
   - component: {fileID: 1959195204}
   m_Layer: 0
-  m_Name: Tutorial Popup
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

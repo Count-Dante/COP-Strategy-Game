@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
       public float totalTime = 25f;
-      public static float remainingTime;
+      public static float remainingTime = 0;
       public static bool timerEnabled;
       public GameObject timerText;
       Image timerBar;
@@ -17,7 +17,8 @@ public class Timer : MonoBehaviour
             startTimer();
             timerText.SetActive(false);
             timerBar = GetComponent<Image>();
-            remainingTime = totalTime;
+            if (remainingTime == 0)
+                 remainingTime = totalTime;
       }
 
       // Update is called once per frame
@@ -40,6 +41,7 @@ public class Timer : MonoBehaviour
                   Time.timeScale = 0;
             }
       }
+
 
       public void pauseTimer()
       {
