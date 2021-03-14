@@ -40,6 +40,8 @@ public class FarmTileTest
   {
     GameObject gameObject = new GameObject();
     Food tile = gameObject.AddComponent<Food>();
+    Food.timerEnabled = true;
     tile.harvestFood();
+    Food.timerEnabled = false;
   }
 }

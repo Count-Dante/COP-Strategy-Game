@@ -6,7 +6,7 @@ using UnityEngine;
 // Ensures that all previously saved data from the scene gets reset.
 public class RestartGame : MonoBehaviour
 {
-  public void resetExpansionPoints()
+  public static void resetExpansionPoints()
   {
     ExpansionController.wood = 0;
     ExpansionController.food = 0;
@@ -15,7 +15,7 @@ public class RestartGame : MonoBehaviour
     ExpansionBar.expansionPoint = 0;
   }
 
-  public void resetDefensePoints()
+  public static void resetDefensePoints()
   {
     DefenseController.wood = 0;
     DefenseController.food = 0;
@@ -24,12 +24,12 @@ public class RestartGame : MonoBehaviour
     DefenseBar.defensePoint = 0;
   }
 
-  public void resetBadRNG()
+  public static void resetBadRNG()
   {
     BadRNG.deadGame = false;
   }
 
-  public void resetResources()
+  public static void resetResources()
   {
     Resources.totalFood = 0;
     Resources.totalGold = 0;

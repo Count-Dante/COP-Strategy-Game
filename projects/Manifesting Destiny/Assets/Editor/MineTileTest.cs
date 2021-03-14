@@ -39,7 +39,9 @@ public class MineTileTest
   {
     GameObject gameObject = new GameObject();
     Gold tile = gameObject.AddComponent<Gold>();
+    Gold.timerEnabled = true;
     tile.harvestGold();
+    Gold.timerEnabled = false;
   }
 
 }

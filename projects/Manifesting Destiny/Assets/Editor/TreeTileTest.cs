@@ -39,6 +39,8 @@ public class TreeTileTest
   {
     GameObject gameObject = new GameObject();
     Wood tile = gameObject.AddComponent<Wood>();
+    Wood.timerEnabled = true;
     tile.harvestWood();
+    Wood.timerEnabled = false;
   }
 }
