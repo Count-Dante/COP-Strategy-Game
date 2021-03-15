@@ -122,13 +122,13 @@ Ryan Black: UID 002. Save functionality
 * [Product Demonstration]()
 
 ## Task Allocation
-Aedan Deyto: 
+Aedan Deyto: UID 017. Victory Function
 
-David Kipikash: 
+David Kipikash: UID 031. Unique Resource Location
 
-Grant Allan: 
+Grant Allan: UID 003. Game Turtorial
 
-Natalia Colmenares: 
+Natalia Colmenares: UID 018. Lose Function
 
-Ryan Black:
+Ryan Black: UID 027. Load Functionality
 
