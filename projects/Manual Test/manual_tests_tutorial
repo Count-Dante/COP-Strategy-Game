@@ -1,0 +1,5 @@
+| Test ID | User Story ID | Steps to Reproduce | Expected Result | Actual Result | Pass or Fail |
+|----------------|---------------|-------------|---------------------|--------|--------|
+|            000 |           008 | Open Manifesting Destiny in Unity Hub. | Manifesting Destiny should open. | Manifesting Destiny opens. | Pass |
+|            000 |           008 | After opening Manifesting Destiny start the game by pressing start game button. | After pressing start game the user should be in the Main Menu of the game. | The user is in the Main Menu of the game after pressing start game. | Pass |
+|            000 |           008 | Hit yes on the tutorial prompt. | The tutorial prompt closes and the tutorial begins | The tutorial prompt closes and the tutorial begins | Pass |
