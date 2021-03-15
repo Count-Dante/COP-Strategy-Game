@@ -2,6 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+<<<<<<< HEAD
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -11,6 +12,15 @@
 /[Uu]ser[Ss]ettings/
 
 /[Mm]emoryCaptures/
+=======
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+>>>>>>> parent of 442be213 (Update .gitignore)
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -55,7 +65,6 @@ sysinfo.txt
 
 # Builds
 *.apk
-*.aab
 *.unitypackage
 
 # Crashlytics generated file
@@ -65,11 +74,4 @@ crashlytics-build.properties
 **/.DS_Store
 Corridor/Library/ShaderCache/
 Corridor/Library/metadata/
-
-# Packed Addressables
-/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
-
-# Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
 
