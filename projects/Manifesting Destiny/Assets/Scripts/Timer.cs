@@ -9,14 +9,13 @@ public class Timer : MonoBehaviour
       public static float remainingTime = 0;
       public static bool timerEnabled;
       public GameObject timerText;
-      Image timerBar;
+      public Image timerBar;
 
       // Start is called before the first frame update
       void Start()
       {
             startTimer();
             timerText.SetActive(false);
-            timerBar = GetComponent<Image>();
             if (remainingTime == 0)
                  remainingTime = totalTime;
       }
