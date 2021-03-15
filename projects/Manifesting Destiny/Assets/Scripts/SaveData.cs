@@ -66,6 +66,7 @@ public class SaveData : MonoBehaviour
         else
         {
             file = File.Create(destination);
+            file.Close();
             return;
         }
 
@@ -97,6 +98,8 @@ public class SaveData : MonoBehaviour
             Resources.setWood(0);
             Resources.setGold(0);
             Resources.setFood(0);
+
+            file.Close();
         }
     }
 }
