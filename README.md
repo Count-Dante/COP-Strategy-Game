@@ -119,7 +119,7 @@ Ryan Black: UID 002. Save functionality
 * [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
 * [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
 * [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
-* [Product Demonstration]()
+* [Product Demonstration](https://youtu.be/WbyFqa0Qyog)
 
 ## Task Allocation
 Aedan Deyto: UID 017. Victory Function
