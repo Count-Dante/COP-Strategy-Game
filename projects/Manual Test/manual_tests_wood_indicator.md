@@ -1,6 +1,6 @@
 # Manual Tests
 
-
+Updated because of UI changes
 | Test ID | User Story ID | Steps to Reproduce | Expected Result | Actual Result | Pass or Fail |
 |----------------|---------------|-------------|---------------------|--------|--------|
 |            000 |           011 | Opening Manifesting Destiny in Unity Hub. | Manifesting Destiny should open. | Manifesting Destiny opens. | Pass |
