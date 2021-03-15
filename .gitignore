@@ -63,6 +63,8 @@ crashlytics-build.properties
 
 # DS_Store
 **/.DS_Store
+Corridor/Library/ShaderCache/
+Corridor/Library/metadata/
 
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
