@@ -171,7 +171,18 @@ Victory Button UML Diagram:
 
 ![Untitled Diagram-Page-1](https://user-images.githubusercontent.com/73034231/111244597-9b9bab80-85d9-11eb-898e-dd9656a19fae.jpg)
 
-* Victory Class: This will send the user to the Victory scene, whenever they are able to expand towards California.
+* Victory Class: This will send the user to the Victory Scene, whenever they are able to expand towards California.
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|  017  | As a player, I want to be able to beat the game so that I am not playing an endless game. |  Victory  |
+
+## Exit to Main Menu
+Exit To Main Menu UML Diagram:
+
+![Untitled Diagram-Page-2](https://user-images.githubusercontent.com/73034231/111245266-c1758000-85da-11eb-97c8-a036f4a925e3.jpg)
+
+* Exit Class: This will sent the user back to the Main Menu Scene.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
