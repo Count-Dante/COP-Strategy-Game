@@ -36,4 +36,12 @@ public class RestartGame : MonoBehaviour
     Resources.totalWood = 0;
   }
 
+  public void restartAll()
+  {
+    resetExpansionPoints();
+    resetDefensePoints();
+    resetBadRNG();
+    resetResources();
+  }
+
 }

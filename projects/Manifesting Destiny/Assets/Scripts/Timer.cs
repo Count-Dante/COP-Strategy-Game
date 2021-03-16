@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
 
       // Start is called before the first frame update
       void Start()
-      {
+      {     remainingTime = totalTime;
             startTimer();
             timerText.SetActive(false);
             if (remainingTime == 0)
