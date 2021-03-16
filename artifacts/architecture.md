@@ -166,6 +166,17 @@ Timer UML Diagram:
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
 |  030  | As a player, I want a timer while I click on the resources so that I think about what resources to prioritize. |  Timer  |
 
+## Victory Button
+Victory Button UML Diagram:
+
+![Untitled Diagram-Page-1](https://user-images.githubusercontent.com/73034231/111244597-9b9bab80-85d9-11eb-898e-dd9656a19fae.jpg)
+
+* Victory Class: This will send the user to the Victory scene, whenever they are able to expand towards California.
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|  017  | As a player, I want to be able to beat the game so that I am not playing an endless game. |  Victory  |
+
 # Data Design
 
 The game utilizes the persistentDataPath which allows the player to save the current state of their game to a static directory path. The user will be able to load their saved game from that path and continue right where they left off. Local variables and other objects pertinent to the game will manifest in memory and be destroyed when the game is closed.
