@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,70 +27,22 @@ public class TileGenerator : MonoBehaviour
       public GameObject Mine3;
       public GameObject grid;
 
-      double x;
-      double y;
-      double height = Screen.height;
-      double width = Screen.width;
-
-      double[,] positions = new double[86, 3] {
-                        // {is set, y-cord, x-cord}
-                        { 0, 70 + (120 * 7), 70 + (114.66 * 5)}, { 0, 70 + (120 * 7), 70 + (114.66 * 6)},
-                        { 0, 70 + (120 * 7), 70 + (114.66 * 7)}, { 0, 70 + (120 * 7), 70 + (114.66 * 8)},
-                        { 0, 70 + (120 * 7), 70 + (114.66 * 9)}, { 0, 70 + (120 * 7), 70 + (114.66 * 10)},
-                        { 0, 70 + (120 * 7), 70 + (114.66 * 11)},
-
-                        { 0, 70 + (120 * 6), 70 + (114.66 * 5)}, { 0, 70 + (120 * 6), 70 + (114.66 * 6)},
-                        { 0, 70 + (120 * 6), 70 + (114.66 * 7)}, { 0, 70 + (120 * 6), 70 + (114.66 * 8)},
-                        { 0, 70 + (120 * 6), 70 + (114.66 * 9)}, { 0, 70 + (120 * 6), 70 + (114.66 * 10)},
-                        { 0, 70 + (120 * 6), 70 + (114.66 * 11)},
-
-                        { 0, 70 + (120 * 5), 70 + (114.66 * 0)}, { 0, 70 + (120 * 5), 70 + (114.66 * 1)},
-                        { 0, 70 + (120 * 5), 70 + (114.66 * 2)}, { 0, 70 + (120 * 5), 70 + (114.66 * 3)},
-                        { 0, 70 + (120 * 5), 70 + (114.66 * 4)}, { 0, 70 + (120 * 5), 70 + (114.66 * 5)},
-                        { 0, 70 + (120 * 5), 70 + (114.66 * 6)}, { 0, 70 + (120 * 5), 70 + (114.66 * 7)},
-                        { 0, 70 + (120 * 5), 70 + (114.66 * 8)}, { 0, 70 + (120 * 5), 70 + (114.66 * 9)},
-                        { 0, 70 + (120 * 5), 70 + (114.66 * 10)}, { 0, 70 + (120 * 5), 70 + (114.66 * 11)},
-
-                        { 0, 70 + (120 * 4), 70 + (114.66 * 0)}, { 0, 70 + (120 * 4), 70 + (114.66 * 1)},
-                        { 0, 70 + (120 * 4), 70 + (114.66 * 2)}, { 0, 70 + (120 * 4), 70 + (114.66 * 3)},
-                        { 0, 70 + (120 * 4), 70 + (114.66 * 4)}, { 0, 70 + (120 * 4), 70 + (114.66 * 5)},
-                        { 0, 70 + (120 * 4), 70 + (114.66 * 6)}, { 0, 70 + (120 * 4), 70 + (114.66 * 7)},
-                        { 0, 70 + (120 * 4), 70 + (114.66 * 8)}, { 0, 70 + (120 * 4), 70 + (114.66 * 9)},
-                        { 0, 70 + (120 * 4), 70 + (114.66 * 10)}, { 0, 70 + (120 * 4), 70 + (114.66 * 11)},
-                        { 0, 70 + (120 * 4), 70 + (114.66 * 12)}, { 0, 70 + (120 * 4), 70 + (114.66 * 13)},
-                        { 0, 70 + (120 * 4), 70 + (114.66 * 14)},
-
-                        { 0, 70 + (120 * 3), 70 + (114.66 * 0)}, { 0, 70 + (120 * 3), 70 + (114.66 * 1)},
-                        { 0, 70 + (120 * 3), 70 + (114.66 * 2)}, { 0, 70 + (120 * 3), 70 + (114.66 * 3)},
-                        { 0, 70 + (120 * 3), 70 + (114.66 * 4)}, { 0, 70 + (120 * 3), 70 + (114.66 * 5)},
-                        { 0, 70 + (120 * 3), 70 + (114.66 * 6)}, { 0, 70 + (120 * 3), 70 + (114.66 * 7)},
-                        { 0, 70 + (120 * 3), 70 + (114.66 * 8)}, { 0, 70 + (120 * 3), 70 + (114.66 * 9)},
-                        { 0, 70 + (120 * 3), 70 + (114.66 * 10)}, { 0, 70 + (120 * 3), 70 + (114.66 * 11)},
-                        { 0, 70 + (120 * 3), 70 + (114.66 * 12)}, { 0, 70 + (120 * 3), 70 + (114.66 * 13)},
-                        { 0, 70 + (120 * 3), 70 + (114.66 * 14)},
-
-                        { 0, 70 + (120 * 2), 70 + (114.66 * 0)}, { 0, 70 + (120 * 2), 70 + (114.66 * 1)},
-                        { 0, 70 + (120 * 2), 70 + (114.66 * 2)}, { 0, 70 + (120 * 2), 70 + (114.66 * 3)},
-                        { 0, 70 + (120 * 2), 70 + (114.66 * 4)}, { 0, 70 + (120 * 2), 70 + (114.66 * 5)},
-                        { 0, 70 + (120 * 2), 70 + (114.66 * 6)}, { 0, 70 + (120 * 2), 70 + (114.66 * 7)},
-                        { 0, 70 + (120 * 2), 70 + (114.66 * 8)}, { 0, 70 + (120 * 2), 70 + (114.66 * 9)},
-                        { 0, 70 + (120 * 2), 70 + (114.66 * 10)}, { 0, 70 + (120 * 2), 70 + (114.66 * 11)},
-                        { 0, 70 + (120 * 2), 70 + (114.66 * 12)}, { 0, 70 + (120 * 2), 70 + (114.66 * 13)},
-                        { 0, 70 + (120 * 2), 70 + (114.66 * 14)},
-
-                        { 0, 70 + (120 * 1), 70 + (114.66 * 0)}, { 0, 70 + (120 * 1), 70 + (114.66 * 1)},
-                        { 0, 70 + (120 * 1), 70 + (114.66 * 2)}, { 0, 70 + (120 * 1), 70 + (114.66 * 3)},
-                        { 0, 70 + (120 * 1), 70 + (114.66 * 4)}, { 0, 70 + (120 * 1), 70 + (114.66 * 5)},
-                        { 0, 70 + (120 * 1), 70 + (114.66 * 6)}, { 0, 70 + (120 * 1), 70 + (114.66 * 7)},
-                        { 0, 70 + (120 * 1), 70 + (114.66 * 8)}, { 0, 70 + (120 * 1), 70 + (114.66 * 9)},
-                        { 0, 70 + (120 * 1), 70 + (114.66 * 10)}, { 0, 70 + (120 * 1), 70 + (114.66 * 11)},
-                        { 0, 70 + (120 * 1), 70 + (114.66 * 12)}, { 0, 70 + (120 * 1), 70 + (114.66 * 13)},
-                        { 0, 70 + (120 * 1), 70 + (114.66 * 14)}
-                  };
+      private double x;
+      private double y;
+      // Provides border around the edge of the screen that is 1% the height of the screen.
+      private double margin;
+      // Accounts for margin at the top and the bottom of the screen.
+      private double verticalRange;
+      // Accounts for margin at the top and the bottom of the screen.
+      private double horizontalRange;
+      // Array that holds valid positions of objects.
+      // {set, x-coordinate, y-coordinate}
+      double[,] positions = new double[86, 3];
 
       void Start()
       {
             grid.SetActive(true);
+            setPositionsArray();
             setWoodTiles();
             setFoodTiles();
             setGoldTiles();
@@ -98,24 +50,29 @@ public class TileGenerator : MonoBehaviour
 
       void Update()
       {
-            Debug.Log("good");
+            Debug.Log(Screen.height);
+            Debug.Log(Screen.width);
       }
 
       public void setWoodTiles()
       {
             for (int i = 0; i < 10; i++)
             {
+                  // Select random index.
                   int index = RNG.randomNumberGenerator();
 
+                  // Ensure index is valid and that position is not already occupied.
                   while (index > 85 || positions[index, 0] == 1)
                   {
                         index = RNG.randomNumberGenerator();
                   }
 
+                  // Set position as taken.
                   positions[index, 0] = 1;
-                  y = positions[index, 1];
-                  x = positions[index, 2];
+                  x = positions[index, 1];
+                  y = positions[index, 2];
 
+                  // Create vector to move the object to the position.
                   Vector3 temp = new Vector3((float)(x), (float)(y), 0);
                   // When replaced with object array, set Object[i].position = temp
                   if (i == 0)
@@ -145,17 +102,21 @@ public class TileGenerator : MonoBehaviour
       {
             for (int i = 0; i < 7; i++)
             {
+                  // Select random index.
                   int index = RNG.randomNumberGenerator();
 
+                  // Ensure index is valid and that position is not already occupied.
                   while (index > 85 || positions[index, 0] == 1)
                   {
                         index = RNG.randomNumberGenerator();
                   }
 
+                  // Set position as taken.
                   positions[index, 0] = 1;
-                  y = positions[index, 1];
-                  x = positions[index, 2];
+                  x = positions[index, 1];
+                  y = positions[index, 2];
 
+                  // Create vector to move the object to the position.
                   Vector3 temp = new Vector3((float)(x), (float)(y), 0);
                   // When replaced with object array, set Object[i].position = temp
                   if (i == 0)
@@ -179,17 +140,21 @@ public class TileGenerator : MonoBehaviour
       {
             for (int i = 0; i < 3; i++)
             {
+                  // Select random index.
                   int index = RNG.randomNumberGenerator();
 
+                  // Ensure index is valid and that position is not already occupied.
                   while (index > 85 || positions[index, 0] == 1)
                   {
                         index = RNG.randomNumberGenerator();
                   }
 
+                  // Set position as taken.
                   positions[index, 0] = 1;
-                  y = positions[index, 1];
-                  x = positions[index, 2];
+                  x = positions[index, 1];
+                  y = positions[index, 2];
 
+                  // Create vector to move the object to the position.
                   Vector3 temp = new Vector3((float)(x), (float)(y), 0);
                   // When replaced with object array, set Object[i].position = temp
                   if (i == 0)
@@ -199,5 +164,128 @@ public class TileGenerator : MonoBehaviour
                   else
                         Mine3.transform.position = temp;
             }
+      }
+
+      // This function explains the complex logic of setting each position
+      public void setPositionsArray()
+      {
+            // 1. First a margin is created around the screen that is 1% of the screen's height.
+            // 2. This margin is then subtracted off all 4 sides of the screen to give us a new
+            //    width (Screen.width - (2 * margin)) and height Screen.height - (2 * margin).
+            // 3. Using this new "range", we then divide the vertical area into 16 sections, and
+            //    the horizontal area into 30 sections.
+            // 4. Using the odd indices of these sections gives us 8 valid vertical placements and
+            //    15 valid horizontal placements.
+            // 5. Some of these placements are occupied by UI elements, and objects can not be
+            //    placed there (in the first 5 x-coordinates and the last 3 x-coordinates).
+
+            margin = (double)Screen.height * 0.01;
+            verticalRange = (double)Screen.height - (2 * margin);
+            horizontalRange = (double)Screen.width - (2 * margin);
+
+            double[,] temp = new double[86, 3] {
+                              { 0, horizontalRange * 1/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 1/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 1/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 1/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 1/30 + margin, verticalRange * 11/16 + margin},
+
+                              { 0, horizontalRange * 3/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 3/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 3/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 3/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 3/30 + margin, verticalRange * 11/16 + margin},
+
+                              { 0, horizontalRange * 5/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 5/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 5/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 5/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 5/30 + margin, verticalRange * 11/16 + margin},
+
+                              { 0, horizontalRange * 7/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 7/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 7/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 7/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 7/30 + margin, verticalRange * 11/16 + margin},
+
+                              { 0, horizontalRange * 9/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 9/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 9/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 9/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 9/30 + margin, verticalRange * 11/16 + margin},
+
+                              { 0, horizontalRange * 11/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 11/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 11/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 11/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 11/30 + margin, verticalRange * 11/16 + margin},
+                              { 0, horizontalRange * 11/30 + margin, verticalRange * 13/16 + margin},
+                              { 0, horizontalRange * 11/30 + margin, verticalRange * 15/16 + margin},
+
+                              { 0, horizontalRange * 13/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 13/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 13/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 13/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 13/30 + margin, verticalRange * 11/16 + margin},
+                              { 0, horizontalRange * 13/30 + margin, verticalRange * 13/16 + margin},
+                              { 0, horizontalRange * 13/30 + margin, verticalRange * 15/16 + margin},
+
+                              { 0, horizontalRange * 15/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 15/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 15/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 15/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 15/30 + margin, verticalRange * 11/16 + margin},
+                              { 0, horizontalRange * 15/30 + margin, verticalRange * 13/16 + margin},
+                              { 0, horizontalRange * 15/30 + margin, verticalRange * 15/16 + margin},
+
+                              { 0, horizontalRange * 17/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 17/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 17/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 17/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 17/30 + margin, verticalRange * 11/16 + margin},
+                              { 0, horizontalRange * 17/30 + margin, verticalRange * 13/16 + margin},
+                              { 0, horizontalRange * 17/30 + margin, verticalRange * 15/16 + margin},
+
+                              { 0, horizontalRange * 19/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 19/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 19/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 19/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 19/30 + margin, verticalRange * 11/16 + margin},
+                              { 0, horizontalRange * 19/30 + margin, verticalRange * 13/16 + margin},
+                              { 0, horizontalRange * 19/30 + margin, verticalRange * 15/16 + margin},
+
+                              { 0, horizontalRange * 21/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 21/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 21/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 21/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 21/30 + margin, verticalRange * 11/16 + margin},
+                              { 0, horizontalRange * 21/30 + margin, verticalRange * 13/16 + margin},
+                              { 0, horizontalRange * 21/30 + margin, verticalRange * 15/16 + margin},
+
+                              { 0, horizontalRange * 23/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 23/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 23/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 23/30 + margin, verticalRange * 9/16 + margin},
+                              { 0, horizontalRange * 23/30 + margin, verticalRange * 11/16 + margin},
+                              { 0, horizontalRange * 23/30 + margin, verticalRange * 13/16 + margin},
+                              { 0, horizontalRange * 23/30 + margin, verticalRange * 15/16 + margin},
+
+                              { 0, horizontalRange * 25/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 25/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 25/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 25/30 + margin, verticalRange * 9/16 + margin},
+
+                              { 0, horizontalRange * 27/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 27/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 27/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 27/30 + margin, verticalRange * 9/16 + margin},
+
+                              { 0, horizontalRange * 29/30 + margin, verticalRange * 3/16 + margin},
+                              { 0, horizontalRange * 29/30 + margin, verticalRange * 5/16 + margin},
+                              { 0, horizontalRange * 29/30 + margin, verticalRange * 7/16 + margin},
+                              { 0, horizontalRange * 29/30 + margin, verticalRange * 9/16 + margin},
+                        };
+
+            positions = temp;
       }
 }
