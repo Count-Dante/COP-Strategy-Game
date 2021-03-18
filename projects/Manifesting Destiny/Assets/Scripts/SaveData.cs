@@ -9,6 +9,7 @@ public class SaveData : MonoBehaviour
     float defensePoints = 0;
     float expansionPoints = 0;
     float remainingTime = 0;
+    string time;
 
     int wood = 0;
     int gold = 0;
@@ -33,6 +34,8 @@ public class SaveData : MonoBehaviour
             file = File.Create(destination);
 
         // Setting the game data from the current game.
+        time = System.DateTime.Now.ToString("dd/MM/yy hh:mm");
+
         remainingTime = Timer.remainingTime;
         defensePoints = DefenseBar.defensePoint;
         expansionPoints = ExpansionBar.expansionPoint;
@@ -42,7 +45,7 @@ public class SaveData : MonoBehaviour
         food = Resources.getFood();
 
         // Creation of a GameData object to store the game data.
-        GameData data = new GameData(remainingTime, defensePoints, expansionPoints, wood, gold, food);
+        GameData data = new GameData(remainingTime, defensePoints, expansionPoints, wood, gold, food, time);
 
         // Game data is seralized and stored in the file.
         BinaryFormatter bf = new BinaryFormatter();
@@ -66,6 +69,18 @@ public class SaveData : MonoBehaviour
         else
         {
             file = File.Create(destination);
+
+            time = System.DateTime.Now.ToString("dd/MM/yy hh:mm");
+            remainingTime = 25;
+            defensePoints = 0;
+            expansionPoints = 0;
+            wood = 0;
+            gold = 0;
+            food = 0;
+
+            GameData data = new GameData(remainingTime, defensePoints, expansionPoints, wood, gold, food, time);
+            BinaryFormatter bf = new BinaryFormatter();
+            bf.Serialize(file, data);
             file.Close();
             return;
         }
