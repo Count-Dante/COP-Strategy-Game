@@ -174,7 +174,7 @@ public class TileGenerator : MonoBehaviour
       {
             GameObject[] tempTrees = new GameObject[numberOfTrees];
 
-            for (int i = 0; i < Trees.Length; i++)
+            for (int i = 0; i < tempTrees.Length; i++)
             {
                   // Create clone of the Tree Prefab.
                   GameObject Tree = Instantiate(TreePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
@@ -187,7 +187,7 @@ public class TileGenerator : MonoBehaviour
 
             GameObject[] tempFarms = new GameObject[numberOfFarms];
 
-            for (int i = 0; i < Farms.Length; i++)
+            for (int i = 0; i < tempFarms.Length; i++)
             {
                   // Create clone of the Farm Prefab.
                   GameObject Farm = Instantiate(FarmPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
@@ -200,7 +200,7 @@ public class TileGenerator : MonoBehaviour
 
             GameObject[] tempMines = new GameObject[numberOfMines];
 
-            for (int i = 0; i < Mines.Length; i++)
+            for (int i = 0; i < tempMines.Length; i++)
             {
                   // Create clone of the Mine Prefab.
                   GameObject Mine = Instantiate(MinePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
