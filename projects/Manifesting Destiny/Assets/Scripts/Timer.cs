@@ -8,8 +8,10 @@ public class Timer : MonoBehaviour
       public float totalTime = 25f;
       public static float remainingTime = 0;
       public static bool timerEnabled;
+      public static bool timerStarted = false;
       public GameObject timerText;
       public Image timerBar;
+
 
       // Start is called before the first frame update
       void Start()
@@ -22,7 +24,7 @@ public class Timer : MonoBehaviour
       // Update is called once per frame
       void Update()
       {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && timerStarted == false)
             {
                   startTimer();
             }
@@ -55,6 +57,7 @@ public class Timer : MonoBehaviour
       public void startTimer()
       {
             timerEnabled = true;
+            timerStarted = true;
       }
 
       public static bool getTimerStatus()
