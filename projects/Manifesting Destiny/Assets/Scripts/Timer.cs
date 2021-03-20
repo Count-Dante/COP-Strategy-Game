@@ -14,7 +14,6 @@ public class Timer : MonoBehaviour
       // Start is called before the first frame update
       void Start()
       {     remainingTime = totalTime;
-            startTimer();
             timerText.SetActive(false);
             if (remainingTime == 0)
                  remainingTime = totalTime;
@@ -23,6 +22,11 @@ public class Timer : MonoBehaviour
       // Update is called once per frame
       void Update()
       {
+            if (Input.GetMouseButtonDown(0))
+            {
+                  startTimer();
+            }
+
             if (remainingTime > 0 && timerEnabled == true)
             {
                   remainingTime -= Time.deltaTime;

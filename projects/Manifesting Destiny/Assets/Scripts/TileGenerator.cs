@@ -4,27 +4,15 @@ using UnityEngine;
 
 public class TileGenerator : MonoBehaviour
 {
-      // EDIT SCRIPT: replace individual objects with array that creates and accesses objects
-      public GameObject Tree1;
-      public GameObject Tree2;
-      public GameObject Tree3;
-      public GameObject Tree4;
-      public GameObject Tree5;
-      public GameObject Tree6;
-      public GameObject Tree7;
-      public GameObject Tree8;
-      public GameObject Tree9;
-      public GameObject Tree10;
-      public GameObject Farm1;
-      public GameObject Farm2;
-      public GameObject Farm3;
-      public GameObject Farm4;
-      public GameObject Farm5;
-      public GameObject Farm6;
-      public GameObject Farm7;
-      public GameObject Mine1;
-      public GameObject Mine2;
-      public GameObject Mine3;
+      GameObject [] Trees;
+      GameObject [] Farms;
+      GameObject [] Mines;
+      public int numberOfTrees;
+      public int numberOfFarms;
+      public int numberOfMines;
+      public GameObject TreePrefab;
+      public GameObject FarmPrefab;
+      public GameObject MinePrefab;
       public GameObject grid;
 
       private double x;
@@ -41,11 +29,12 @@ public class TileGenerator : MonoBehaviour
 
       void Start()
       {
+            // Used for debugging. For final game set grid.SetActive to false.
             grid.SetActive(true);
+            setObjectArrays();
             setPositionsArray();
-            setWoodTiles();
-            setFoodTiles();
-            setGoldTiles();
+            setTilePositions();
+            disablePrefabs();
       }
 
       void Update()
@@ -54,9 +43,47 @@ public class TileGenerator : MonoBehaviour
             Debug.Log(Screen.width);
       }
 
-      public void setWoodTiles()
+      // This function temporarily disables GameObject Tiles while acessing menus.
+      public void disableTiles()
       {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < Trees.Length; i++)
+            {
+                  Trees[i].SetActive(false);
+            }
+
+            for (int i = 0; i < Farms.Length; i++)
+            {
+                  Farms[i].SetActive(false);
+            }
+
+            for (int i = 0; i < Mines.Length; i++)
+            {
+                  Mines[i].SetActive(false);
+            }
+      }
+
+      public void enableTiles()
+      {
+            for (int i = 0; i < Trees.Length; i++)
+            {
+                  Trees[i].SetActive(true);
+            }
+
+            for (int i = 0; i < Farms.Length; i++)
+            {
+                  Farms[i].SetActive(true);
+            }
+
+            for (int i = 0; i < Mines.Length; i++)
+            {
+                  Mines[i].SetActive(true);
+            }
+      }
+
+      // This function sets the position of the Tree tiles.
+      public void setTreeTiles()
+      {
+            for (int i = 0; i < Trees.Length; i++)
             {
                   // Select random index.
                   int index = RNG.randomNumberGenerator();
@@ -74,33 +101,14 @@ public class TileGenerator : MonoBehaviour
 
                   // Create vector to move the object to the position.
                   Vector3 temp = new Vector3((float)(x), (float)(y), 0);
-                  // When replaced with object array, set Object[i].position = temp
-                  if (i == 0)
-                        Tree1.transform.position = temp;
-                  else if (i == 1)
-                        Tree2.transform.position = temp;
-                  else if (i == 2)
-                        Tree3.transform.position = temp;
-                  else if (i == 3)
-                        Tree4.transform.position = temp;
-                  else if (i == 4)
-                        Tree5.transform.position = temp;
-                  else if (i == 5)
-                        Tree6.transform.position = temp;
-                  else if (i == 6)
-                        Tree7.transform.position = temp;
-                  else if (i == 7)
-                        Tree8.transform.position = temp;
-                  else if (i == 8)
-                        Tree9.transform.position = temp;
-                  else
-                        Tree10.transform.position = temp;
+                  Trees[i].transform.position = temp;
             }
       }
 
-      public void setFoodTiles()
+      // This function sets the position of the Farm tiles.
+      public void setFarmTiles()
       {
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < Farms.Length; i++)
             {
                   // Select random index.
                   int index = RNG.randomNumberGenerator();
@@ -118,27 +126,14 @@ public class TileGenerator : MonoBehaviour
 
                   // Create vector to move the object to the position.
                   Vector3 temp = new Vector3((float)(x), (float)(y), 0);
-                  // When replaced with object array, set Object[i].position = temp
-                  if (i == 0)
-                        Farm1.transform.position = temp;
-                  else if (i == 1)
-                        Farm2.transform.position = temp;
-                  else if (i == 2)
-                        Farm3.transform.position = temp;
-                  else if (i == 3)
-                        Farm4.transform.position = temp;
-                  else if (i == 4)
-                        Farm5.transform.position = temp;
-                  else if (i == 5)
-                        Farm6.transform.position = temp;
-                  else
-                        Farm7.transform.position = temp;
+                  Farms[i].transform.position = temp;
             }
       }
 
-      public void setGoldTiles()
+      // This function sets the position of the Mine tiles.
+      public void setMineTiles()
       {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < Mines.Length; i++)
             {
                   // Select random index.
                   int index = RNG.randomNumberGenerator();
@@ -156,17 +151,73 @@ public class TileGenerator : MonoBehaviour
 
                   // Create vector to move the object to the position.
                   Vector3 temp = new Vector3((float)(x), (float)(y), 0);
-                  // When replaced with object array, set Object[i].position = temp
-                  if (i == 0)
-                        Mine1.transform.position = temp;
-                  else if (i == 1)
-                        Mine2.transform.position = temp;
-                  else
-                        Mine3.transform.position = temp;
+                  Mines[i].transform.position = temp;
             }
       }
 
-      // This function explains the complex logic of setting each position
+      public void setTilePositions()
+      {
+            setTreeTiles();
+            setFarmTiles();
+            setMineTiles();
+      }
+
+      public void disablePrefabs()
+      {
+            TreePrefab.SetActive(false);
+            FarmPrefab.SetActive(false);
+            MinePrefab.SetActive(false);
+      }
+
+      // This function instantiates Tile GameObjects and places them in their corresponding array.
+      public void setObjectArrays()
+      {
+            GameObject[] tempTrees = new GameObject[numberOfTrees];
+
+            for (int i = 0; i < Trees.Length; i++)
+            {
+                  // Create clone of the Tree Prefab.
+                  GameObject Tree = Instantiate(TreePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                  // Move that object to the correct layer to appear in-game.
+                  Tree.transform.SetParent (GameObject.FindGameObjectWithTag("MainCamera").transform, true);
+                  Tree.transform.SetParent (GameObject.FindGameObjectWithTag("Canvas").transform, true);
+                  // Insert new object into array to be accessed later.
+                  tempTrees[i] = Tree;
+            }
+
+            GameObject[] tempFarms = new GameObject[numberOfFarms];
+
+            for (int i = 0; i < Farms.Length; i++)
+            {
+                  // Create clone of the Farm Prefab.
+                  GameObject Farm = Instantiate(FarmPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                  // Move that object to the correct layer to appear in-game.
+                  Farm.transform.SetParent (GameObject.FindGameObjectWithTag("MainCamera").transform, true);
+                  Farm.transform.SetParent (GameObject.FindGameObjectWithTag("Canvas").transform, true);
+                  // Insert new object into array to be accessed later.
+                  tempFarms[i] = Farm;
+            }
+
+            GameObject[] tempMines = new GameObject[numberOfMines];
+
+            for (int i = 0; i < Mines.Length; i++)
+            {
+                  // Create clone of the Mine Prefab.
+                  GameObject Mine = Instantiate(MinePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+                  // Move that object to the correct layer to appear in-game.
+                  Mine.transform.SetParent (GameObject.FindGameObjectWithTag("MainCamera").transform, true);
+                  Mine.transform.SetParent (GameObject.FindGameObjectWithTag("Canvas").transform, true);
+                  // Insert new object into array to be accessed later.
+                  tempMines[i] = Mine;
+            }
+
+            // Update fields.
+            Trees = tempTrees;
+            Farms = tempFarms;
+            Mines = tempMines;
+      }
+
+      // This function explains the complex logic of setting each position.
       public void setPositionsArray()
       {
             // 1. First a margin is created around the screen that is 1% of the screen's height.
