@@ -917,17 +917,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1391527442}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1436909099}
         m_MethodName: SetActive
         m_Mode: 6
@@ -985,6 +974,28 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1736054058}
         m_MethodName: startTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 567970149}
+        m_MethodName: resourceRemoved
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 567970149}
+        m_MethodName: checkIfPlayerLose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2092,17 +2103,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1391527442}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1436909099}
         m_MethodName: SetActive
         m_Mode: 6
@@ -2160,6 +2160,28 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1736054058}
         m_MethodName: startTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 567970153}
+        m_MethodName: resourceRemoved
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 567970153}
+        m_MethodName: checkIfPlayerLose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4154,6 +4176,9 @@ GameObject:
   - component: {fileID: 567970151}
   - component: {fileID: 567970152}
   - component: {fileID: 567970147}
+  - component: {fileID: 567970153}
+  - component: {fileID: 567970149}
+  - component: {fileID: 567970148}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4305,6 +4330,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   failedSource: {fileID: 241543451}
   backgroundSource: {fileID: 547367146}
+--- !u!114 &567970148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567970139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdeb46ba99bb2d4288c9a3d71e33c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PostRNG: {fileID: 1391527442}
+--- !u!114 &567970149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567970139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82b41b34231aaa468d7f6deb7276e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PostRNG: {fileID: 1391527442}
 --- !u!114 &567970150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4342,6 +4393,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8091417b0b84e5459e0fd0ef2447835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &567970153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567970139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19093f52cf32613489ea4a139be18133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PostRNG: {fileID: 1391527442}
 --- !u!1 &676763005
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,17 +5202,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1391527442}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1436909099}
         m_MethodName: SetActive
         m_Mode: 6
@@ -5206,6 +5259,28 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1736054058}
         m_MethodName: startTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 567970148}
+        m_MethodName: resourceRemoved
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 567970148}
+        m_MethodName: checkIfPlayerLose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

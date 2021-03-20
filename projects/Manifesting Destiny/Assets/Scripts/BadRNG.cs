@@ -36,34 +36,7 @@ public class BadRNG : MonoBehaviour
                 break;
         }
 
-        // These if statments check if the chosen event and its detrimental impact to
-        // the total defense value can occur. If not, curEvent is '4' and the user has
-        // to pack up their settlement and leave since they allocated too many resources
-        // towards expansion and did not leave enough for defense.
-
-        // Tornado
-        if (curEvent == 1 && defense - 8 >= 0)
-            defense -= 20;
-
-        // Plague
-        else if (curEvent == 2 && defense - 6 >= 0)
-            defense -= 30;
-
-        // Bandits
-        else if (curEvent == 3 && defense - 4 >= 0)
-            defense -= 50;
-
-        // Pack
-        else
-        {
-          curEvent = 4;
-          deadGame = true;
-
-        }
-
         // Sets the object / image associated with the current event to active and sets the
-        // new value of defense points to the defense bar.
-        DefenseBar.defensePoint = defense;
         PostRNG.transform.GetChild(curEvent).gameObject.SetActive(true);
 
     }
