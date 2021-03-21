@@ -27,4 +27,10 @@ public class FailedSoundManager : MonoBehaviour
     // ensure activateSound() is played only once.
     flag = true;
   }
+
+  public void activateBackgroundSound()
+  {
+    backgroundSource.Play();
+    failedSource.Stop();
+  }
 }

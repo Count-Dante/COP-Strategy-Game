@@ -18,6 +18,30 @@ EditorBuildSettings:
     path: Assets/Scenes/SecondSettlement.unity
     guid: 3f8a7b5ac7f8b432885ca088b2a5beee
   - enabled: 1
+    path: Assets/Scenes/ThirdSettlement.unity
+    guid: cd7e11a9a39334625af9536c134166a7
+  - enabled: 1
+    path: Assets/Scenes/FourthSettlement.unity
+    guid: 7585a6350692a44219d5605b7f2acf84
+  - enabled: 1
+    path: Assets/Scenes/FifthSettlement.unity
+    guid: dcc0d91703cb644b389dc50785ef0558
+  - enabled: 1
+    path: Assets/Scenes/SixthSettlement.unity
+    guid: 9bfca446d16f04b19a6ff0f27d808712
+  - enabled: 1
+    path: Assets/Scenes/SeventhSettlement.unity
+    guid: 77cad17256bb84256a4d070512cb658f
+  - enabled: 1
+    path: Assets/Scenes/EigthSettlement.unity
+    guid: a8c18c8836ed54f60be25195c39982c7
+  - enabled: 1
+    path: Assets/Scenes/NinthSettlment.unity
+    guid: 2e65dd06406f04630ad8ed666126def6
+  - enabled: 1
+    path: Assets/Scenes/TenthSettlment.unity
+    guid: 8ee2d9aa9cb51423ba54fb0cc3756bf6
+  - enabled: 1
     path: Assets/Scenes/Victory.unity
     guid: 0fba4b29a99ed1849ad427c81cfc8b71
   m_configObjects: {}

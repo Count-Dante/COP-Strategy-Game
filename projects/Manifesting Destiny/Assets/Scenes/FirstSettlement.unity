@@ -14266,7 +14266,7 @@ GameObject:
   - component: {fileID: 2142800474}
   m_Layer: 0
   m_Name: ExpansionButton
-  m_TagString: Untagged
+  m_TagString: ExpansionButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
