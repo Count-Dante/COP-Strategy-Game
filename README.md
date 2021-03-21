@@ -132,3 +132,25 @@ Natalia Colmenares: UID 018. Lose Function
 
 Ryan Black: UID 027. Load Functionality
 
+# Sprint 7
+* [Trello Board](https://trello.com/b/FpkzNxdc/backlogs)
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1mqqSALltwAl0edOKvCXrpOLnEsmOgAQWlE3VF5gjhaM/edit?ts=601f11a4#gid=429846743)
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/1SVAG2XL3UHwgRf9H_69p2QMZEYk6puFvHCiJfRDD5Q4/edit#gid=0)
+* [System Architecture](https://github.com/Grant-Allan/COP-Strategy-Game/blob/main/artifacts/architecture.md)
+* [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
+* [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
+* [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
+* [Product Demonstration]()
+
+## Task Allocation
+Aedan Deyto: UID 032. Edit bad RNG to get more difficult as the game progresses
+
+David Kipikash: UID 031. Dynamic instantiation of tiles
+
+Grant Allan: UID 003. Finalize the game Tutorial 
+
+Natalia Colmenares: UID 016. Make 10 new levels
+
+Ryan Black: UID 033. Delete saved files
+
+
