@@ -140,7 +140,7 @@ Ryan Black: UID 027. Load Functionality
 * [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
 * [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
 * [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
-* [Product Demonstration]()
+* [Product Demonstration](https://youtu.be/mXpOJ63FiQU)
 
 ## Task Allocation
 Aedan Deyto: UID 032. Edit bad RNG to get more difficult as the game progresses
