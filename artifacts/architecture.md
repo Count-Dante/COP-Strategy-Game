@@ -188,6 +188,41 @@ Exit To Main Menu UML Diagram:
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
 |  017  | As a player, I want to be able to beat the game so that I am not playing an endless game. |  Victory  |
 
+## 
+Failed Sound Manager UML Diagram:
+
+![Manifesting Destiny Class Diagrams-Failed Sound Manager](https://user-images.githubusercontent.com/45442774/112058155-9934d680-8b30-11eb-917b-5cc346ecb258.png)
+
+* Failed Sound Manager Class: 
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|    |    |    |
+
+## 
+Events UML Diagram:
+
+![Manifesting Destiny Class Diagrams-Events](https://user-images.githubusercontent.com/45442774/112058197-aa7de300-8b30-11eb-9444-869935513eca.png)
+
+* Plague Class: 
+* Bandit Class: 
+* Tornado Class: 
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|    |    |    |
+
+## 
+Play Background Sound UML Diagram:
+
+![Manifesting Destiny Class Diagrams-Play Background Sound](https://user-images.githubusercontent.com/45442774/112058270-bff30d00-8b30-11eb-8ab0-e736d5701d34.png)
+
+* Play Background Sound Class: 
+
+| **ID** | **User Story**                                                                                              | **Major Classes**       |
+| ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
+|    |    |    |
+
 # Data Design
 
 The game utilizes the persistentDataPath which allows the player to save the current state of their game to a static directory path. The user will be able to load their saved game from that path and continue right where they left off. Local variables and other objects pertinent to the game will manifest in memory and be destroyed when the game is closed.
