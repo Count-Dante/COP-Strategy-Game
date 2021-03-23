@@ -10367,7 +10367,6 @@ GameObject:
   - component: {fileID: 964997594}
   - component: {fileID: 964997593}
   - component: {fileID: 964997592}
-  - component: {fileID: 964997591}
   - component: {fileID: 964997590}
   - component: {fileID: 964997589}
   - component: {fileID: 964997588}
@@ -10478,25 +10477,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ce2d3e356e4ad5418243e5681a99af5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &964997591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964997583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cd8925b6055ac44ebca8154fe09f5f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberOfTrees: 0
-  numberOfFarms: 0
-  numberOfMines: 0
-  TreePrefab: {fileID: 0}
-  FarmPrefab: {fileID: 0}
-  MinePrefab: {fileID: 0}
-  grid: {fileID: 0}
 --- !u!81 &964997592
 AudioListener:
   m_ObjectHideFlags: 0
