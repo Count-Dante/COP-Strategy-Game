@@ -193,11 +193,11 @@ Failed Sound Manager UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Failed Sound Manager](https://user-images.githubusercontent.com/45442774/112058155-9934d680-8b30-11eb-917b-5cc346ecb258.png)
 
-* Failed Sound Manager Class: 
+* Failed Sound Manager Class: Plays a sound that signifies losing the game while also stopping the normal background sound of the game.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |    |    |
+|  005  |  As a Player, I want music when I play the game to make it more enjoyable.   | Failed Sound Manager   |
 
 ## 
 Events UML Diagram:
@@ -217,11 +217,11 @@ Play Background Sound UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Play Background Sound](https://user-images.githubusercontent.com/45442774/112058270-bff30d00-8b30-11eb-8ab0-e736d5701d34.png)
 
-* Play Background Sound Class: 
+* Play Background Sound Class: Plays the background sound through a script that can start and stop the sound of the game.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |    |    |
+|  005  | As a Player, I want music when I play the game to make it more enjoyable.    |  Play Background Sound  |
 
 # Data Design
 
