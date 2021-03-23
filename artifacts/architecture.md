@@ -204,13 +204,13 @@ Events UML Diagram:
 
 ![Manifesting Destiny Class Diagrams-Events](https://user-images.githubusercontent.com/45442774/112058197-aa7de300-8b30-11eb-9444-869935513eca.png)
 
-* Plague Class: 
-* Bandit Class: 
-* Tornado Class: 
+* Plague Class: This class takes a certin amount of food based off of how much the defense bar is filled. And see if the player losses.
+* Bandit Class: This class takes a certin amount of gold based off of how much the defense bar is filled. And see if the player losses.
+* Tornado Class: This class takes a certin amount of wood based off of how much the defense bar is filled. And see if the player losses.
 
 | **ID** | **User Story**                                                                                              | **Major Classes**       |
 | ------ | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-|    |    |    |
+|  032  | As a player, I want different bad events that have different effects so that the game has variety. | Plague, Bandit & Tornado Class |
 
 ## 
 Play Background Sound UML Diagram:
