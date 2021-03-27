@@ -102,6 +102,8 @@ public class TileGenerator : MonoBehaviour
                   // Create vector to move the object to the position.
                   Vector3 temp = new Vector3((float)(x), (float)(y), 0);
                   Trees[i].transform.position = temp;
+                  // Properly scale the object.
+                  Trees[i].transform.localScale = Vector3.one;
             }
       }
 
@@ -127,6 +129,8 @@ public class TileGenerator : MonoBehaviour
                   // Create vector to move the object to the position.
                   Vector3 temp = new Vector3((float)(x), (float)(y), 0);
                   Farms[i].transform.position = temp;
+                  // Properly scale the object.
+                  Farms[i].transform.localScale = Vector3.one;
             }
       }
 
@@ -152,6 +156,8 @@ public class TileGenerator : MonoBehaviour
                   // Create vector to move the object to the position.
                   Vector3 temp = new Vector3((float)(x), (float)(y), 0);
                   Mines[i].transform.position = temp;
+                  // Properly scale the object.
+                  Mines[i].transform.localScale = Vector3.one;
             }
       }
 
