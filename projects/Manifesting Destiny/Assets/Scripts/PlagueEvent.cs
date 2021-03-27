@@ -8,6 +8,7 @@ public class PlagueEvent : MonoBehaviour
     public static int updateResource = 0;
 
     public GameObject PostRNG;
+    public BadEventController multiplier;
 
     public void resourceRemoved()
     {
@@ -43,7 +44,8 @@ public class PlagueEvent : MonoBehaviour
 
     public void checkIfPlayerLose()
     {
-        float defense = DefenseBar.defensePoint - 30;
+        double multi = multiplier.badEvenetMultiplier();
+        float defense = DefenseBar.defensePoint - (float)(20 * multi);
 
         if (defense <= 0)
         {

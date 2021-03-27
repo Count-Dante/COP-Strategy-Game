@@ -10224,6 +10224,7 @@ GameObject:
   - component: {fileID: 1338294512}
   - component: {fileID: 1338294511}
   - component: {fileID: 1338294525}
+  - component: {fileID: 1338294526}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10244,6 +10245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PostRNG: {fileID: 1524021589}
+  multiplier: {fileID: 1338294526}
 --- !u!114 &1338294512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10257,6 +10259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PostRNG: {fileID: 1524021589}
+  multiplier: {fileID: 1338294526}
 --- !u!114 &1338294513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10270,6 +10273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PostRNG: {fileID: 1524021589}
+  multiplier: {fileID: 1338294526}
 --- !u!114 &1338294514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10465,6 +10469,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   failedSource: {fileID: 465112987}
   backgroundSource: {fileID: 715805134}
+--- !u!114 &1338294526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338294510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bce21de4cf3584eb165f323f38ff4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 1
+  medium: 0
+  hard: 0
+  extreme: 0
 --- !u!1 &1340267160
 GameObject:
   m_ObjectHideFlags: 0

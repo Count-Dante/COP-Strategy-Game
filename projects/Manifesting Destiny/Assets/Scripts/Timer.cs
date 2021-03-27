@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
       public float totalTime = 25f;
       public static float remainingTime = 0;
       public static bool timerEnabled;
-      public static bool timerStarted = false;
+      public bool timerStarted = false;
       public GameObject timerText;
       public Image timerBar;
 
@@ -17,6 +17,7 @@ public class Timer : MonoBehaviour
       void Start()
       {     remainingTime = totalTime;
             timerText.SetActive(false);
+            timerEnabled = false;
             if (remainingTime == 0)
                  remainingTime = totalTime;
       }
@@ -43,7 +44,6 @@ public class Timer : MonoBehaviour
             {
                   timerEnabled = false;
                   timerText.SetActive(true);
-                  Time.timeScale = 0;
             }
       }
 

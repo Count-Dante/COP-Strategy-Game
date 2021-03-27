@@ -8,6 +8,7 @@ public class BanditEvent : MonoBehaviour
     public static int updateResource = 0;
 
     public GameObject PostRNG;
+    public BadEventController multiplier;
 
     public void resourceRemoved()
     {
@@ -43,7 +44,8 @@ public class BanditEvent : MonoBehaviour
 
     public void checkIfPlayerLose()
     {
-        float defense = DefenseBar.defensePoint - 50;
+        double multi = multiplier.badEvenetMultiplier();
+        float defense = DefenseBar.defensePoint - (float)(30 * multi);
 
         if (defense <= 0)
         {
