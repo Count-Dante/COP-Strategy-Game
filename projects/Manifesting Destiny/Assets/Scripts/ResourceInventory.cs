@@ -15,7 +15,9 @@ public class ResourceInventory : MonoBehaviour
     private static int startFood;
     private static int startGold;
 
-    public Text woodtext;
+    public TextMeshProUGUI woodtext;
+    public TextMeshProUGUI goldtext;
+    public TextMeshProUGUI foodtext;
 
     public Slider woodExpansion;
     public Slider woodDefense;
@@ -100,7 +102,7 @@ public class ResourceInventory : MonoBehaviour
     {
       ExpansionBar.expansionPoint = ExpansionBar.expansionPoint + ExpansionBar.getCurrentExpansionPoint();
       DefenseBar.defensePoint = DefenseBar.defensePoint + DefenseBar.getCurrentDefensePoint();
-      
+
       woodExpansion.value = 0;
       woodDefense.value = 0;
 
@@ -114,10 +116,14 @@ public class ResourceInventory : MonoBehaviour
     void Update()
     {
       woodtext.text = Convert.ToString(wood);
+      foodtext.text = Convert.ToString(food);
+      goldtext.text = Convert.ToString(gold);
+
       updateSlider();
       reevaluateResource();
     }
 
+    // Determines how many of each resource is left after allocating it to defense or expansion
     private void reevaluateResource()
     {
       wood = startWood - ExpansionController.wood - DefenseController.wood;

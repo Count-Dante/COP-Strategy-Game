@@ -2526,7 +2526,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5837fb9561b5643c898a2b7c22d1c76a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodtext: {fileID: 636475748}
+  woodtext: {fileID: 1242223106}
+  goldtext: {fileID: 856756664}
+  foodtext: {fileID: 1547550119}
   woodExpansion: {fileID: 1938143987}
   woodDefense: {fileID: 948803296}
   goldExpansion: {fileID: 1723879950}
@@ -4699,7 +4701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe8694ade4ce934c81d4875ae8e87cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 25
+  totalTime: 20
   timerStarted: 0
   timerText: {fileID: 286904291}
   timerBar: {fileID: 1981935415}

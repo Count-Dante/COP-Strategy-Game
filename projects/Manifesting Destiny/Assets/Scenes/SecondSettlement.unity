@@ -4817,7 +4817,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5837fb9561b5643c898a2b7c22d1c76a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodtext: {fileID: 194585394}
+  woodtext: {fileID: 1387719367}
+  goldtext: {fileID: 921181694}
+  foodtext: {fileID: 1619083760}
   woodExpansion: {fileID: 57015257}
   woodDefense: {fileID: 607079477}
   goldExpansion: {fileID: 1533421328}

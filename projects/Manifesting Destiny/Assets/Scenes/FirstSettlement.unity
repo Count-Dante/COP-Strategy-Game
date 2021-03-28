@@ -251,84 +251,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &18753524
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 18753525}
-  - component: {fileID: 18753527}
-  - component: {fileID: 18753526}
-  m_Layer: 0
-  m_Name: WoodTest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &18753525
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18753524}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 726389545}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -312, y: -184}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.49999997, y: 0.5000002}
---- !u!114 &18753526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18753524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: New Text
---- !u!222 &18753527
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18753524}
-  m_CullTransparentMesh: 0
 --- !u!1 &80906961
 GameObject:
   m_ObjectHideFlags: 0
@@ -4474,6 +4396,11 @@ MonoBehaviour:
   timerStarted: 0
   timerText: {fileID: 1877288393}
   timerBar: {fileID: 676763007}
+  easy: 0
+  medium: 0
+  med_hard: 0
+  hard: 0
+  extreme: 0
 --- !u!1 &693039893
 GameObject:
   m_ObjectHideFlags: 0
@@ -4582,7 +4509,6 @@ RectTransform:
   m_Children:
   - {fileID: 117588627}
   - {fileID: 1644815870}
-  - {fileID: 18753525}
   m_Father: {fileID: 1794651368}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4640,7 +4566,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5837fb9561b5643c898a2b7c22d1c76a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodtext: {fileID: 18753526}
+  woodtext: {fileID: 337766543}
+  goldtext: {fileID: 1698096399}
+  foodtext: {fileID: 131808929}
   woodExpansion: {fileID: 472714439}
   woodDefense: {fileID: 14576506}
   goldExpansion: {fileID: 1093159466}
@@ -10858,6 +10786,11 @@ MonoBehaviour:
   timerStarted: 0
   timerText: {fileID: 1877288393}
   timerBar: {fileID: 676763007}
+  easy: 1
+  medium: 0
+  med_hard: 0
+  hard: 0
+  extreme: 0
 --- !u!222 &1736054059
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -2877,7 +2877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe8694ade4ce934c81d4875ae8e87cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 25
+  totalTime: 17
   timerStarted: 0
   timerText: {fileID: 439433800}
   timerBar: {fileID: 555076903}
@@ -13650,7 +13650,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5837fb9561b5643c898a2b7c22d1c76a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodtext: {fileID: 783122505}
+  woodtext: {fileID: 437206095}
+  goldtext: {fileID: 2130025722}
+  foodtext: {fileID: 1107538912}
   woodExpansion: {fileID: 1691763281}
   woodDefense: {fileID: 59013917}
   goldExpansion: {fileID: 1188032169}

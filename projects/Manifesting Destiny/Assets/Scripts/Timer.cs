@@ -12,10 +12,11 @@ public class Timer : MonoBehaviour
       public GameObject timerText;
       public Image timerBar;
 
-
       // Start is called before the first frame update
       void Start()
-      {     remainingTime = totalTime;
+      {
+            remainingTime = totalTime;
+
             timerText.SetActive(false);
             timerEnabled = false;
             if (remainingTime == 0)
