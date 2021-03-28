@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using NUnit.Framework;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class LoadGameTest
 {
@@ -13,232 +15,197 @@ public class LoadGameTest
      * -------------------------------------------
      * Click 'load game x' to start that game.
      * 
-     * Set wood, gold, food amounts to 10.
-     * 
-     * Set timer remaining timer 25, defense bar
-     * to 10 and expansion bar to 10.
-     * 
-     * Save the game to a save file.
+     * Save the game to a save file, serves the same
+     * purpose as hitting the expansion button as an
+     * autosave.
      * 
      * Load that save file.
      * 
-     * Verify the loaded save values match those
-     * previously set.
+     * Verify the second settlement scene is loaded
+     * after loading the perviously saved file.
+     * 
+     * Why? Initial scene when loading a new save is the
+     * first settlement, a successful save (first autosave)
+     * and load would load the second settlement.
     */
 
 
-        [Test]
-        public void testSave1()
-        {
+    [Test]
+    public void testSave1()
+    {
+        // This function clears all previously created test saves.
+        clearTests();
 
-            GameObject gameObject = new GameObject();
-            Resources resources = gameObject.AddComponent<Resources>();
-            Timer timer = gameObject.AddComponent<Timer>();
-            DefenseBar defenseBar = gameObject.AddComponent<DefenseBar>();
-            ExpansionBar expansionBar = gameObject.AddComponent<ExpansionBar>();
-            SaveData saveData = gameObject.AddComponent<SaveData>();
-
-            saveData.LoadGame("save1t");
-
-            Resources.setWood(10);
-            Resources.setGold(10);
-            Resources.setFood(10);
-
-            Timer.remainingTime = 25;
-            DefenseBar.defensePoint = 10;
-            ExpansionBar.expansionPoint = 10;
-
-            saveData.SaveGame();
-            saveData.LoadGame("save1t");
-
-            Assert.IsTrue(Resources.getWood() == 10 && Resources.getGold() == 10 && Resources.getFood() == 10
-               && Timer.remainingTime == 25 && DefenseBar.defensePoint == 10 && ExpansionBar.expansionPoint == 10);
-        }
-
-        [Test]
-        public void testSave2()
-        {
-
+        // Attaches the save/load script to a game object.
         GameObject gameObject = new GameObject();
-        Resources resources = gameObject.AddComponent<Resources>();
-        Timer timer = gameObject.AddComponent<Timer>();
-        DefenseBar defenseBar = gameObject.AddComponent<DefenseBar>();
-        ExpansionBar expansionBar = gameObject.AddComponent<ExpansionBar>();
-        SaveData saveData = gameObject.AddComponent<SaveData>();
+        tSaveData saveData = gameObject.AddComponent<tSaveData>();
+
+        // Click load game 1.
+        saveData.LoadGame("save1t");
+        // Autosave game 1 after expansion.
+        saveData.SaveGame();
+        // Load game 1 again.
+        saveData.LoadGame("save1t");
+
+        // Check what the active scene is.
+        Scene activeScene = EditorSceneManager.GetActiveScene();
+        string activeSceneName = activeScene.name;
+
+        // Verify the second settlement scene loaded correctly.
+        Assert.IsTrue(activeSceneName == "SecondSettlement");
+    }
+
+
+    [Test]
+    public void testSave2()
+    {
+        GameObject gameObject = new GameObject();
+        tSaveData saveData = gameObject.AddComponent<tSaveData>();
+
         saveData.LoadGame("save2t");
+        saveData.SaveGame();
+        saveData.LoadGame("save2t");
+        Scene activeScene = EditorSceneManager.GetActiveScene();
+        string activeSceneName = activeScene.name;
 
-            Resources.setWood(10);
-            Resources.setGold(10);
-            Resources.setFood(10);
+        Assert.IsTrue(activeSceneName == "SecondSettlement");
+    }
 
-            Timer.remainingTime = 25;
-            DefenseBar.defensePoint = 10;
-            ExpansionBar.expansionPoint = 10;
-
-            saveData.SaveGame();
-            saveData.LoadGame("save2t");
-
-            Assert.IsTrue(Resources.getWood() == 10 && Resources.getGold() == 10 && Resources.getFood() == 10
-               && Timer.remainingTime == 25 && DefenseBar.defensePoint == 10 && ExpansionBar.expansionPoint == 10);
-        }
-
-        [Test]
-        public void testSave3()
-        {
+    [Test]
+    public void testSave3()
+    {
 
         GameObject gameObject = new GameObject();
-        Resources resources = gameObject.AddComponent<Resources>();
-        Timer timer = gameObject.AddComponent<Timer>();
-        DefenseBar defenseBar = gameObject.AddComponent<DefenseBar>();
-        ExpansionBar expansionBar = gameObject.AddComponent<ExpansionBar>();
-        SaveData saveData = gameObject.AddComponent<SaveData>();
+        tSaveData saveData = gameObject.AddComponent<tSaveData>();
 
         saveData.LoadGame("save3t");
+        saveData.SaveGame();
+        saveData.LoadGame("save3t");
+        Scene activeScene = EditorSceneManager.GetActiveScene();
+        string activeSceneName = activeScene.name;
 
-            Resources.setWood(10);
-            Resources.setGold(10);
-            Resources.setFood(10);
+        Assert.IsTrue(activeSceneName == "SecondSettlement");
+    }
 
-            Timer.remainingTime = 25;
-            DefenseBar.defensePoint = 10;
-            ExpansionBar.expansionPoint = 10;
-
-            saveData.SaveGame();
-            saveData.LoadGame("save3t");
-
-            Assert.IsTrue(Resources.getWood() == 10 && Resources.getGold() == 10 && Resources.getFood() == 10
-               && Timer.remainingTime == 25 && DefenseBar.defensePoint == 10 && ExpansionBar.expansionPoint == 10);
-        }
-
-        [Test]
-        public void testSave4()
-        {
+    [Test]
+    public void testSave4()
+    {
 
         GameObject gameObject = new GameObject();
-        Resources resources = gameObject.AddComponent<Resources>();
-        Timer timer = gameObject.AddComponent<Timer>();
-        DefenseBar defenseBar = gameObject.AddComponent<DefenseBar>();
-        ExpansionBar expansionBar = gameObject.AddComponent<ExpansionBar>();
-        SaveData saveData = gameObject.AddComponent<SaveData>();
+        tSaveData saveData = gameObject.AddComponent<tSaveData>();
 
         saveData.LoadGame("save4t");
+        saveData.SaveGame();
+        saveData.LoadGame("save4t");
+        Scene activeScene = EditorSceneManager.GetActiveScene();
+        string activeSceneName = activeScene.name;
 
-            Resources.setWood(10);
-            Resources.setGold(10);
-            Resources.setFood(10);
+        Assert.IsTrue(activeSceneName == "SecondSettlement");
+    }
 
-            Timer.remainingTime = 25;
-            DefenseBar.defensePoint = 10;
-            ExpansionBar.expansionPoint = 10;
-
-            saveData.SaveGame();
-            saveData.LoadGame("save4t");
-
-            Assert.IsTrue(Resources.getWood() == 10 && Resources.getGold() == 10 && Resources.getFood() == 10
-               && Timer.remainingTime == 25 && DefenseBar.defensePoint == 10 && ExpansionBar.expansionPoint == 10);
-        }
-
-        [Test]
-        public void testSave5()
-        {
-
+    [Test]
+    public void testSave5()
+    {
         GameObject gameObject = new GameObject();
-        Resources resources = gameObject.AddComponent<Resources>();
-        Timer timer = gameObject.AddComponent<Timer>();
-        DefenseBar defenseBar = gameObject.AddComponent<DefenseBar>();
-        ExpansionBar expansionBar = gameObject.AddComponent<ExpansionBar>();
-        SaveData saveData = gameObject.AddComponent<SaveData>();
+        tSaveData saveData = gameObject.AddComponent<tSaveData>();
 
         saveData.LoadGame("save5t");
+        saveData.SaveGame();
+        saveData.LoadGame("save5t");
+        Scene activeScene = EditorSceneManager.GetActiveScene();
+        string activeSceneName = activeScene.name;
 
-            Resources.setWood(10);
-            Resources.setGold(10);
-            Resources.setFood(10);
+        Assert.IsTrue(activeSceneName == "SecondSettlement");
+    }
 
-            Timer.remainingTime = 25;
-            DefenseBar.defensePoint = 10;
-            ExpansionBar.expansionPoint = 10;
+    /* Automated Test for deleting saves 
+    *  Pseudocode 
+    * -------------------------------------------
+    * The save files are created befopre the clear
+    * test is run (!!!)
+    * 
+    * Use the clear function to clear a given save
+    * Verify that save file does not exist
+    * Return true if so
+   */
 
-            saveData.SaveGame();
-            saveData.LoadGame("save5t");
+    [Test]
+    public void testSave1Clear()
+    {
 
-            Assert.IsTrue(Resources.getWood() == 10 && Resources.getGold() == 10 && Resources.getFood() == 10
-               && Timer.remainingTime == 25 && DefenseBar.defensePoint == 10 && ExpansionBar.expansionPoint == 10);
-        }
+        // Attach the clear all script to a game object.
+        GameObject gameObject = new GameObject();
+        clearAll ClearAll = gameObject.AddComponent<clearAll>();
 
-        /* Automated Test for deleting saves 
-        *  Pseudocode 
-        * -------------------------------------------
-        * The save files are created befopre the clear
-        * test is run (!!!)
-        * 
-        * Use the clear function to clear a given save
-        * Verify that save file does not exist
-        * Return true if so
-       */
+        // Destination where the test save SHOULD be.
+        string destination = Application.persistentDataPath + "/save1t.dat";
 
-        [Test]
-        public void testSave1Clear() {
+        // Clear function for deletion and assert file was successfully deleted.
+        ClearAll.clear("save1t");
+        Assert.IsTrue(!File.Exists(destination));
 
-            GameObject gameObject = new GameObject();
-            clearAll ClearAll = gameObject.AddComponent<clearAll>();
+    }
 
-            string destination = Application.persistentDataPath + "/save1t.dat";
-            ClearAll.clear("save1t");
-            Assert.IsTrue(!File.Exists(destination));
+    [Test]
+    public void testSave2Clear()
+    {
 
-        }
+        GameObject gameObject = new GameObject();
+        clearAll ClearAll = gameObject.AddComponent<clearAll>();
 
-        [Test]
-        public void testSave2Clear()
+        string destination = Application.persistentDataPath + "/save2t.dat";
+        ClearAll.clear("save2t");
+        Assert.IsTrue(!File.Exists(destination));
+
+    }
+
+    [Test]
+    public void testSave3Clear()
+    {
+
+        GameObject gameObject = new GameObject();
+        clearAll ClearAll = gameObject.AddComponent<clearAll>();
+
+        string destination = Application.persistentDataPath + "/save3t.dat";
+        ClearAll.clear("save3t");
+        Assert.IsTrue(!File.Exists(destination));
+
+    }
+
+    [Test]
+    public void testSave4Clear()
+    {
+
+        GameObject gameObject = new GameObject();
+        clearAll ClearAll = gameObject.AddComponent<clearAll>();
+
+        string destination = Application.persistentDataPath + "/save4t.dat";
+        ClearAll.clear("save4t");
+        Assert.IsTrue(!File.Exists(destination));
+
+    }
+
+    [Test]
+    public void testSave5Clear()
+    {
+
+        GameObject gameObject = new GameObject();
+        clearAll ClearAll = gameObject.AddComponent<clearAll>();
+
+        string destination = Application.persistentDataPath + "/save5t.dat";
+        ClearAll.clear("save5t");
+        Assert.IsTrue(!File.Exists(destination));
+
+    }
+
+    // Function that iterates through potential locations of test saves and deletes them once found.
+    public void clearTests()
+    {
+        for (int i = 1; i < 6; i++)
         {
-
-            GameObject gameObject = new GameObject();
-            clearAll ClearAll = gameObject.AddComponent<clearAll>();
-
-            string destination = Application.persistentDataPath + "/save2t.dat";
-            ClearAll.clear("save2t");
-            Assert.IsTrue(!File.Exists(destination));
-
+            string destination = Application.persistentDataPath + "/save" + i + "t.dat";
+            if (File.Exists(destination))
+                File.Delete(destination);
         }
-
-        [Test]
-        public void testSave3Clear()
-        {
-
-            GameObject gameObject = new GameObject();
-            clearAll ClearAll = gameObject.AddComponent<clearAll>();
-
-            string destination = Application.persistentDataPath + "/save3t.dat";
-            ClearAll.clear("save3t");
-            Assert.IsTrue(!File.Exists(destination));
-
-        }
-
-        [Test]
-        public void testSave4Clear()
-        {
-
-            GameObject gameObject = new GameObject();
-            clearAll ClearAll = gameObject.AddComponent<clearAll>();
-
-            string destination = Application.persistentDataPath + "/save4t.dat";
-            ClearAll.clear("save4t");
-            Assert.IsTrue(!File.Exists(destination));
-
-        }
-
-        [Test]
-        public void testSave5Clear()
-        {
-
-            GameObject gameObject = new GameObject();
-            clearAll ClearAll = gameObject.AddComponent<clearAll>();
-
-            string destination = Application.persistentDataPath + "/save5t.dat";
-            ClearAll.clear("save5t");
-            Assert.IsTrue(!File.Exists(destination));
-
-        }
-
+    }
 }

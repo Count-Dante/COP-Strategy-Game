@@ -1977,8 +1977,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: Play
+      - m_Target: {fileID: 981169308}
+        m_MethodName: SaveGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6062,6 +6062,7 @@ GameObject:
   - component: {fileID: 981169305}
   - component: {fileID: 981169304}
   - component: {fileID: 981169318}
+  - component: {fileID: 981169319}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6308,6 +6309,18 @@ MonoBehaviour:
   medium: 1
   hard: 0
   extreme: 0
+--- !u!114 &981169319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981169303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8091417b0b84e5459e0fd0ef2447835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &994401827
 GameObject:
   m_ObjectHideFlags: 0

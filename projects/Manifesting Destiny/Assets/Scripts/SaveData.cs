@@ -2,18 +2,14 @@
 using UnityEngine.UI;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.SceneManagement;
 
 public class SaveData : MonoBehaviour
 {
-    // Variables to store game data.
-    float defensePoints = 0;
-    float expansionPoints = 0;
-    float remainingTime = 0;
+    // Variables to current scene names and the time the game was created or saved.
+    string scene;
     string time;
 
-    int wood = 0;
-    int gold = 0;
-    int food = 0;
 
     // Static string to hold the name of the current save
     public static string curSave;
@@ -33,19 +29,48 @@ public class SaveData : MonoBehaviour
         else
             file = File.Create(destination);
 
-        // Setting the game data from the current game.
+        // Getting the current system time when the save is created for a timestamp.
         time = System.DateTime.Now.ToString("dd/MM/yy hh:mm");
 
-        remainingTime = Timer.remainingTime;
-        defensePoints = DefenseBar.defensePoint;
-        expansionPoints = ExpansionBar.expansionPoint;
+        // When the expansion button is pressed, the next scene is loaded and the progression
+        // to that scene is saved. If the current scene when the button is pressed is the first
+        // settlement, then the next scene / level to be loaded would be the second level and so
+        // on.
+        if (string.Equals(SceneManager.GetActiveScene().name, "FirstSettlement"))
+            scene = "SecondSettlement";
 
-        wood = Resources.getWood();
-        gold = Resources.getGold();
-        food = Resources.getFood();
+        else if (string.Equals(SceneManager.GetActiveScene().name, "SecondSettlement"))
+            scene = "ThirdSettlement";
+
+        else if (string.Equals(SceneManager.GetActiveScene().name, "ThirdSettlement"))
+            scene = "FourthSettlement";
+
+        else if (string.Equals(SceneManager.GetActiveScene().name, "FourthSettlement"))
+            scene = "FifthSettlement";
+
+        else if (string.Equals(SceneManager.GetActiveScene().name, "FifthSettlement"))
+            scene = "SixthSettlement";
+
+        else if (string.Equals(SceneManager.GetActiveScene().name, "SixthSettlement"))
+            scene = "SeventhSettlement";
+
+        else if (string.Equals(SceneManager.GetActiveScene().name, "SeventhSettlement"))
+            scene = "EigthSettlement";
+
+        else if (string.Equals(SceneManager.GetActiveScene().name, "EigthSettlement"))
+            scene = "NinthSettlement";
+
+        else if (string.Equals(SceneManager.GetActiveScene().name, "NinthSettlement"))
+            scene = "Settlement";
+
+        else if (string.Equals(SceneManager.GetActiveScene().name, "TenthSettlement"))
+            scene = "Victory";
+        else
+            scene = "FirstSettlement";
+
 
         // Creation of a GameData object to store the game data.
-        GameData data = new GameData(remainingTime, defensePoints, expansionPoints, wood, gold, food, time);
+        GameData data = new GameData(time, scene);
 
         // Game data is seralized and stored in the file.
         BinaryFormatter bf = new BinaryFormatter();
@@ -71,17 +96,13 @@ public class SaveData : MonoBehaviour
             file = File.Create(destination);
 
             time = System.DateTime.Now.ToString("dd/MM/yy hh:mm");
-            remainingTime = 25;
-            defensePoints = 0;
-            expansionPoints = 0;
-            wood = 0;
-            gold = 0;
-            food = 0;
+            scene = "FirstSettlement";
 
-            GameData data = new GameData(remainingTime, defensePoints, expansionPoints, wood, gold, food, time);
+            GameData data = new GameData(time, scene);
             BinaryFormatter bf = new BinaryFormatter();
             bf.Serialize(file, data);
             file.Close();
+            SceneManager.LoadScene(scene);
             return;
         }
 
@@ -92,29 +113,17 @@ public class SaveData : MonoBehaviour
             BinaryFormatter bf = new BinaryFormatter();
             GameData data = (GameData)bf.Deserialize(file);
             file.Close();
-
-            Timer.remainingTime = data.remainingTime;
-            DefenseBar.defensePoint = data.defensePoints;
-            ExpansionBar.expansionPoint = data.expansionPoints;
-
-            Resources.setWood(data.wood);
-            Resources.setGold(data.gold);
-            Resources.setFood(data.food);
-
+            SceneManager.LoadScene(data.scene);
         }
 
         // File is empty, insert initial values to avoid errors.
         catch
         {
-            Timer.remainingTime = 25;
-            DefenseBar.defensePoint = 0;
-            ExpansionBar.expansionPoint = 0;
 
-            Resources.setWood(0);
-            Resources.setGold(0);
-            Resources.setFood(0);
-
+            time = System.DateTime.Now.ToString("dd/MM/yy hh:mm");
+            scene = "FirstSettlement";
             file.Close();
+            SceneManager.LoadScene(scene);
         }
     }
 }
