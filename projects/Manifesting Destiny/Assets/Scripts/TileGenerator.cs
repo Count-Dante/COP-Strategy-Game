@@ -30,7 +30,7 @@ public class TileGenerator : MonoBehaviour
       void Start()
       {
             // Used for debugging. For final game set grid.SetActive to false.
-            grid.SetActive(true);
+            grid.SetActive(false);
             setObjectArrays();
             setPositionsArray();
             setTilePositions();
@@ -187,6 +187,7 @@ public class TileGenerator : MonoBehaviour
                   // Move that object to the correct layer to appear in-game.
                   Tree.transform.SetParent (GameObject.FindGameObjectWithTag("MainCamera").transform, true);
                   Tree.transform.SetParent (GameObject.FindGameObjectWithTag("Canvas").transform, true);
+                  Tree.transform.SetParent (GameObject.FindGameObjectWithTag("Tiles").transform, true);
                   // Insert new object into array to be accessed later.
                   tempTrees[i] = Tree;
             }
@@ -200,6 +201,7 @@ public class TileGenerator : MonoBehaviour
                   // Move that object to the correct layer to appear in-game.
                   Farm.transform.SetParent (GameObject.FindGameObjectWithTag("MainCamera").transform, true);
                   Farm.transform.SetParent (GameObject.FindGameObjectWithTag("Canvas").transform, true);
+                  Farm.transform.SetParent (GameObject.FindGameObjectWithTag("Tiles").transform, true);
                   // Insert new object into array to be accessed later.
                   tempFarms[i] = Farm;
             }
@@ -213,6 +215,7 @@ public class TileGenerator : MonoBehaviour
                   // Move that object to the correct layer to appear in-game.
                   Mine.transform.SetParent (GameObject.FindGameObjectWithTag("MainCamera").transform, true);
                   Mine.transform.SetParent (GameObject.FindGameObjectWithTag("Canvas").transform, true);
+                  Mine.transform.SetParent (GameObject.FindGameObjectWithTag("Tiles").transform, true);
                   // Insert new object into array to be accessed later.
                   tempMines[i] = Mine;
             }
