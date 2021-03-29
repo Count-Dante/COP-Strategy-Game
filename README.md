@@ -161,7 +161,7 @@ Ryan Black: UID 033. Delete saved files
 * [Source Code](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Scripts)
 * [Automated Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manifesting%20Destiny/Assets/Editor)
 * [Manual Tests](https://github.com/Grant-Allan/COP-Strategy-Game/tree/main/projects/Manual%20Test)
-* [Product Demonstration]()
+* [Product Demonstration](https://youtu.be/A5GdhqspHM4)
 
 ## Task Allocation
 Aedan Deyto: UID 032. Edit bad RNG to get more difficult as the game progresses
