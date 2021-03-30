@@ -7,7 +7,6 @@ public class QuitGame : MonoBehaviour
     public void ExitGame()
     {
         // If it's in the Unity Editor, this will close it
-        UnityEditor.EditorApplication.isPlaying = false;
 
         // If it's being run as an application, this will quit the application
         Application.Quit();

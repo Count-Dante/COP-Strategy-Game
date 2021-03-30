@@ -18,7 +18,7 @@ public class ExpansionBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        maxExpansionPoint = ExpansionController.easyExpansion;
+        maxExpansionPoint = expand.getMaxExpansionPoints();
         slider.maxValue = maxExpansionPoint;
         slider.value = expansionPoint;
     }

@@ -2,12 +2,12 @@
 using UnityEngine.UI;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
+//using UnityEditor.SceneManagement;
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // This a slightly modified version of the SaveData script that handles the save and load functions.
-// The automated test runner for unity loads unity scenes through a function called EditorSceneManager
+// The automated test runner for unity loads unity scenes through a function called SceneManager
 // whereas in play scenes are called through a function called SceneManager. That is the only modification
 // to the script implemented in game.
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -44,34 +44,34 @@ public class tSaveData : MonoBehaviour
         // to that scene is saved. If the current scene when the button is pressed is the first
         // settlement, then the next scene / level to be loaded would be the second level and so
         // on.
-        if (string.Equals(EditorSceneManager.GetActiveScene().name, "FirstSettlement"))
+        if (string.Equals(SceneManager.GetActiveScene().name, "FirstSettlement"))
             scene = "SecondSettlement";
 
-        else if (string.Equals(EditorSceneManager.GetActiveScene().name, "SecondSettlement"))
+        else if (string.Equals(SceneManager.GetActiveScene().name, "SecondSettlement"))
             scene = "ThirdSettlement";
 
-        else if (string.Equals(EditorSceneManager.GetActiveScene().name, "ThirdSettlement"))
+        else if (string.Equals(SceneManager.GetActiveScene().name, "ThirdSettlement"))
             scene = "FourthSettlement";
 
-        else if (string.Equals(EditorSceneManager.GetActiveScene().name, "FourthSettlement"))
+        else if (string.Equals(SceneManager.GetActiveScene().name, "FourthSettlement"))
             scene = "FifthSettlement";
 
-        else if (string.Equals(EditorSceneManager.GetActiveScene().name, "FifthSettlement"))
+        else if (string.Equals(SceneManager.GetActiveScene().name, "FifthSettlement"))
             scene = "SixthSettlement";
 
-        else if (string.Equals(EditorSceneManager.GetActiveScene().name, "SixthSettlement"))
+        else if (string.Equals(SceneManager.GetActiveScene().name, "SixthSettlement"))
             scene = "SeventhSettlement";
 
-        else if (string.Equals(EditorSceneManager.GetActiveScene().name, "SeventhSettlement"))
+        else if (string.Equals(SceneManager.GetActiveScene().name, "SeventhSettlement"))
             scene = "EigthSettlement";
 
-        else if (string.Equals(EditorSceneManager.GetActiveScene().name, "EigthSettlement"))
+        else if (string.Equals(SceneManager.GetActiveScene().name, "EigthSettlement"))
             scene = "NinthSettlement";
 
-        else if (string.Equals(EditorSceneManager.GetActiveScene().name, "NinthSettlement"))
+        else if (string.Equals(SceneManager.GetActiveScene().name, "NinthSettlement"))
             scene = "Settlement";
 
-        else if (string.Equals(EditorSceneManager.GetActiveScene().name, "TenthSettlement"))
+        else if (string.Equals(SceneManager.GetActiveScene().name, "TenthSettlement"))
             scene = "Victory";
         else
             scene = "FirstSettlement";
@@ -110,7 +110,7 @@ public class tSaveData : MonoBehaviour
             BinaryFormatter bf = new BinaryFormatter();
             bf.Serialize(file, data);
             file.Close();
-            EditorSceneManager.OpenScene("Assets/Scenes/FirstSettlement.unity");
+            SceneManager.LoadScene("Assets/Scenes/FirstSettlement.unity");
             return;
         }
 
@@ -121,7 +121,7 @@ public class tSaveData : MonoBehaviour
             BinaryFormatter bf = new BinaryFormatter();
             GameData data = (GameData)bf.Deserialize(file);
             file.Close();
-            EditorSceneManager.OpenScene("Assets/Scenes/" + data.scene + ".unity");
+            SceneManager.LoadScene("Assets/Scenes/" + data.scene + ".unity");
         }
 
         // File is empty, insert initial values to avoid errors.
@@ -131,7 +131,7 @@ public class tSaveData : MonoBehaviour
             time = System.DateTime.Now.ToString("dd/MM/yy hh:mm");
             scene = "FirstSettlement";
             file.Close();
-            EditorSceneManager.OpenScene("Assets/Scenes/FirstSettlement.unity");
+            SceneManager.LoadScene("Assets/Scenes/FirstSettlement.unity");
         }
     }
 }

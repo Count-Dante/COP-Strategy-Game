@@ -68,4 +68,24 @@ public class ExpansionController : MonoBehaviour
       expansion.gameObject.SetActive(true);
     }
 
+    public int getMaxExpansionPoints()
+    {
+        if (easy)
+        {
+            return easyExpansion;
+        }
+        else if (medium)
+        {
+            return mediumExpansion;
+        }
+        else if (hard)
+        {
+            return hardExpansion;
+        }
+        else
+        {
+            return extremeExpansion;
+        }
+    }
+
 }
